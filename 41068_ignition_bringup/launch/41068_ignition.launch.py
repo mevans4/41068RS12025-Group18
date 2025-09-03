@@ -142,7 +142,7 @@ def generate_launch_description():
         executable='create',
         output='screen',
         parameters=[{'use_sim_time': use_sim_time}],
-        arguments=['-topic', '/robot_description', '-z', '0.2']
+        arguments=['-name', 'sjtu_drone','-topic', '/robot_description', '-z', '0.2']
     )
     ld.add_action(robot_spawner)
 
