@@ -15,9 +15,13 @@ private:
         auto result = detector_.detectTrunk(msg->ranges, msg->angle_min, msg->angle_increment);
 
         if (result.valid) {
-            RCLCPP_INFO(this->get_logger(), "Detected trunk width: %.2f m", result.width_m);
+            RCLCPP_INFO(this->get_logger(),
+                        "Tree detected: Diameter = %.2f m, Center = (%.2f, %.2f)",
+                        result.diameter_m,
+                        result.center.x,
+                        result.center.y);
         } else {
-            RCLCPP_WARN(this->get_logger(), "No trunk detected.");
+            RCLCPP_WARN(this->get_logger(), "No trunk detected in scan.");
         }
     }
 
