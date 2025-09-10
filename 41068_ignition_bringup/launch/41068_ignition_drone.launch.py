@@ -70,7 +70,7 @@ def generate_launch_description():
         'world',
         default_value='simple_trees',
         description='Which world to load',
-        choices=['simple_trees', 'large_demo']
+        choices=['simple_trees', 'large_demo', 'PlantationTest']
     )
     ld.add_action(world_launch_arg)
     gazebo = IncludeLaunchDescription(
@@ -80,7 +80,7 @@ def generate_launch_description():
             'ign_args': [PathJoinSubstitution([pkg_path,
                                                'worlds',
                                                [LaunchConfiguration('world'), '.sdf']]),
-                         ' -r']}.items()
+                         ' -r --render-engine ogre']}.items()
     )
     ld.add_action(gazebo)
 
@@ -90,7 +90,14 @@ def generate_launch_description():
         executable='create',
         output='screen',
         parameters=[{'use_sim_time': use_sim_time}],
-        arguments=['-topic', '/robot_description', '-z', '2.0'] # z is height above ground
+        arguments=['-topic', '/robot_description',
+                    '-x', '4.0',
+                    '-y', '4.0',
+                    '-z', '0.5',
+                    '-R', '0.0',
+                    '-P', '0.0',
+                    '-Y', '1.57'
+                ]
     )
     ld.add_action(robot_spawner)
 
