@@ -8,7 +8,6 @@
   <xacro:property name="r200_cam_rgb_pz" value="0.013"/>
   <xacro:property name="r200_cam_depth_offset" value="0.01"/>
 
-
   <!-- Main link -->
   <link name="base_link">
     <inertial>
@@ -18,12 +17,15 @@
                iyy="1.764e-3" iyz="3.595e-7"
                izz="3.328e-3" />
     </inertial>
-<!--     <collision name="collision">
-      <origin xyz="-0.00424 0.00014 -0.00595" rpy="0 0 0"/>
+    
+    <!-- Add collision geometry to prevent lidar self-collision -->
+    <collision name="collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.5 0.5 0.2"/>
+        <cylinder length="0.05" radius="0.15"/>  <!-- Encompasses propellers -->
       </geometry>
-    </collision> -->
+    </collision>
+    
     <visual name="hull">
       <geometry>
         <mesh filename="file://$(find 41068_ignition_bringup)/urdf_drone/meshes/hull.dae"/>
@@ -55,7 +57,6 @@
     </visual>
   </link>
 
-
   <joint name="imu_joint" type="fixed">
     <parent link="base_link"/>
     <child link="imu_link"/>
@@ -64,10 +65,32 @@
 
   <link name="imu_link"/>
 
-  <joint name="scan_joint" type="fixed">
+  <!-- ADD NEW LIDAR MOUNT HERE -->
+  <joint name="lidar_mount_joint" type="fixed">
     <parent link="base_link"/>
+    <child link="lidar_mount"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/>  <!-- Mount higher up -->
+  </joint>
+
+  <link name="lidar_mount">
+    <visual>
+      <geometry>
+        <cylinder length="0.03" radius="0.01"/>  <!-- Thin mounting post -->
+      </geometry>
+      <material name="dark"/>
+    </visual>
+    <inertial>
+      <mass value="0.01"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- MODIFY THE SCAN JOINT TO USE THE NEW MOUNT -->
+  <joint name="scan_joint" type="fixed">
+    <parent link="lidar_mount"/>  <!-- Changed from base_link to lidar_mount -->
     <child link="base_scan"/>
-    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    <origin xyz="0 0 0.02" rpy="0 0 0"/>  <!-- Small offset from mount -->
   </joint>
 
   <link name="base_scan">
@@ -80,7 +103,7 @@
     </visual>
 
     <inertial>
-      <mass value="0" />
+      <mass value="0.01" />  <!-- Give it small mass -->
       <origin xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0.0" ixz="0.0"
                iyy="0.001" iyz="0.0"
@@ -89,7 +112,7 @@
   </link>
 
   <joint name="camera_joint" type="fixed">
-    <origin xyz="0.25 0.0 0.25" rpy="0 0.785398 0"/> <!-- 0.5 0.0 0.9 -->
+    <origin xyz="0.25 0.0 0.25" rpy="0 0.785398 0"/>
     <parent link="base_link"/>
     <child link="camera_link"/>
   </joint>
