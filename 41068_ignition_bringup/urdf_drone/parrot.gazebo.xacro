@@ -111,7 +111,7 @@
         name="ignition::gazebo::systems::Sensors">
     </plugin>
   </gazebo>
-  
+
   <gazebo reference="base_scan">
     <material>Gazebo/FlatBlack</material>
     <sensor type="gpu_lidar" name="lidar">

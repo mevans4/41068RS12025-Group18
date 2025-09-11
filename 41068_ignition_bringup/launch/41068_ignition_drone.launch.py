@@ -80,7 +80,7 @@ def generate_launch_description():
             'ign_args': [PathJoinSubstitution([pkg_path,
                                                'worlds',
                                                [LaunchConfiguration('world'), '.sdf']]),
-                         ' -r --render-engine ogre']}.items()
+                         ' -r']}.items()
     )
     ld.add_action(gazebo)
 
@@ -96,8 +96,7 @@ def generate_launch_description():
                     '-z', '0.5',
                     '-R', '0.0',
                     '-P', '0.0',
-                    '-Y', '1.57'
-                ]
+                    '-Y', '1.57'] # z is height above ground
     )
     ld.add_action(robot_spawner)
 
