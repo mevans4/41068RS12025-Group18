@@ -20,7 +20,11 @@
       <direction>-0.5 0.1 -0.9</direction>
       <intensity>5</intensity>
     </light>
+<<<<<<< HEAD
     <gravity>0 0 -9.81</gravity>
+=======
+    <gravity>0 0 0</gravity>
+>>>>>>> 90ebd0481f065534d6c5023fd01985eb813c6374
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type="adiabatic"/>
     <physics name="default_physics" type="ignored">
@@ -120,7 +124,11 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine7</name>
+<<<<<<< HEAD
       <pose>2 4 1.33612 0 0 0</pose>
+=======
+      <pose>2 4 0 0 0 0</pose>
+>>>>>>> 90ebd0481f065534d6c5023fd01985eb813c6374
     </include>
     <include>
       <uri>
