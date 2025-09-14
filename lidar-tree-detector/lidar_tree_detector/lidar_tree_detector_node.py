@@ -7,7 +7,7 @@ class LidarTreeDetectorNode(Node):
         super().__init__('lidar_tree_detector')
         self.subscription = self.create_subscription(
             LaserScan,
-            '/scan',  # Change to your LiDAR topic
+            '/scan/points',  # Change to your LiDAR topic
             self.lidar_callback,
             10
         )
