@@ -1,7 +1,9 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/laser_scan.hpp>
+#include <std_msgs/msg/string.hpp>
 #include <vector>
 #include <cmath>
+#include <sstream>
 
 class LidarTreeDetectorNode : public rclcpp::Node
 {
@@ -13,26 +15,30 @@ public:
             "/scan", 10,
             std::bind(&LidarTreeDetectorNode::lidar_callback, this, std::placeholders::_1)
         );
+        publisher_ = this->create_publisher<std_msgs::msg::String>("detected_trees", 10);
     }
 
 private:
+    // Store unique tree positions
+    std::vector<std::pair<float, float>> unique_trees_;
+    const float duplicate_threshold_ = 1.0; // meters
+
     void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
     {
-        RCLCPP_DEBUG(this->get_logger(), "Received LaserScan message with %zu ranges", msg->ranges.size());
-
-        // Step 1: Preprocess data
         std::vector<std::pair<float, float>> points = preprocess_lidar(msg);
-        RCLCPP_DEBUG(this->get_logger(), "Preprocessed %zu points", points.size());
-
-        // Step 2: Detect trees (placeholder logic)
         std::vector<std::pair<float, float>> tree_positions = detect_trees(points);
-        RCLCPP_INFO(this->get_logger(), "Detected %zu trees", tree_positions.size());
 
-        // Step 3: Analyze trees (placeholder logic)
-        analyze_trees(tree_positions);
+        for (const auto& tree : tree_positions)
+        {
+            if (!is_duplicate(tree)) {
+                unique_trees_.push_back(tree);
+                RCLCPP_INFO(this->get_logger(), "Added new tree at (%.2f, %.2f)", tree.first, tree.second);
+            }
+        }
+
+        publish_tree_array();
     }
 
-    // Convert polar coordinates to Cartesian (x, y)
     std::vector<std::pair<float, float>> preprocess_lidar(const sensor_msgs::msg::LaserScan::SharedPtr& msg)
     {
         std::vector<std::pair<float, float>> points;
@@ -50,44 +56,54 @@ private:
         return points;
     }
 
-    // Placeholder: Detect trees (clusters) in the point cloud
     std::vector<std::pair<float, float>> detect_trees(const std::vector<std::pair<float, float>>& points)
     {
         std::vector<std::pair<float, float>> tree_positions;
-        // TODO: Replace with real clustering/tree detection logic
         if (!points.empty())
         {
-            // For demonstration, just pick every 50th point as a "tree"
             for (size_t i = 0; i < points.size(); i += 50)
             {
                 tree_positions.push_back(points[i]);
-                RCLCPP_DEBUG(this->get_logger(), "Tree candidate at (%.2f, %.2f)", points[i].first, points[i].second);
             }
         }
         return tree_positions;
     }
 
-    // Placeholder: Analyze detected trees
-    void analyze_trees(const std::vector<std::pair<float, float>>& tree_positions)
+    bool is_duplicate(const std::pair<float, float>& new_tree)
     {
-        for (size_t i = 0; i < tree_positions.size(); ++i)
+        for (const auto& tree : unique_trees_)
         {
-            RCLCPP_INFO(this->get_logger(), "Tree %zu at (x=%.2f, y=%.2f)", i, tree_positions[i].first, tree_positions[i].second);
-            // TODO: Add more analysis (e.g., estimate diameter, height, etc.)
+            float dx = tree.first - new_tree.first;
+            float dy = tree.second - new_tree.second;
+            float dist = std::sqrt(dx*dx + dy*dy);
+            if (dist < duplicate_threshold_)
+                return true;
         }
+        return false;
+    }
+
+    void publish_tree_array()
+    {
+        std_msgs::msg::String msg;
+        std::ostringstream oss;
+        oss << "Detected trees (" << unique_trees_.size() << "): ";
+        for (size_t i = 0; i < unique_trees_.size(); ++i)
+        {
+            oss << "[" << unique_trees_[i].first << ", " << unique_trees_[i].second << "]";
+            if (i != unique_trees_.size() - 1)
+                oss << ", ";
+        }
+        msg.data = oss.str();
+        publisher_->publish(msg);
     }
 
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
 };
 
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
-    // Set logger level to DEBUG for detailed output
-    rclcpp::Logger logger = rclcpp::get_logger("rclcpp");
-    if (rcutils_logging_set_logger_level(logger.get_name(), RCUTILS_LOG_SEVERITY_DEBUG) != RCUTILS_RET_OK) {
-        RCLCPP_WARN(logger, "Failed to set logger level to DEBUG");
-    }
     rclcpp::spin(std::make_shared<LidarTreeDetectorNode>());
     rclcpp::shutdown();
     return 0;
