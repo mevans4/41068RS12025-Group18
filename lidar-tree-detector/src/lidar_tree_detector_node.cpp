@@ -57,17 +57,61 @@ private:
     }
 
     std::vector<std::pair<float, float>> detect_trees(const std::vector<std::pair<float, float>>& points)
+{
+    std::vector<std::pair<float, float>> tree_positions;
+    if (points.empty()) return tree_positions;
+
+    const float cluster_dist_threshold = 0.5; // meters, adjust as needed
+    const size_t min_cluster_size = 3;        // minimum points to consider a tree
+
+    std::vector<std::pair<float, float>> cluster;
+    for (size_t i = 0; i < points.size(); ++i)
     {
-        std::vector<std::pair<float, float>> tree_positions;
-        if (!points.empty())
+        if (cluster.empty())
         {
-            for (size_t i = 0; i < points.size(); i += 50)
+            cluster.push_back(points[i]);
+        }
+        else
+        {
+            float dx = points[i].first - cluster.back().first;
+            float dy = points[i].second - cluster.back().second;
+            float dist = std::sqrt(dx*dx + dy*dy);
+            if (dist < cluster_dist_threshold)
             {
-                tree_positions.push_back(points[i]);
+                cluster.push_back(points[i]);
+            }
+            else
+            {
+                // End of cluster
+                if (cluster.size() >= min_cluster_size)
+                {
+                    // Compute centroid
+                    float sum_x = 0, sum_y = 0;
+                    for (const auto& p : cluster)
+                    {
+                        sum_x += p.first;
+                        sum_y += p.second;
+                    }
+                    tree_positions.emplace_back(sum_x / cluster.size(), sum_y / cluster.size());
+                }
+                cluster.clear();
+                cluster.push_back(points[i]);
             }
         }
-        return tree_positions;
     }
+    // Check last cluster
+    if (cluster.size() >= min_cluster_size)
+    {
+        float sum_x = 0, sum_y = 0;
+        for (const auto& p : cluster)
+        {
+            sum_x += p.first;
+            sum_y += p.second;
+        }
+        tree_positions.emplace_back(sum_x / cluster.size(), sum_y / cluster.size());
+    }
+    return tree_positions;
+}
 
     bool is_duplicate(const std::pair<float, float>& new_tree)
     {
