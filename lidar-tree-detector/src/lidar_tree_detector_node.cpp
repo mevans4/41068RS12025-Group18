@@ -5,10 +5,29 @@
 #include <cmath>
 #include <sstream>
 
+struct Tree
+{
+    int id;
+    float x_avg;
+    float y_avg;
+    std::vector<float> diameters;
+    int count;
+
+    Tree(int id_, float x, float y, float diameter)
+        : id(id_), x_avg(x), y_avg(y), diameters{diameter}, count(1) {}
+
+    float latest_diameter() const { return diameters.empty() ? 0.0f : diameters.back(); }
+    float average_diameter() const {
+        float sum = 0;
+        for (float d : diameters) sum += d;
+        return diameters.empty() ? 0.0f : sum / diameters.size();
+    }
+};
+
 class LidarTreeDetectorNode : public rclcpp::Node
 {
 public:
-    LidarTreeDetectorNode() : Node("lidar_tree_detector")
+    LidarTreeDetectorNode() : Node("lidar_tree_detector"), next_tree_id_(1)
     {
         RCLCPP_INFO(this->get_logger(), "LidarTreeDetectorNode has started.");
         subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
@@ -19,20 +38,30 @@ public:
     }
 
 private:
-    // Store unique tree positions
-    std::vector<std::pair<float, float>> unique_trees_;
-    const float duplicate_threshold_ = 1.0; // meters
+    std::vector<Tree> trees_;
+    int next_tree_id_;
+    const float match_threshold_ = 1.0; // meters
 
     void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
     {
         std::vector<std::pair<float, float>> points = preprocess_lidar(msg);
-        std::vector<std::pair<float, float>> tree_positions = detect_trees(points);
+        auto clusters = cluster_points(points);
 
-        for (const auto& tree : tree_positions)
+        for (const auto& cluster : clusters)
         {
-            if (!is_duplicate(tree)) {
-                unique_trees_.push_back(tree);
-                RCLCPP_INFO(this->get_logger(), "Added new tree at (%.2f, %.2f)", tree.first, tree.second);
+            auto [cx, cy] = compute_centroid(cluster);
+            float diameter = estimate_diameter(cluster);
+
+            int match_idx = find_matching_tree(cx, cy);
+            if (match_idx >= 0) {
+                // Update running averages and diameter history
+                Tree& t = trees_[match_idx];
+                t.count++;
+                t.x_avg += (cx - t.x_avg) / t.count;
+                t.y_avg += (cy - t.y_avg) / t.count;
+                t.diameters.push_back(diameter);
+            } else {
+                trees_.emplace_back(next_tree_id_++, cx, cy, diameter);
             }
         }
 
@@ -56,51 +85,46 @@ private:
         return points;
     }
 
-    std::vector<std::pair<float, float>> detect_trees(const std::vector<std::pair<float, float>>& points)
-{
-    std::vector<std::pair<float, float>> tree_positions;
-    if (points.empty()) return tree_positions;
-
-    const float cluster_dist_threshold = 0.5; // meters, adjust as needed
-    const size_t min_cluster_size = 3;        // minimum points to consider a tree
-
-    std::vector<std::pair<float, float>> cluster;
-    for (size_t i = 0; i < points.size(); ++i)
+    std::vector<std::vector<std::pair<float, float>>> cluster_points(const std::vector<std::pair<float, float>>& points)
     {
-        if (cluster.empty())
+        std::vector<std::vector<std::pair<float, float>>> clusters;
+        if (points.empty()) return clusters;
+
+        const float cluster_dist_threshold = 0.5; // meters
+        const size_t min_cluster_size = 3;
+
+        std::vector<std::pair<float, float>> cluster;
+        for (size_t i = 0; i < points.size(); ++i)
         {
-            cluster.push_back(points[i]);
-        }
-        else
-        {
-            float dx = points[i].first - cluster.back().first;
-            float dy = points[i].second - cluster.back().second;
-            float dist = std::sqrt(dx*dx + dy*dy);
-            if (dist < cluster_dist_threshold)
+            if (cluster.empty())
             {
                 cluster.push_back(points[i]);
             }
             else
             {
-                // End of cluster
-                if (cluster.size() >= min_cluster_size)
+                float dx = points[i].first - cluster.back().first;
+                float dy = points[i].second - cluster.back().second;
+                float dist = std::sqrt(dx*dx + dy*dy);
+                if (dist < cluster_dist_threshold)
                 {
-                    // Compute centroid
-                    float sum_x = 0, sum_y = 0;
-                    for (const auto& p : cluster)
-                    {
-                        sum_x += p.first;
-                        sum_y += p.second;
-                    }
-                    tree_positions.emplace_back(sum_x / cluster.size(), sum_y / cluster.size());
+                    cluster.push_back(points[i]);
                 }
-                cluster.clear();
-                cluster.push_back(points[i]);
+                else
+                {
+                    if (cluster.size() >= min_cluster_size)
+                        clusters.push_back(cluster);
+                    cluster.clear();
+                    cluster.push_back(points[i]);
+                }
             }
         }
+        if (cluster.size() >= min_cluster_size)
+            clusters.push_back(cluster);
+
+        return clusters;
     }
-    // Check last cluster
-    if (cluster.size() >= min_cluster_size)
+
+    std::pair<float, float> compute_centroid(const std::vector<std::pair<float, float>>& cluster)
     {
         float sum_x = 0, sum_y = 0;
         for (const auto& p : cluster)
@@ -108,33 +132,53 @@ private:
             sum_x += p.first;
             sum_y += p.second;
         }
-        tree_positions.emplace_back(sum_x / cluster.size(), sum_y / cluster.size());
+        return {sum_x / cluster.size(), sum_y / cluster.size()};
     }
-    return tree_positions;
-}
 
-    bool is_duplicate(const std::pair<float, float>& new_tree)
+    float estimate_diameter(const std::vector<std::pair<float, float>>& cluster)
     {
-        for (const auto& tree : unique_trees_)
+        float max_dist = 0;
+        for (size_t i = 0; i < cluster.size(); ++i)
         {
-            float dx = tree.first - new_tree.first;
-            float dy = tree.second - new_tree.second;
-            float dist = std::sqrt(dx*dx + dy*dy);
-            if (dist < duplicate_threshold_)
-                return true;
+            for (size_t j = i + 1; j < cluster.size(); ++j)
+            {
+                float dx = cluster[i].first - cluster[j].first;
+                float dy = cluster[i].second - cluster[j].second;
+                float dist = std::sqrt(dx*dx + dy*dy);
+                if (dist > max_dist)
+                    max_dist = dist;
+            }
         }
-        return false;
+        return max_dist;
+    }
+
+    int find_matching_tree(float x, float y)
+    {
+        for (size_t i = 0; i < trees_.size(); ++i)
+        {
+            float dx = trees_[i].x_avg - x;
+            float dy = trees_[i].y_avg - y;
+            float dist = std::sqrt(dx*dx + dy*dy);
+            if (dist < match_threshold_)
+                return i;
+        }
+        return -1;
     }
 
     void publish_tree_array()
     {
         std_msgs::msg::String msg;
         std::ostringstream oss;
-        oss << "Detected trees (" << unique_trees_.size() << "): ";
-        for (size_t i = 0; i < unique_trees_.size(); ++i)
+        oss << "Detected trees (" << trees_.size() << "): ";
+        for (size_t i = 0; i < trees_.size(); ++i)
         {
-            oss << "[" << unique_trees_[i].first << ", " << unique_trees_[i].second << "]";
-            if (i != unique_trees_.size() - 1)
+            oss << "[id=" << trees_[i].id
+                << ", x=" << trees_[i].x_avg
+                << ", y=" << trees_[i].y_avg
+                << ", avg_diam=" << trees_[i].average_diameter()
+                << ", latest_diam=" << trees_[i].latest_diameter()
+                << ", obs=" << trees_[i].count << "]";
+            if (i != trees_.size() - 1)
                 oss << ", ";
         }
         msg.data = oss.str();
