@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 # Add this block to create the executable and link dependencies:
 add_executable(drone_controller_node src/drone_controller.cpp)
@@ -16,6 +17,7 @@ add_executable(drone_controller_node src/drone_controller.cpp)
 ament_target_dependencies(drone_controller_node
   rclcpp
   geometry_msgs
+  nav_msgs
 )
 
 install(TARGETS
