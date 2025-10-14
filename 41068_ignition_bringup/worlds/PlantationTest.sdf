@@ -72,132 +72,132 @@
     </include> -->
     
     
-    <!-- Pine trees -->
+        <!-- Pine trees (centered around 0,0) -->
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine1</name>
-      <pose>6 4 0 0 -0 0.1</pose>
+      <pose>0 -10 0 0 -0 0.1</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine2</name>
-      <pose>6 8 0 0 -0 0.3</pose>
+      <pose>0 -6 0 0 -0 0.3</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine3</name>
-      <pose>6 12 0 0 -0 0.2</pose>
+      <pose>0 -2 0 0 -0 0.2</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine4</name>
-      <pose>6 16 0 0 -0 0.9</pose>
+      <pose>0 2 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine5</name>
-      <pose>6 20 0 0 -0 0.9</pose>
+      <pose>0 6 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine6</name>
-      <pose>6 24 0 0 -0 0.9</pose>
+      <pose>0 10 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine7</name>
-      <pose>2 4 0 0 0 0</pose>
+      <pose>-4 -10 0 0 0 0</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine8</name>
-      <pose>2 8 0 0 -0 0.5</pose>
+      <pose>-4 -6 0 0 -0 0.5</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine9</name>
-      <pose>2 12 0 0 -0 0.9</pose>
+      <pose>-4 -2 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine10</name>
-      <pose>2 16 0 0 -0 0.9</pose>
+      <pose>-4 2 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine11</name>
-      <pose>2 20 0 0 -0 0.9</pose>
+      <pose>-4 6 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine12</name>
-      <pose>2 24 0 0 -0 0.9</pose>
+      <pose>-4 10 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine13</name>
-      <pose>10 4 0 0 -0 0.9</pose>
+      <pose>4 -10 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine14</name>
-      <pose>10 8 0 0 -0 0.9</pose>
+      <pose>4 -6 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine15</name>
-      <pose>10 12 0 0 -0 0.9</pose>
+      <pose>4 -2 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine16</name>
-      <pose>10 16 0 0 -0 0.9</pose>
+      <pose>4 2 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine17</name>
-      <pose>10 20 0 0 -0 0.9</pose>
+      <pose>4 6 0 0 -0 0.9</pose>
     </include>
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine18</name>
-      <pose>10 24 0 0 -0 0.9</pose>
+      <pose>4 10 0 0 -0 0.9</pose>
     </include>
 
     <!-- Platypus

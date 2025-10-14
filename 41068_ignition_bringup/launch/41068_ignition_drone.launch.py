@@ -91,12 +91,12 @@ def generate_launch_description():
         output='screen',
         parameters=[{'use_sim_time': use_sim_time}],
         arguments=['-topic', '/robot_description',
-                    '-x', '4.0',
-                    '-y', '4.0',
+                    '-x', '-2.0',
+                    '-y', '-12.0',
                     '-z', '0.5',
                     '-R', '0.0',
                     '-P', '0.0',
-                    '-Y', '1.57'] # z is height above ground
+                    '-Y', '1.57']
     )
     ld.add_action(robot_spawner)
 
