@@ -1,0 +1,2 @@
+drone::MissionPlannerNode;lib/libmission_planner_component.so
+drone:DroneControllerNode;lib/libdrone_controller_enhanced_component.so

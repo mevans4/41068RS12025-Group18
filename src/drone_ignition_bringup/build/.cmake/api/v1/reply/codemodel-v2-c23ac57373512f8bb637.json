@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a77d0d2f70de9e24fba2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "drone_ignition_bringup",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_control-Debug-647ed8b5331d942e72c3.json",
+					"name" : "drone_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_controller_enhanced_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_controller_enhanced_component-Debug-f466871a0e36e42685f2.json",
+					"name" : "drone_controller_enhanced_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_ignition_bringup_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_ignition_bringup_uninstall-Debug-c2b5ffddb03b30a96dd6.json",
+					"name" : "drone_ignition_bringup_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_mission_composed::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_mission_composed-Debug-f008f46ad244d228935e.json",
+					"name" : "drone_mission_composed",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mission_executor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mission_executor-Debug-ce84cdac6c1265a44707.json",
+					"name" : "mission_executor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mission_planner_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mission_planner_component-Debug-7562e710be9ec9bf4716.json",
+					"name" : "mission_planner_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path_planner-Debug-51e7fe277503c757af1d.json",
+					"name" : "path_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pid_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pid_controller-Debug-d738cf4853f56fb5a713.json",
+					"name" : "pid_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "state_machine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-state_machine-Debug-4c440f8efdcdb48482cf.json",
+					"name" : "state_machine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-fd6412c2ba8c9aba7825.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/student/41068RS12025-Group18/src/drone_ignition_bringup/build",
+		"source" : "/home/student/41068RS12025-Group18/src/drone_ignition_bringup"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
