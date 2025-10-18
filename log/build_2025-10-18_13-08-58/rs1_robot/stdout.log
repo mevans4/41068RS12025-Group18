@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target path_planner[0m
+[35m[1mConsolidate compiler generated dependencies of target state_machine[0m
+[35m[1mConsolidate compiler generated dependencies of target pid_controller[0m
+[35m[1mConsolidate compiler generated dependencies of target mission_executor[0m
+[  6%] [32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid.cpp.o[0m
+[ 25%] Built target state_machine
+[ 37%] Built target mission_executor
+[ 43%] [32m[1mLinking CXX shared library libpid_controller.so[0m
+[ 43%] Built target pid_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/drone_control.dir/src/drone_control.cpp.o[0m

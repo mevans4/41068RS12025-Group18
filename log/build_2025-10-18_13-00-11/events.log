@@ -1,0 +1,482 @@
+[0.000000] (-) TimerEvent: {}
+[0.000705] (rs1_robot) JobQueued: {'identifier': 'rs1_robot', 'dependencies': OrderedDict()}
+[0.001057] (rs1_robot) JobStarted: {'identifier': 'rs1_robot'}
+[0.070062] (rs1_robot) JobProgress: {'identifier': 'rs1_robot', 'progress': 'cmake'}
+[0.070508] (rs1_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/student/41068RS12025-Group18/src/41068_ignition_bringup', '-DCMAKE_INSTALL_PREFIX=/home/student/41068RS12025-Group18/install/rs1_robot'], 'cwd': '/home/student/41068RS12025-Group18/build/rs1_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1860'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2901189c_c7bd_46af_a7b2_fa7f7e3b36f1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/rs1_robot'), ('LC_ALL', 'en_US.UTF-8'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[0.099681] (-) TimerEvent: {}
+[0.200108] (-) TimerEvent: {}
+[0.300631] (-) TimerEvent: {}
+[0.401058] (-) TimerEvent: {}
+[0.501549] (-) TimerEvent: {}
+[0.602025] (-) TimerEvent: {}
+[0.702435] (-) TimerEvent: {}
+[0.802834] (-) TimerEvent: {}
+[0.903313] (-) TimerEvent: {}
+[1.003834] (-) TimerEvent: {}
+[1.104284] (-) TimerEvent: {}
+[1.134256] (rs1_robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.204517] (-) TimerEvent: {}
+[1.304985] (-) TimerEvent: {}
+[1.405541] (-) TimerEvent: {}
+[1.506033] (-) TimerEvent: {}
+[1.606561] (-) TimerEvent: {}
+[1.707055] (-) TimerEvent: {}
+[1.767298] (rs1_robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.807261] (-) TimerEvent: {}
+[1.893566] (rs1_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.907431] (-) TimerEvent: {}
+[2.007852] (-) TimerEvent: {}
+[2.069439] (rs1_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.077127] (rs1_robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.081301] (rs1_robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.089248] (rs1_robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.106925] (rs1_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.107928] (-) TimerEvent: {}
+[2.208272] (-) TimerEvent: {}
+[2.227110] (rs1_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.235920] (rs1_robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.236177] (rs1_robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.237621] (rs1_robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.306048] (rs1_robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.308415] (-) TimerEvent: {}
+[2.408818] (-) TimerEvent: {}
+[2.509212] (-) TimerEvent: {}
+[2.561263] (rs1_robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.609426] (-) TimerEvent: {}
+[2.709903] (-) TimerEvent: {}
+[2.810366] (-) TimerEvent: {}
+[2.910889] (-) TimerEvent: {}
+[2.924666] (rs1_robot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.011045] (-) TimerEvent: {}
+[3.111531] (-) TimerEvent: {}
+[3.203862] (rs1_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.211724] (-) TimerEvent: {}
+[3.233512] (rs1_robot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.292709] (rs1_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.311954] (-) TimerEvent: {}
+[3.387748] (rs1_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.412103] (-) TimerEvent: {}
+[3.475910] (rs1_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.512253] (-) TimerEvent: {}
+[3.612692] (-) TimerEvent: {}
+[3.713122] (-) TimerEvent: {}
+[3.746500] (rs1_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.767626] (rs1_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.813249] (-) TimerEvent: {}
+[3.913691] (-) TimerEvent: {}
+[4.014188] (-) TimerEvent: {}
+[4.074655] (rs1_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.114337] (-) TimerEvent: {}
+[4.124535] (rs1_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.174726] (rs1_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.214505] (-) TimerEvent: {}
+[4.253531] (rs1_robot) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.314679] (-) TimerEvent: {}
+[4.415168] (-) TimerEvent: {}
+[4.474269] (rs1_robot) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.475041] (rs1_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.515371] (-) TimerEvent: {}
+[4.566518] (rs1_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.567798] (rs1_robot) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.615589] (-) TimerEvent: {}
+[4.716052] (-) TimerEvent: {}
+[4.816554] (-) TimerEvent: {}
+[4.853873] (rs1_robot) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[4.916758] (-) TimerEvent: {}
+[5.017258] (-) TimerEvent: {}
+[5.027247] (rs1_robot) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[5.104505] (rs1_robot) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.117446] (-) TimerEvent: {}
+[5.191244] (rs1_robot) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[5.217644] (-) TimerEvent: {}
+[5.272556] (rs1_robot) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[5.317846] (-) TimerEvent: {}
+[5.343706] (rs1_robot) StdoutLine: {'line': b'-- Found ros_gz_interfaces: 0.244.20 (/opt/ros/humble/share/ros_gz_interfaces/cmake)\n'}
+[5.418049] (-) TimerEvent: {}
+[5.428214] (rs1_robot) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[5.514572] (rs1_robot) StdoutLine: {'line': b'-- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)\n'}
+[5.518140] (-) TimerEvent: {}
+[5.538158] (rs1_robot) StdoutLine: {'line': b'-- Found ros_gz_bridge: 0.244.20 (/opt/ros/humble/share/ros_gz_bridge/cmake)\n'}
+[5.618348] (-) TimerEvent: {}
+[5.718787] (-) TimerEvent: {}
+[5.773314] (rs1_robot) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[5.818984] (-) TimerEvent: {}
+[5.911344] (rs1_robot) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[5.919190] (-) TimerEvent: {}
+[6.019587] (-) TimerEvent: {}
+[6.120131] (-) TimerEvent: {}
+[6.220617] (-) TimerEvent: {}
+[6.321110] (-) TimerEvent: {}
+[6.421593] (-) TimerEvent: {}
+[6.522099] (-) TimerEvent: {}
+[6.622625] (-) TimerEvent: {}
+[6.723072] (-) TimerEvent: {}
+[6.739666] (rs1_robot) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[6.766906] (rs1_robot) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[6.823303] (-) TimerEvent: {}
+[6.877377] (rs1_robot) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[6.923574] (-) TimerEvent: {}
+[6.948003] (rs1_robot) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.955020] (rs1_robot) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.955260] (rs1_robot) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.966768] (rs1_robot) StdoutLine: {'line': b'-- Found grid_map_ros: 2.0.1 (/opt/ros/humble/share/grid_map_ros/cmake)\n'}
+[7.023710] (-) TimerEvent: {}
+[7.124112] (-) TimerEvent: {}
+[7.224551] (-) TimerEvent: {}
+[7.324976] (-) TimerEvent: {}
+[7.425444] (-) TimerEvent: {}
+[7.525881] (-) TimerEvent: {}
+[7.626303] (-) TimerEvent: {}
+[7.690886] (rs1_robot) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.726447] (-) TimerEvent: {}
+[7.730253] (rs1_robot) StdoutLine: {'line': b'-- Generating done\n'}
+[7.746234] (rs1_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/student/41068RS12025-Group18/build/rs1_robot\n'}
+[7.768802] (rs1_robot) CommandEnded: {'returncode': 0}
+[7.769649] (rs1_robot) JobProgress: {'identifier': 'rs1_robot', 'progress': 'build'}
+[7.771026] (rs1_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/41068RS12025-Group18/build/rs1_robot', '--', '-j8', '-l8'], 'cwd': '/home/student/41068RS12025-Group18/build/rs1_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1860'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2901189c_c7bd_46af_a7b2_fa7f7e3b36f1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/rs1_robot'), ('LC_ALL', 'en_US.UTF-8'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[7.826577] (-) TimerEvent: {}
+[7.829522] (rs1_robot) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid.cpp.o\x1b[0m\n'}
+[7.829999] (rs1_robot) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/mission_executor.dir/src/mission_executor.cpp.o\x1b[0m\n'}
+[7.830287] (rs1_robot) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/state_machine.dir/src/state_machine.cpp.o\x1b[0m\n'}
+[7.830646] (rs1_robot) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner.cpp.o\x1b[0m\n'}
+[7.926695] (-) TimerEvent: {}
+[8.027064] (-) TimerEvent: {}
+[8.127427] (-) TimerEvent: {}
+[8.227802] (-) TimerEvent: {}
+[8.328165] (-) TimerEvent: {}
+[8.428551] (-) TimerEvent: {}
+[8.447153] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:8:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.447522] (rs1_robot) StderrLine: {'line': b'    8 |   \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::PIDController()\n'}
+[8.447675] (rs1_robot) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.447888] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:20:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.447999] (rs1_robot) StderrLine: {'line': b'   20 |   \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::PIDController(double kp, double ki, double kd)\n'}
+[8.448099] (rs1_robot) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.448178] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:32:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.448257] (rs1_robot) StderrLine: {'line': b'   32 |   void \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::setGains(double kp, double ki, double kd) {\n'}
+[8.448335] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.449141] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::setGains(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.449281] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:34:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kkp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.449426] (rs1_robot) StderrLine: {'line': b'   34 |     \x1b[01;31m\x1b[Kkp_\x1b[m\x1b[K = kp;\n'}
+[8.449561] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.449682] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kkp\x1b[m\x1b[K\n'}
+[8.455764] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:35:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kki_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kki\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.456061] (rs1_robot) StderrLine: {'line': b'   35 |     \x1b[01;31m\x1b[Kki_\x1b[m\x1b[K = ki;\n'}
+[8.456217] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.456365] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kki\x1b[m\x1b[K\n'}
+[8.457066] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:36:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kkd\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.457276] (rs1_robot) StderrLine: {'line': b'   36 |     \x1b[01;31m\x1b[Kkd_\x1b[m\x1b[K = kd;\n'}
+[8.457418] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.457607] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kkd\x1b[m\x1b[K\n'}
+[8.457715] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.457818] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:39:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.457919] (rs1_robot) StderrLine: {'line': b'   39 |   void \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::setLimits(double min_output, double max_output) {\n'}
+[8.458017] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.458867] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::setLimits(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.458998] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmin_output_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmin_output\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.459067] (rs1_robot) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[Kmin_output_\x1b[m\x1b[K = min_output;\n'}
+[8.459127] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.459187] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmin_output\x1b[m\x1b[K\n'}
+[8.459947] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:42:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_output_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmax_output\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.460066] (rs1_robot) StderrLine: {'line': b'   42 |     \x1b[01;31m\x1b[Kmax_output_\x1b[m\x1b[K = max_output;\n'}
+[8.460131] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.460190] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmax_output\x1b[m\x1b[K\n'}
+[8.460249] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.460315] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:45:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.460375] (rs1_robot) StderrLine: {'line': b'   45 |   void \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::setIntegralLimits(double min_integral, double max_integral) {\n'}
+[8.460434] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.461048] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::setIntegralLimits(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.461137] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:47:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmin_integral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmin_integral\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.461213] (rs1_robot) StderrLine: {'line': b'   47 |     \x1b[01;31m\x1b[Kmin_integral_\x1b[m\x1b[K = min_integral;\n'}
+[8.461273] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.461332] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmin_integral\x1b[m\x1b[K\n'}
+[8.462175] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:48:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_integral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmax_integral\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.462280] (rs1_robot) StderrLine: {'line': b'   48 |     \x1b[01;31m\x1b[Kmax_integral_\x1b[m\x1b[K = max_integral;\n'}
+[8.462342] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.462401] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmax_integral\x1b[m\x1b[K\n'}
+[8.462482] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.462547] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:51:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.462608] (rs1_robot) StderrLine: {'line': b'   51 |   void \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::setIntegralThreshold(double threshold) {\n'}
+[8.462666] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.463854] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::setIntegralThreshold(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.463950] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:53:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_threshold_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetIntegralThreshold\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.464018] (rs1_robot) StderrLine: {'line': b'   53 |     \x1b[01;31m\x1b[Kintegral_threshold_\x1b[m\x1b[K = threshold;\n'}
+[8.464081] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.464141] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[KsetIntegralThreshold\x1b[m\x1b[K\n'}
+[8.464199] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.464292] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:56:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.464388] (rs1_robot) StderrLine: {'line': b'   56 |   double \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::calculate(double setpoint, double process_variable, double dt) {\n'}
+[8.464497] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.465778] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone::calculate(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.465913] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:61:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kproportional_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.466005] (rs1_robot) StderrLine: {'line': b'   61 |     \x1b[01;31m\x1b[Kproportional_term_\x1b[m\x1b[K = kp_ * error;\n'}
+[8.466091] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.466884] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:61:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.466984] (rs1_robot) StderrLine: {'line': b'   61 |     proportional_term_ = \x1b[01;31m\x1b[Kkp_\x1b[m\x1b[K * error;\n'}
+[8.467046] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.468343] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:64:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.468421] (rs1_robot) StderrLine: {'line': b'   64 |     \x1b[01;31m\x1b[Kintegral_\x1b[m\x1b[K += error * dt;\n'}
+[8.468492] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.470011] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:65:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KclampIntegral\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.470142] (rs1_robot) StderrLine: {'line': b'   65 |     \x1b[01;31m\x1b[KclampIntegral\x1b[m\x1b[K();  // Apply windup protection\n'}
+[8.470210] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.471699] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:66:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.471856] (rs1_robot) StderrLine: {'line': b'   66 |     \x1b[01;31m\x1b[Kintegral_term_\x1b[m\x1b[K = ki_ * integral_;\n'}
+[8.471927] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.472608] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:66:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kki_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.472688] (rs1_robot) StderrLine: {'line': b'   66 |     integral_term_ = \x1b[01;31m\x1b[Kki_\x1b[m\x1b[K * integral_;\n'}
+[8.472749] (rs1_robot) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.474133] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:69:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfirst_run_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.474281] (rs1_robot) StderrLine: {'line': b'   69 |     if (\x1b[01;31m\x1b[Kfirst_run_\x1b[m\x1b[K) {\n'}
+[8.474356] (rs1_robot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.475839] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:70:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kderivative_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.475969] (rs1_robot) StderrLine: {'line': b'   70 |       \x1b[01;31m\x1b[Kderivative_term_\x1b[m\x1b[K = 0.0;  // No derivative on first iteration\n'}
+[8.476039] (rs1_robot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.477507] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:73:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kderivative_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.477650] (rs1_robot) StderrLine: {'line': b'   73 |       \x1b[01;31m\x1b[Kderivative_term_\x1b[m\x1b[K = kd_ * (error - previous_error_) / dt;\n'}
+[8.477720] (rs1_robot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.478489] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:73:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.478571] (rs1_robot) StderrLine: {'line': b'   73 |       derivative_term_ = \x1b[01;31m\x1b[Kkd_\x1b[m\x1b[K * (error - previous_error_) / dt;\n'}
+[8.478632] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.480097] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:73:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprevious_error_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.480183] (rs1_robot) StderrLine: {'line': b'   73 |       derivative_term_ = kd_ * (error - \x1b[01;31m\x1b[Kprevious_error_\x1b[m\x1b[K) / dt;\n'}
+[8.480242] (rs1_robot) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.481785] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:77:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprevious_error_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.481941] (rs1_robot) StderrLine: {'line': b'   77 |     \x1b[01;31m\x1b[Kprevious_error_\x1b[m\x1b[K = error;\n'}
+[8.482014] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.483559] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:80:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kderivative_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.483690] (rs1_robot) StderrLine: {'line': b'   80 |     double output = proportional_term_ + integral_term_ + \x1b[01;31m\x1b[Kderivative_term_\x1b[m\x1b[K;\n'}
+[8.483762] (rs1_robot) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.485125] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:83:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmin_output_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.485267] (rs1_robot) StderrLine: {'line': b'   83 |     return std::clamp(output, \x1b[01;31m\x1b[Kmin_output_\x1b[m\x1b[K, max_output_);\n'}
+[8.485338] (rs1_robot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.486503] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:83:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_output_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.486584] (rs1_robot) StderrLine: {'line': b'   83 |     return std::clamp(output, min_output_, \x1b[01;31m\x1b[Kmax_output_\x1b[m\x1b[K);\n'}
+[8.486646] (rs1_robot) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.489932] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.490068] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:86:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.490140] (rs1_robot) StderrLine: {'line': b'   86 |   double \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::calculateWithWindupProtection(double setpoint, double process_variable, double dt, double windup_threshold) {\n'}
+[8.490205] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.491717] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone::calculateWithWindupProtection(double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.491847] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:91:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kproportional_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.491927] (rs1_robot) StderrLine: {'line': b'   91 |     \x1b[01;31m\x1b[Kproportional_term_\x1b[m\x1b[K = kp_ * error;\n'}
+[8.492025] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.492809] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:91:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.492894] (rs1_robot) StderrLine: {'line': b'   91 |     proportional_term_ = \x1b[01;31m\x1b[Kkp_\x1b[m\x1b[K * error;\n'}
+[8.492955] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.494344] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:96:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.494502] (rs1_robot) StderrLine: {'line': b'   96 |       \x1b[01;31m\x1b[Kintegral_\x1b[m\x1b[K += error * dt;\n'}
+[8.494579] (rs1_robot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.495923] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:97:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KclampIntegral\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.496057] (rs1_robot) StderrLine: {'line': b'   97 |       \x1b[01;31m\x1b[KclampIntegral\x1b[m\x1b[K();  // Apply integral limits\n'}
+[8.496126] (rs1_robot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.497504] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:99:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.497653] (rs1_robot) StderrLine: {'line': b'   99 |     \x1b[01;31m\x1b[Kintegral_term_\x1b[m\x1b[K = ki_ * integral_;\n'}
+[8.497723] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.498508] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:99:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kki_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.498587] (rs1_robot) StderrLine: {'line': b'   99 |     integral_term_ = \x1b[01;31m\x1b[Kki_\x1b[m\x1b[K * integral_;\n'}
+[8.498649] (rs1_robot) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.499999] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:99:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.500129] (rs1_robot) StderrLine: {'line': b'   99 |     integral_term_ = ki_ * \x1b[01;31m\x1b[Kintegral_\x1b[m\x1b[K;\n'}
+[8.500199] (rs1_robot) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.501400] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:102:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfirst_run_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.501492] (rs1_robot) StderrLine: {'line': b'  102 |     if (\x1b[01;31m\x1b[Kfirst_run_\x1b[m\x1b[K) {\n'}
+[8.501559] (rs1_robot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.503158] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:103:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kderivative_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.503258] (rs1_robot) StderrLine: {'line': b'  103 |       \x1b[01;31m\x1b[Kderivative_term_\x1b[m\x1b[K = 0.0;  // No derivative on first iteration\n'}
+[8.503323] (rs1_robot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.504905] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:106:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kderivative_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.505049] (rs1_robot) StderrLine: {'line': b'  106 |       \x1b[01;31m\x1b[Kderivative_term_\x1b[m\x1b[K = kd_ * (error - previous_error_) / dt;\n'}
+[8.505123] (rs1_robot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.505889] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:106:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.505970] (rs1_robot) StderrLine: {'line': b'  106 |       derivative_term_ = \x1b[01;31m\x1b[Kkd_\x1b[m\x1b[K * (error - previous_error_) / dt;\n'}
+[8.506034] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.507583] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:106:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprevious_error_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.507714] (rs1_robot) StderrLine: {'line': b'  106 |       derivative_term_ = kd_ * (error - \x1b[01;31m\x1b[Kprevious_error_\x1b[m\x1b[K) / dt;\n'}
+[8.507789] (rs1_robot) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.509175] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:110:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprevious_error_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.509308] (rs1_robot) StderrLine: {'line': b'  110 |     \x1b[01;31m\x1b[Kprevious_error_\x1b[m\x1b[K = error;\n'}
+[8.509380] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.510869] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:113:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kderivative_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.511004] (rs1_robot) StderrLine: {'line': b'  113 |     double output = proportional_term_ + integral_term_ + \x1b[01;31m\x1b[Kderivative_term_\x1b[m\x1b[K;\n'}
+[8.511075] (rs1_robot) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.512331] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:116:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmin_output_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.512494] (rs1_robot) StderrLine: {'line': b'  116 |     return std::clamp(output, \x1b[01;31m\x1b[Kmin_output_\x1b[m\x1b[K, max_output_);\n'}
+[8.512568] (rs1_robot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.513923] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:116:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_output_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.514070] (rs1_robot) StderrLine: {'line': b'  116 |     return std::clamp(output, min_output_, \x1b[01;31m\x1b[Kmax_output_\x1b[m\x1b[K);\n'}
+[8.514140] (rs1_robot) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.514202] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.514265] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:119:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.514327] (rs1_robot) StderrLine: {'line': b'  119 |   void \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::reset() {\n'}
+[8.514398] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.515523] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::reset()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.515601] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:121:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprevious_error_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.515665] (rs1_robot) StderrLine: {'line': b'  121 |     \x1b[01;31m\x1b[Kprevious_error_\x1b[m\x1b[K = 0.0;\n'}
+[8.515724] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.516942] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:122:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.517034] (rs1_robot) StderrLine: {'line': b'  122 |     \x1b[01;31m\x1b[Kintegral_\x1b[m\x1b[K = 0.0;\n'}
+[8.517103] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.518724] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:123:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kproportional_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.518855] (rs1_robot) StderrLine: {'line': b'  123 |     \x1b[01;31m\x1b[Kproportional_term_\x1b[m\x1b[K = 0.0;\n'}
+[8.518923] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.520404] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:124:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.520557] (rs1_robot) StderrLine: {'line': b'  124 |     \x1b[01;31m\x1b[Kintegral_term_\x1b[m\x1b[K = 0.0;\n'}
+[8.520629] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.521997] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:125:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kderivative_term_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.522096] (rs1_robot) StderrLine: {'line': b'  125 |     \x1b[01;31m\x1b[Kderivative_term_\x1b[m\x1b[K = 0.0;\n'}
+[8.522159] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.523510] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:126:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfirst_run_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.523641] (rs1_robot) StderrLine: {'line': b'  126 |     \x1b[01;31m\x1b[Kfirst_run_\x1b[m\x1b[K = true;\n'}
+[8.523709] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.523772] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.523835] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:129:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPIDController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.523897] (rs1_robot) StderrLine: {'line': b'  129 |   void \x1b[01;31m\x1b[KPIDController\x1b[m\x1b[K::clampIntegral() {\n'}
+[8.523955] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.524963] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::clampIntegral()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.525039] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:131:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kintegral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.525099] (rs1_robot) StderrLine: {'line': b'  131 |     \x1b[01;31m\x1b[Kintegral_\x1b[m\x1b[K = std::clamp(integral_, min_integral_, max_integral_);\n'}
+[8.525158] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.526601] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:131:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmin_integral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.526731] (rs1_robot) StderrLine: {'line': b'  131 |     integral_ = std::clamp(integral_, \x1b[01;31m\x1b[Kmin_integral_\x1b[m\x1b[K, max_integral_);\n'}
+[8.526816] (rs1_robot) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.528158] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:131:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_integral_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.528291] (rs1_robot) StderrLine: {'line': b'  131 |     integral_ = std::clamp(integral_, min_integral_, \x1b[01;31m\x1b[Kmax_integral_\x1b[m\x1b[K);\n'}
+[8.528360] (rs1_robot) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.528605] (-) TimerEvent: {}
+[8.570852] (rs1_robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pid_controller.dir/build.make:76: CMakeFiles/pid_controller.dir/src/pid.cpp.o] Error 1\n'}
+[8.571135] (rs1_robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:151: CMakeFiles/pid_controller.dir/all] Error 2\n'}
+[8.571214] (rs1_robot) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[8.628821] (-) TimerEvent: {}
+[8.729313] (-) TimerEvent: {}
+[8.788222] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:7:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathPlanner\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.788519] (rs1_robot) StderrLine: {'line': b'    7 |   \x1b[01;31m\x1b[KPathPlanner\x1b[m\x1b[K::PathPlanner() : current_waypoint_index_(0) {}\n'}
+[8.788617] (rs1_robot) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.788703] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:9:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathPlanner\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.788802] (rs1_robot) StderrLine: {'line': b'    9 |   void \x1b[01;31m\x1b[KPathPlanner\x1b[m\x1b[K::setWaypoints(const std::vector<geometry_msgs::msg::PoseStamped>& waypoints) {\n'}
+[8.788882] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.790572] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::setWaypoints(const std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.790762] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:11:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kwaypoints\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.790856] (rs1_robot) StderrLine: {'line': b'   11 |     \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K = waypoints;\n'}
+[8.790936] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.791014] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kwaypoints\x1b[m\x1b[K\n'}
+[8.793771] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:12:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.793950] (rs1_robot) StderrLine: {'line': b'   12 |     \x1b[01;31m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K = 0;\n'}
+[8.794039] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.794124] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.794218] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:20:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathPlanner\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.794302] (rs1_robot) StderrLine: {'line': b'   20 |   geometry_msgs::msg::PoseStamped \x1b[01;31m\x1b[KPathPlanner\x1b[m\x1b[K::getNextWaypoint() {\n'}
+[8.794382] (rs1_robot) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.795812] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped drone::getNextWaypoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.795945] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:22:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KhasNextWaypoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetNextWaypoint\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.796018] (rs1_robot) StderrLine: {'line': b'   22 |     if (\x1b[01;31m\x1b[KhasNextWaypoint\x1b[m\x1b[K()) {\n'}
+[8.796081] (rs1_robot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.796140] (rs1_robot) StderrLine: {'line': b'      |         \x1b[32m\x1b[KgetNextWaypoint\x1b[m\x1b[K\n'}
+[8.797910] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:23:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetWaypoints\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.798098] (rs1_robot) StderrLine: {'line': b'   23 |       return \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K[current_waypoint_index_++];\n'}
+[8.798169] (rs1_robot) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.798230] (rs1_robot) StderrLine: {'line': b'      |              \x1b[32m\x1b[KsetWaypoints\x1b[m\x1b[K\n'}
+[8.801214] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:23:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.801501] (rs1_robot) StderrLine: {'line': b'   23 |       return waypoints_[\x1b[01;31m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K++];\n'}
+[8.801582] (rs1_robot) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.801646] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.801712] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:28:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathPlanner\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.801775] (rs1_robot) StderrLine: {'line': b'   28 |   geometry_msgs::msg::PoseStamped \x1b[01;31m\x1b[KPathPlanner\x1b[m\x1b[K::getCurrentWaypoint() const {\n'}
+[8.801840] (rs1_robot) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.801899] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:28:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped drone::getCurrentWaypoint()\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[8.801979] (rs1_robot) StderrLine: {'line': b'   28 |   geometry_msgs::msg::PoseStamped PathPlanner::getCurrentWaypoint() \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K {\n'}
+[8.802044] (rs1_robot) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.803549] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped drone::getCurrentWaypoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.803704] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KhasNextWaypoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetNextWaypoint\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.803778] (rs1_robot) StderrLine: {'line': b'   30 |     if (\x1b[01;31m\x1b[KhasNextWaypoint\x1b[m\x1b[K()) {\n'}
+[8.803839] (rs1_robot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.803901] (rs1_robot) StderrLine: {'line': b'      |         \x1b[32m\x1b[KgetNextWaypoint\x1b[m\x1b[K\n'}
+[8.805929] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:31:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetWaypoints\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.806078] (rs1_robot) StderrLine: {'line': b'   31 |       return \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K[current_waypoint_index_];\n'}
+[8.806150] (rs1_robot) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.806215] (rs1_robot) StderrLine: {'line': b'      |              \x1b[32m\x1b[KsetWaypoints\x1b[m\x1b[K\n'}
+[8.808882] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:31:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.809133] (rs1_robot) StderrLine: {'line': b'   31 |       return waypoints_[\x1b[01;31m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K];\n'}
+[8.809208] (rs1_robot) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.809271] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.809334] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:36:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathPlanner\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.809396] (rs1_robot) StderrLine: {'line': b'   36 |   bool \x1b[01;31m\x1b[KPathPlanner\x1b[m\x1b[K::hasNextWaypoint() const {\n'}
+[8.809454] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.809532] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:36:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kbool drone::hasNextWaypoint()\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[8.809593] (rs1_robot) StderrLine: {'line': b'   36 |   bool PathPlanner::hasNextWaypoint() \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K {\n'}
+[8.809652] (rs1_robot) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.812286] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool drone::hasNextWaypoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.812418] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:37:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.812522] (rs1_robot) StderrLine: {'line': b'   37 |     return \x1b[01;31m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K < waypoints_.size();\n'}
+[8.812588] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.814509] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:37:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetWaypoints\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.814634] (rs1_robot) StderrLine: {'line': b'   37 |     return current_waypoint_index_ < \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K.size();\n'}
+[8.814700] (rs1_robot) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.814766] (rs1_robot) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[KsetWaypoints\x1b[m\x1b[K\n'}
+[8.814826] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.814885] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:40:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathPlanner\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.814945] (rs1_robot) StderrLine: {'line': b'   40 |   void \x1b[01;31m\x1b[KPathPlanner\x1b[m\x1b[K::reset() {\n'}
+[8.815002] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.817661] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone::reset()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.817791] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.817872] (rs1_robot) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K = 0;\n'}
+[8.817935] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.817995] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.818054] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:44:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathPlanner\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.818115] (rs1_robot) StderrLine: {'line': b'   44 |   double \x1b[01;31m\x1b[KPathPlanner\x1b[m\x1b[K::getDistanceToWaypoint(const geometry_msgs::msg::PoseStamped& current_pose) const {\n'}
+[8.818182] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.818240] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:44:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone::getDistanceToWaypoint(const PoseStamped&)\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[8.818305] (rs1_robot) StderrLine: {'line': b'   44 |   double PathPlanner::getDistanceToWaypoint(const geometry_msgs::msg::PoseStamped& current_pose) \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K {\n'}
+[8.818389] (rs1_robot) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.820003] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone::getDistanceToWaypoint(const PoseStamped&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.820126] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:47:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetWaypoints\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.820196] (rs1_robot) StderrLine: {'line': b'   47 |     const auto& target = \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K[current_waypoint_index_];\n'}
+[8.820259] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.820320] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[32m\x1b[KsetWaypoints\x1b[m\x1b[K\n'}
+[8.823053] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:47:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.823185] (rs1_robot) StderrLine: {'line': b'   47 |     const auto& target = waypoints_[\x1b[01;31m\x1b[Kcurrent_waypoint_index_\x1b[m\x1b[K];\n'}
+[8.823252] (rs1_robot) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.829409] (-) TimerEvent: {}
+[8.910110] (rs1_robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner.cpp.o] Error 1\n'}
+[8.910424] (rs1_robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/path_planner.dir/all] Error 2\n'}
+[8.929600] (-) TimerEvent: {}
+[9.030071] (-) TimerEvent: {}
+[9.130588] (-) TimerEvent: {}
+[9.231082] (-) TimerEvent: {}
+[9.331570] (-) TimerEvent: {}
+[9.432059] (-) TimerEvent: {}
+[9.532556] (-) TimerEvent: {}
+[9.633065] (-) TimerEvent: {}
+[9.733527] (-) TimerEvent: {}
+[9.834006] (-) TimerEvent: {}
+[9.934529] (-) TimerEvent: {}
+[10.035054] (-) TimerEvent: {}
+[10.135524] (-) TimerEvent: {}
+[10.236061] (-) TimerEvent: {}
+[10.336597] (-) TimerEvent: {}
+[10.437048] (-) TimerEvent: {}
+[10.537515] (-) TimerEvent: {}
+[10.638029] (-) TimerEvent: {}
+[10.738556] (-) TimerEvent: {}
+[10.839070] (-) TimerEvent: {}
+[10.939571] (-) TimerEvent: {}
+[11.040110] (-) TimerEvent: {}
+[11.140626] (-) TimerEvent: {}
+[11.241075] (-) TimerEvent: {}
+[11.341560] (-) TimerEvent: {}
+[11.442062] (-) TimerEvent: {}
+[11.542574] (-) TimerEvent: {}
+[11.643092] (-) TimerEvent: {}
+[11.743572] (-) TimerEvent: {}
+[11.791828] (rs1_robot) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX shared library libmission_executor.so\x1b[0m\n'}
+[11.843632] (rs1_robot) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libstate_machine.so\x1b[0m\n'}
+[11.843918] (-) TimerEvent: {}
+[11.944288] (-) TimerEvent: {}
+[12.044818] (-) TimerEvent: {}
+[12.075436] (rs1_robot) StdoutLine: {'line': b'[ 37%] Built target state_machine\n'}
+[12.145022] (-) TimerEvent: {}
+[12.168843] (rs1_robot) StdoutLine: {'line': b'[ 37%] Built target mission_executor\n'}
+[12.169941] (rs1_robot) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.172839] (rs1_robot) CommandEnded: {'returncode': 2}
+[12.245370] (-) TimerEvent: {}
+[12.284364] (rs1_robot) JobEnded: {'identifier': 'rs1_robot', 'rc': 2}
+[12.294908] (-) EventReactorShutdown: {}

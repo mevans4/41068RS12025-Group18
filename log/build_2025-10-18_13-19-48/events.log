@@ -1,0 +1,407 @@
+[0.000000] (-) TimerEvent: {}
+[0.000761] (rs1_robot) JobQueued: {'identifier': 'rs1_robot', 'dependencies': OrderedDict()}
+[0.000824] (rs1_robot) JobStarted: {'identifier': 'rs1_robot'}
+[0.009006] (rs1_robot) JobProgress: {'identifier': 'rs1_robot', 'progress': 'cmake'}
+[0.009714] (rs1_robot) JobProgress: {'identifier': 'rs1_robot', 'progress': 'build'}
+[0.010444] (rs1_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/41068RS12025-Group18/build/rs1_robot', '--', '-j8', '-l8'], 'cwd': '/home/student/41068RS12025-Group18/build/rs1_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1860'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2901189c_c7bd_46af_a7b2_fa7f7e3b36f1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/rs1_robot'), ('LC_ALL', 'en_US.UTF-8'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[0.067131] (rs1_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target path_planner\x1b[0m\n'}
+[0.076085] (rs1_robot) StdoutLine: {'line': b'[ 12%] Built target pid_controller\n'}
+[0.081052] (rs1_robot) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner.cpp.o\x1b[0m\n'}
+[0.087545] (rs1_robot) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/state_machine.dir/src/state_machine.cpp.o\x1b[0m\n'}
+[0.087803] (rs1_robot) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/mission_executor.dir/src/mission_executor.cpp.o\x1b[0m\n'}
+[0.089272] (rs1_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_control\x1b[0m\n'}
+[0.099522] (-) TimerEvent: {}
+[0.108414] (rs1_robot) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/drone_control.dir/src/drone_control.cpp.o\x1b[0m\n'}
+[0.199672] (-) TimerEvent: {}
+[0.300124] (-) TimerEvent: {}
+[0.400603] (-) TimerEvent: {}
+[0.501089] (-) TimerEvent: {}
+[0.601577] (-) TimerEvent: {}
+[0.702093] (-) TimerEvent: {}
+[0.781756] (rs1_robot) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libpath_planner.so\x1b[0m\n'}
+[0.802235] (-) TimerEvent: {}
+[0.902706] (-) TimerEvent: {}
+[0.959456] (rs1_robot) StdoutLine: {'line': b'[ 43%] Built target path_planner\n'}
+[1.002839] (-) TimerEvent: {}
+[1.103346] (-) TimerEvent: {}
+[1.203837] (-) TimerEvent: {}
+[1.304359] (-) TimerEvent: {}
+[1.404856] (-) TimerEvent: {}
+[1.505364] (-) TimerEvent: {}
+[1.605847] (-) TimerEvent: {}
+[1.706408] (-) TimerEvent: {}
+[1.806818] (-) TimerEvent: {}
+[1.907234] (-) TimerEvent: {}
+[2.007686] (-) TimerEvent: {}
+[2.108180] (-) TimerEvent: {}
+[2.208623] (-) TimerEvent: {}
+[2.309088] (-) TimerEvent: {}
+[2.409602] (-) TimerEvent: {}
+[2.474604] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/mission_executor.cpp:6:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionExecutor\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.474905] (rs1_robot) StderrLine: {'line': b'    6 | \x1b[01;31m\x1b[KMissionExecutor\x1b[m\x1b[K::MissionExecutor() {\n'}
+[2.474984] (rs1_robot) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.478144] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:7:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStateMachine\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.478282] (rs1_robot) StderrLine: {'line': b'    7 |   \x1b[01;31m\x1b[KStateMachine\x1b[m\x1b[K::StateMachine() : current_state_(MissionState::IDLE) {\n'}
+[2.478350] (rs1_robot) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.478410] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:12:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStateMachine\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.478471] (rs1_robot) StderrLine: {'line': b'   12 |   void \x1b[01;31m\x1b[KStateMachine\x1b[m\x1b[K::setState(MissionState new_state) {\n'}
+[2.478541] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.478597] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:12:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[KsetState\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[2.478851] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:12:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdrone::MissionState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.478920] (rs1_robot) StderrLine: {'line': b'   12 |   void StateMachine::setState(\x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K new_state) {\n'}
+[2.478979] (rs1_robot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.479052] (rs1_robot) StderrLine: {'line': b'      |                               \x1b[32m\x1b[Kdrone::MissionState\x1b[m\x1b[K\n'}
+[2.479113] (rs1_robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/include/mission/state_machine.h:15\x1b[m\x1b[K,\n'}
+[2.479172] (rs1_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:1\x1b[m\x1b[K:\n'}
+[2.479229] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/include/mission_state.h:23:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdrone::MissionState\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.479288] (rs1_robot) StderrLine: {'line': b'   23 | enum class \x1b[01;36m\x1b[KMissionState\x1b[m\x1b[K\n'}
+[2.479346] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.480827] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:26:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.480957] (rs1_robot) StderrLine: {'line': b'   26 |   \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K StateMachine::getCurrentState() const {\n'}
+[2.481040] (rs1_robot) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.481104] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:30:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStateMachine\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.481167] (rs1_robot) StderrLine: {'line': b'   30 |   std::string \x1b[01;31m\x1b[KStateMachine\x1b[m\x1b[K::getStateString() const {\n'}
+[2.481226] (rs1_robot) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.481288] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:30:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kstd::string drone_swarm::getStateString()\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[2.481360] (rs1_robot) StderrLine: {'line': b'   30 |   std::string StateMachine::getStateString() \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K {\n'}
+[2.481418] (rs1_robot) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.485349] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::string drone_swarm::getStateString()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.485586] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:32:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_state_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.485812] (rs1_robot) StderrLine: {'line': b'   32 |     switch (\x1b[01;31m\x1b[Kcurrent_state_\x1b[m\x1b[K) {\n'}
+[2.485876] (rs1_robot) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.485935] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:33:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.486076] (rs1_robot) StderrLine: {'line': b'   33 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::IDLE: return "IDLE";\n'}
+[2.486141] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.486197] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:34:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.486257] (rs1_robot) StderrLine: {'line': b'   34 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::TAKEOFF: return "TAKEOFF";\n'}
+[2.486435] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.486494] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:35:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.486549] (rs1_robot) StderrLine: {'line': b'   35 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::WAYPOINT_NAVIGATION: return "WAYPOINT_NAVIGATION";\n'}
+[2.486606] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.486662] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:36:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.486719] (rs1_robot) StderrLine: {'line': b'   36 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::HOVERING: return "HOVERING";\n'}
+[2.486774] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.486828] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:37:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.486885] (rs1_robot) StderrLine: {'line': b'   37 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::LANDING: return "LANDING";\n'}
+[2.486938] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.487005] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:38:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.487067] (rs1_robot) StderrLine: {'line': b'   38 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::MANUAL_CONTROL: return "MANUAL_CONTROL";\n'}
+[2.487122] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.487178] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:39:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.487241] (rs1_robot) StderrLine: {'line': b'   39 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::EMERGENCY: return "EMERGENCY";\n'}
+[2.487295] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.487350] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:40:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.487407] (rs1_robot) StderrLine: {'line': b'   40 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::WILDFIRE_REACTION: return "WILDFIRE_REACTION";\n'}
+[2.487461] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.487516] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:41:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.487573] (rs1_robot) StderrLine: {'line': b'   41 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::ORBIT_INCIDENT: return "ORBIT_INCIDENT";\n'}
+[2.487627] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.487681] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:42:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.487736] (rs1_robot) StderrLine: {'line': b'   42 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::STRANDED_HIKER_REACTION: return "STRANDED_HIKER_REACTION";\n'}
+[2.487797] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.487853] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:43:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.487909] (rs1_robot) StderrLine: {'line': b'   43 |       case \x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K::DEBRIS_OBSTRUCTION_REACTION: return "DEBRIS_OBSTRUCTION_REACTION";\n'}
+[2.487964] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.488032] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.488094] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:48:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStateMachine\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.488151] (rs1_robot) StderrLine: {'line': b'   48 |   bool \x1b[01;31m\x1b[KStateMachine\x1b[m\x1b[K::canTransition(MissionState target_state) const {\n'}
+[2.488214] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.488269] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:48:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMissionState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdrone::MissionState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.488329] (rs1_robot) StderrLine: {'line': b'   48 |   bool StateMachine::canTransition(\x1b[01;31m\x1b[KMissionState\x1b[m\x1b[K target_state) const {\n'}
+[2.488383] (rs1_robot) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.488439] (rs1_robot) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[Kdrone::MissionState\x1b[m\x1b[K\n'}
+[2.488498] (rs1_robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/include/mission/state_machine.h:15\x1b[m\x1b[K,\n'}
+[2.488557] (rs1_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:1\x1b[m\x1b[K:\n'}
+[2.488613] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/include/mission_state.h:23:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdrone::MissionState\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.488669] (rs1_robot) StderrLine: {'line': b'   23 | enum class \x1b[01;36m\x1b[KMissionState\x1b[m\x1b[K\n'}
+[2.488724] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.509768] (-) TimerEvent: {}
+[2.522843] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:12:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.523103] (rs1_robot) StderrLine: {'line': b'   12 |   \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::DroneControl()\n'}
+[2.523197] (rs1_robot) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.523275] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:34:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.523355] (rs1_robot) StderrLine: {'line': b'   34 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::initialise(double mass, double max_thrust) {\n'}
+[2.523430] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.527381] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::initialise(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.527568] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:36:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdrone_mass_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.527650] (rs1_robot) StderrLine: {'line': b'   36 |     \x1b[01;31m\x1b[Kdrone_mass_\x1b[m\x1b[K = mass;\n'}
+[2.527721] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.529747] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:37:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_thrust_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmax_thrust\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.529892] (rs1_robot) StderrLine: {'line': b'   37 |     \x1b[01;31m\x1b[Kmax_thrust_\x1b[m\x1b[K = max_thrust;\n'}
+[2.529967] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.530075] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmax_thrust\x1b[m\x1b[K\n'}
+[2.530146] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.530214] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:40:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.530281] (rs1_robot) StderrLine: {'line': b'   40 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::setLogger(rclcpp::Logger logger) {\n'}
+[2.530346] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.532045] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::setLogger(rclcpp::Logger)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.532188] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:42:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Klogger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.532266] (rs1_robot) StderrLine: {'line': b'   42 |     \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K = logger;\n'}
+[2.532334] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.532401] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Klogger\x1b[m\x1b[K\n'}
+[2.532467] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.532535] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:45:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.532602] (rs1_robot) StderrLine: {'line': b'   45 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::setCmdVelPublisher(rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub) {\n'}
+[2.532668] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.536122] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::setCmdVelPublisher(rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.536285] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:47:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.536357] (rs1_robot) StderrLine: {'line': b'   47 |     \x1b[01;31m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K = pub;\n'}
+[2.536418] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.536477] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.536539] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:50:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.536609] (rs1_robot) StderrLine: {'line': b'   50 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::updatePositionPIDGains(double kp, double ki, double kd) {\n'}
+[2.536667] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.538493] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::updatePositionPIDGains(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.538630] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:52:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_x_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.538701] (rs1_robot) StderrLine: {'line': b'   52 |     \x1b[01;31m\x1b[Kpid_x_\x1b[m\x1b[K->setGains(kp, ki, kd);\n'}
+[2.538775] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.538835] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.540795] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:53:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.540928] (rs1_robot) StderrLine: {'line': b'   53 |     \x1b[01;31m\x1b[Kpid_y_\x1b[m\x1b[K->setGains(kp, ki, kd);\n'}
+[2.541008] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.541075] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.543253] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:54:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_z_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.543343] (rs1_robot) StderrLine: {'line': b'   54 |     \x1b[01;31m\x1b[Kpid_z_\x1b[m\x1b[K->setGains(kp, ki, kd);\n'}
+[2.543403] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.543460] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.543518] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.543577] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:57:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.543646] (rs1_robot) StderrLine: {'line': b'   57 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::updateVelocityPIDGains(double kp, double ki, double kd) {\n'}
+[2.543710] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.543774] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:62:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.543854] (rs1_robot) StderrLine: {'line': b'   62 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::updateAttitudePIDGains(double kp, double ki, double kd) {\n'}
+[2.543917] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.543982] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:67:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.544069] (rs1_robot) StderrLine: {'line': b'   67 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::setControlLimits(double max_velocity, double max_angular_velocity) {\n'}
+[2.544128] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.545860] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::setControlLimits(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.546072] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:69:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_velocity_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmax_velocity\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.546181] (rs1_robot) StderrLine: {'line': b'   69 |     \x1b[01;31m\x1b[Kmax_velocity_\x1b[m\x1b[K = max_velocity;\n'}
+[2.546287] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.546373] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmax_velocity\x1b[m\x1b[K\n'}
+[2.548407] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:70:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_angular_velocity_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmax_angular_velocity\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.548564] (rs1_robot) StderrLine: {'line': b'   70 |     \x1b[01;31m\x1b[Kmax_angular_velocity_\x1b[m\x1b[K = max_angular_velocity;\n'}
+[2.548659] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.548760] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmax_angular_velocity\x1b[m\x1b[K\n'}
+[2.548846] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.548932] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:73:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.549045] (rs1_robot) StderrLine: {'line': b'   73 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::resetControllers() {\n'}
+[2.549134] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.550953] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::resetControllers()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.551131] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:75:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_x_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.551232] (rs1_robot) StderrLine: {'line': b'   75 |     \x1b[01;31m\x1b[Kpid_x_\x1b[m\x1b[K->reset();\n'}
+[2.551317] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.551400] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.553502] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:76:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.553670] (rs1_robot) StderrLine: {'line': b'   76 |     \x1b[01;31m\x1b[Kpid_y_\x1b[m\x1b[K->reset();\n'}
+[2.553779] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.553880] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.555922] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:77:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_z_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.556103] (rs1_robot) StderrLine: {'line': b'   77 |     \x1b[01;31m\x1b[Kpid_z_\x1b[m\x1b[K->reset();\n'}
+[2.556217] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.556318] (rs1_robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.558898] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:78:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.559092] (rs1_robot) StderrLine: {'line': b'   78 |     \x1b[01;31m\x1b[Kpid_yaw_\x1b[m\x1b[K->reset();\n'}
+[2.559206] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.563500] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:80:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfirst_command_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.563661] (rs1_robot) StderrLine: {'line': b'   80 |     \x1b[01;31m\x1b[Kfirst_command_\x1b[m\x1b[K = true;  // Reset smoothing filter\n'}
+[2.563769] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.570266] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:81:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu_data_available_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.570450] (rs1_robot) StderrLine: {'line': b'   81 |     \x1b[01;31m\x1b[Kimu_data_available_\x1b[m\x1b[K = false;\n'}
+[2.570519] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.570578] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.570667] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:84:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.570780] (rs1_robot) StderrLine: {'line': b'   84 |   geometry_msgs::msg::Twist \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculateAdvancedPositionControl(\n'}
+[2.570862] (rs1_robot) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.577088] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist drone_swarm::calculateAdvancedPositionControl(const PoseStamped&, const PoseStamped&, double, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.577224] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:102:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu_data_available_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.577293] (rs1_robot) StderrLine: {'line': b'  102 |     if (\x1b[01;31m\x1b[Kimu_data_available_\x1b[m\x1b[K && horizontal_distance > 0.3) {\n'}
+[2.577355] (rs1_robot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.583537] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:104:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcalculateYawToTarget\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.583683] (rs1_robot) StderrLine: {'line': b'  104 |       double target_yaw = \x1b[01;31m\x1b[KcalculateYawToTarget\x1b[m\x1b[K(current_pose.pose.position, target_pose.pose.position);\n'}
+[2.583752] (rs1_robot) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.586717] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:107:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcurrent_pose\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.586870] (rs1_robot) StderrLine: {'line': b'  107 |       raw_cmd.angular.z = calculateYawControl(target_yaw, \x1b[01;31m\x1b[Kcurrent_yaw_\x1b[m\x1b[K, dt);\n'}
+[2.586939] (rs1_robot) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.587010] (rs1_robot) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[Kcurrent_pose\x1b[m\x1b[K\n'}
+[2.592918] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:107:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcalculateYawControl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.593074] (rs1_robot) StderrLine: {'line': b'  107 |       raw_cmd.angular.z = \x1b[01;31m\x1b[KcalculateYawControl\x1b[m\x1b[K(target_yaw, current_yaw_, dt);\n'}
+[2.593144] (rs1_robot) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.597542] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:110:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KnormalizeAngle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.597684] (rs1_robot) StderrLine: {'line': b'  110 |       double yaw_error = \x1b[01;31m\x1b[KnormalizeAngle\x1b[m\x1b[K(target_yaw - current_yaw_);\n'}
+[2.597791] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.600077] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:130:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.600204] (rs1_robot) StderrLine: {'line': b'  130 |         raw_cmd.linear.y = \x1b[01;31m\x1b[Kpid_y_\x1b[m\x1b[K->calculateWithWindupProtection(target_pose.pose.position.y, current_pose.pose.position.y, dt, 1.0) * 0.3;\n'}
+[2.600274] (rs1_robot) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.600335] (rs1_robot) StderrLine: {'line': b'      |                            \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.602374] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:135:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_x_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.602500] (rs1_robot) StderrLine: {'line': b'  135 |       raw_cmd.linear.x = \x1b[01;31m\x1b[Kpid_x_\x1b[m\x1b[K->calculateWithWindupProtection(target_pose.pose.position.x, current_pose.pose.position.x, dt, 2.0);\n'}
+[2.602582] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.602644] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.604666] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:136:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.604799] (rs1_robot) StderrLine: {'line': b'  136 |       raw_cmd.linear.y = \x1b[01;31m\x1b[Kpid_y_\x1b[m\x1b[K->calculateWithWindupProtection(target_pose.pose.position.y, current_pose.pose.position.y, dt, 2.0);\n'}
+[2.604870] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.604931] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.607081] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:160:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_z_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.607171] (rs1_robot) StderrLine: {'line': b'  160 |       raw_cmd.linear.z = \x1b[01;31m\x1b[Kpid_z_\x1b[m\x1b[K->calculateWithWindupProtection(target_pose.pose.position.z, current_pose.pose.position.z, dt, 1.0);\n'}
+[2.607231] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.607289] (rs1_robot) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.609846] (-) TimerEvent: {}
+[2.613554] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:174:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KapplySmoothingFilter\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.613689] (rs1_robot) StderrLine: {'line': b'  174 |     \x1b[01;31m\x1b[KapplySmoothingFilter\x1b[m\x1b[K(cmd_vel, raw_cmd);\n'}
+[2.613756] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.621858] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:182:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KscaleForBasicVelocityControl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.622064] (rs1_robot) StderrLine: {'line': b'  182 |     \x1b[01;31m\x1b[KscaleForBasicVelocityControl\x1b[m\x1b[K(cmd_vel);\n'}
+[2.622141] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.622210] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.622311] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.622486] (rs1_robot) StderrLine: {'line': b'  187 |   bool \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::flyToGoal(VehicleData& vehicle, const geometry_msgs::msg::Pose& goal) {\n'}
+[2.622554] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.622613] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVehicleData\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdrone::VehicleData\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.622675] (rs1_robot) StderrLine: {'line': b'  187 |   bool DroneControl::flyToGoal(\x1b[01;31m\x1b[KVehicleData\x1b[m\x1b[K& vehicle, const geometry_msgs::msg::Pose& goal) {\n'}
+[2.622733] (rs1_robot) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.622802] (rs1_robot) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Kdrone::VehicleData\x1b[m\x1b[K\n'}
+[2.622860] (rs1_robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:1\x1b[m\x1b[K:\n'}
+[2.622916] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/include/drone_control.h:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdrone::VehicleData\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.622980] (rs1_robot) StderrLine: {'line': b'   32 | struct \x1b[01;36m\x1b[KVehicleData\x1b[m\x1b[K {\n'}
+[2.623056] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.625050] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvehicle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.625171] (rs1_robot) StderrLine: {'line': b'  187 |   bool DroneControl::flyToGoal(VehicleData& \x1b[01;31m\x1b[Kvehicle\x1b[m\x1b[K, const geometry_msgs::msg::Pose& goal) {\n'}
+[2.625237] (rs1_robot) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.625298] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.625360] (rs1_robot) StderrLine: {'line': b'  187 |   bool DroneControl::flyToGoal(VehicleData& vehicle, \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K geometry_msgs::msg::Pose& goal) {\n'}
+[2.625430] (rs1_robot) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.625489] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpression list treated as compound expression in initializer [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.625552] (rs1_robot) StderrLine: {'line': b'  187 |   bool DroneControl::flyToGoal(VehicleData& vehicle, const geometry_msgs::msg::Pose& goal\x1b[01;31m\x1b[K)\x1b[m\x1b[K {\n'}
+[2.625609] (rs1_robot) StderrLine: {'line': b'      |                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.625667] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:292:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.625725] (rs1_robot) StderrLine: {'line': b'  292 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::applySmoothingFilter(geometry_msgs::msg::Twist& cmd_vel, const geometry_msgs::msg::Twist& raw_cmd, double alpha) {\n'}
+[2.625783] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.629713] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::applySmoothingFilter(geometry_msgs::msg::Twist&, const Twist&, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.629836] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:294:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfirst_command_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.629904] (rs1_robot) StderrLine: {'line': b'  294 |     if (\x1b[01;31m\x1b[Kfirst_command_\x1b[m\x1b[K) {\n'}
+[2.629964] (rs1_robot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.632583] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:298:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_cmd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.632732] (rs1_robot) StderrLine: {'line': b'  298 |       cmd_vel.linear.x = alpha * raw_cmd.linear.x + (1.0 - alpha) * \x1b[01;31m\x1b[Klast_cmd_\x1b[m\x1b[K.linear.x;\n'}
+[2.632814] (rs1_robot) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.635561] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:306:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_cmd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.635689] (rs1_robot) StderrLine: {'line': b'  306 |     \x1b[01;31m\x1b[Klast_cmd_\x1b[m\x1b[K = cmd_vel;\n'}
+[2.635796] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.635898] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.636059] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:309:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.636132] (rs1_robot) StderrLine: {'line': b'  309 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::scaleForBasicVelocityControl(geometry_msgs::msg::Twist& cmd_vel) {\n'}
+[2.636193] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.636251] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:315:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.636309] (rs1_robot) StderrLine: {'line': b'  315 |   bool \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::isGoalReached(const geometry_msgs::msg::Point& current_pos, const geometry_msgs::msg::Pose& goal, bool use_manual_altitude) {\n'}
+[2.636376] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.636432] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:328:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.636548] (rs1_robot) StderrLine: {'line': b'  328 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::applyControlLimits(geometry_msgs::msg::Twist& cmd_vel) {\n'}
+[2.636621] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.640058] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::applyControlLimits(geometry_msgs::msg::Twist&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.640213] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:330:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_velocity_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.640320] (rs1_robot) StderrLine: {'line': b'  330 |     cmd_vel.linear.x = std::clamp(cmd_vel.linear.x, -\x1b[01;31m\x1b[Kmax_velocity_\x1b[m\x1b[K, max_velocity_);\n'}
+[2.640413] (rs1_robot) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.650528] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:334:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_angular_velocity_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.650789] (rs1_robot) StderrLine: {'line': b'  334 |     cmd_vel.angular.x = std::clamp(cmd_vel.angular.x, -\x1b[01;31m\x1b[Kmax_angular_velocity_\x1b[m\x1b[K, max_angular_velocity_);\n'}
+[2.650901] (rs1_robot) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.651029] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.651126] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:340:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.651219] (rs1_robot) StderrLine: {'line': b'  340 |   geometry_msgs::msg::Twist \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculateControlOutput(\n'}
+[2.651310] (rs1_robot) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.651398] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist drone_swarm::calculateControlOutput(const PoseStamped&, const PoseStamped&, const Twist&, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.651489] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:347:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo few arguments to function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist drone_swarm::calculateAdvancedPositionControl(const PoseStamped&, const PoseStamped&, double, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.651581] (rs1_robot) StderrLine: {'line': b'  347 |     return \x1b[01;31m\x1b[KcalculateAdvancedPositionControl(current_pose, target_pose, dt)\x1b[m\x1b[K;\n'}
+[2.651668] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.651757] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:84:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.651845] (rs1_robot) StderrLine: {'line': b'   84 |   geometry_msgs::msg::Twist \x1b[01;36m\x1b[KDroneControl\x1b[m\x1b[K::calculateAdvancedPositionControl(\n'}
+[2.651931] (rs1_robot) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.652036] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.652141] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:350:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.652223] (rs1_robot) StderrLine: {'line': b'  350 |   geometry_msgs::msg::Twist \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculatePositionControl(\n'}
+[2.652283] (rs1_robot) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.652351] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist drone_swarm::calculatePositionControl(const PoseStamped&, const PoseStamped&, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.652413] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:354:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo few arguments to function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist drone_swarm::calculateAdvancedPositionControl(const PoseStamped&, const PoseStamped&, double, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.652474] (rs1_robot) StderrLine: {'line': b'  354 |     return \x1b[01;31m\x1b[KcalculateAdvancedPositionControl(current_pose, target_pose, dt)\x1b[m\x1b[K;\n'}
+[2.652541] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.652599] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:84:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.652659] (rs1_robot) StderrLine: {'line': b'   84 |   geometry_msgs::msg::Twist \x1b[01;36m\x1b[KDroneControl\x1b[m\x1b[K::calculateAdvancedPositionControl(\n'}
+[2.652828] (rs1_robot) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.652889] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.652955] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:373:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.653034] (rs1_robot) StderrLine: {'line': b'  373 |   double \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculateXControl(double target_x, double current_x, double dt) {\n'}
+[2.653095] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.653154] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone_swarm::calculateXControl(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.653212] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:374:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_x_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.653273] (rs1_robot) StderrLine: {'line': b'  374 |     return \x1b[01;31m\x1b[Kpid_x_\x1b[m\x1b[K->calculate(target_x, current_x, dt);\n'}
+[2.653330] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.653388] (rs1_robot) StderrLine: {'line': b'      |            \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.653443] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.653498] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:377:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.653555] (rs1_robot) StderrLine: {'line': b'  377 |   double \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculateYControl(double target_y, double current_y, double dt) {\n'}
+[2.653612] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.655435] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone_swarm::calculateYControl(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.655559] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:378:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.655627] (rs1_robot) StderrLine: {'line': b'  378 |     return \x1b[01;31m\x1b[Kpid_y_\x1b[m\x1b[K->calculate(target_y, current_y, dt);\n'}
+[2.655685] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.655754] (rs1_robot) StderrLine: {'line': b'      |            \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.655811] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.655869] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:381:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.655926] (rs1_robot) StderrLine: {'line': b'  381 |   double \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculateZControl(double target_z, double current_z, double dt) {\n'}
+[2.655982] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.657894] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone_swarm::calculateZControl(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.658064] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:382:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_z_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.658176] (rs1_robot) StderrLine: {'line': b'  382 |     return \x1b[01;31m\x1b[Kpid_z_\x1b[m\x1b[K->calculate(target_z, current_z, dt);\n'}
+[2.658259] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.658340] (rs1_robot) StderrLine: {'line': b'      |            \x1b[32m\x1b[Kpid_t\x1b[m\x1b[K\n'}
+[2.658420] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.658499] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:385:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.658578] (rs1_robot) StderrLine: {'line': b'  385 |   void \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::updateCurrentYaw(double yaw) {\n'}
+[2.658657] (rs1_robot) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.661910] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid drone_swarm::updateCurrentYaw(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.662075] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:386:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.662171] (rs1_robot) StderrLine: {'line': b'  386 |     \x1b[01;31m\x1b[Kcurrent_yaw_\x1b[m\x1b[K = normalizeAngle(yaw);\n'}
+[2.662253] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.666554] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:386:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KnormalizeAngle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.666686] (rs1_robot) StderrLine: {'line': b'  386 |     current_yaw_ = \x1b[01;31m\x1b[KnormalizeAngle\x1b[m\x1b[K(yaw);\n'}
+[2.666752] (rs1_robot) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.672856] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:387:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu_data_available_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673033] (rs1_robot) StderrLine: {'line': b'  387 |     \x1b[01;31m\x1b[Kimu_data_available_\x1b[m\x1b[K = true;\n'}
+[2.673107] (rs1_robot) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673169] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.673226] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:390:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.673287] (rs1_robot) StderrLine: {'line': b'  390 |   double \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculateYawToTarget(const geometry_msgs::msg::Point& current_pos, const geometry_msgs::msg::Point& target_pos) {\n'}
+[2.673346] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673402] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:396:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.673460] (rs1_robot) StderrLine: {'line': b'  396 |   double \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::calculateYawControl(double target_yaw, double current_yaw, double dt) {\n'}
+[2.673517] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.677563] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble drone_swarm::calculateYawControl(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.677697] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:398:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KnormalizeAngle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.677768] (rs1_robot) StderrLine: {'line': b'  398 |     double yaw_error = \x1b[01;31m\x1b[KnormalizeAngle\x1b[m\x1b[K(target_yaw - current_yaw);\n'}
+[2.677831] (rs1_robot) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.680404] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:399:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.680531] (rs1_robot) StderrLine: {'line': b'  399 |     return \x1b[01;31m\x1b[Kpid_yaw_\x1b[m\x1b[K->calculate(0.0, -yaw_error, dt);  // Negative error for proper direction\n'}
+[2.680630] (rs1_robot) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.680737] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.680802] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:402:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDroneControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.680860] (rs1_robot) StderrLine: {'line': b'  402 |   double \x1b[01;31m\x1b[KDroneControl\x1b[m\x1b[K::normalizeAngle(double angle) {\n'}
+[2.680917] (rs1_robot) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.710057] (-) TimerEvent: {}
+[2.810533] (-) TimerEvent: {}
+[2.900345] (rs1_robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mission_executor.dir/build.make:76: CMakeFiles/mission_executor.dir/src/mission_executor.cpp.o] Error 1\n'}
+[2.900807] (rs1_robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/mission_executor.dir/all] Error 2\n'}
+[2.901011] (rs1_robot) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.901602] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::string drone_swarm::getStateString()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.901791] (rs1_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/state_machine.cpp:46:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.901927] (rs1_robot) StderrLine: {'line': b'   46 |   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[2.902089] (rs1_robot) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.908836] (rs1_robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/state_machine.dir/build.make:76: CMakeFiles/state_machine.dir/src/state_machine.cpp.o] Error 1\n'}
+[2.909140] (rs1_robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/state_machine.dir/all] Error 2\n'}
+[2.910624] (-) TimerEvent: {}
+[3.011015] (-) TimerEvent: {}
+[3.098593] (rs1_robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/drone_control.dir/build.make:76: CMakeFiles/drone_control.dir/src/drone_control.cpp.o] Error 1\n'}
+[3.098879] (rs1_robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:177: CMakeFiles/drone_control.dir/all] Error 2\n'}
+[3.099239] (rs1_robot) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.102313] (rs1_robot) CommandEnded: {'returncode': 2}
+[3.111601] (-) TimerEvent: {}
+[3.113060] (rs1_robot) JobEnded: {'identifier': 'rs1_robot', 'rc': 2}
+[3.123493] (-) EventReactorShutdown: {}

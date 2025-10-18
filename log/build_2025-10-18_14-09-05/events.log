@@ -1,0 +1,602 @@
+[0.000000] (-) TimerEvent: {}
+[0.000564] (drone_ignition_bringup) JobQueued: {'identifier': 'drone_ignition_bringup', 'dependencies': OrderedDict()}
+[0.000864] (drone_ignition_bringup) JobStarted: {'identifier': 'drone_ignition_bringup'}
+[0.009107] (drone_ignition_bringup) JobProgress: {'identifier': 'drone_ignition_bringup', 'progress': 'cmake'}
+[0.009690] (drone_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/student/41068RS12025-Group18/src/drone_ignition_bringup', '-DCMAKE_INSTALL_PREFIX=/home/student/41068RS12025-Group18/install/drone_ignition_bringup'], 'cwd': '/home/student/41068RS12025-Group18/build/drone_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1883'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5e4a8440_f0ef_410f_8338_b721451fbd41'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.126'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/drone_ignition_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[0.069518] (drone_ignition_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099502] (-) TimerEvent: {}
+[0.130746] (drone_ignition_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.139074] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199630] (-) TimerEvent: {}
+[0.213794] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.221507] (drone_ignition_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.221742] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.222117] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.225133] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299854] (-) TimerEvent: {}
+[0.316397] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.324892] (drone_ignition_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.325195] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.325633] (drone_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.329524] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399965] (-) TimerEvent: {}
+[0.488582] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500149] (-) TimerEvent: {}
+[0.587838] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600276] (-) TimerEvent: {}
+[0.632942] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.638884] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.647750] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.660435] (drone_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.677094] (drone_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700444] (-) TimerEvent: {}
+[0.722831] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.725571] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800574] (-) TimerEvent: {}
+[0.815390] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.847817] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.894421] (drone_ignition_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.900737] (-) TimerEvent: {}
+[0.903282] (drone_ignition_bringup) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.986071] (drone_ignition_bringup) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.986613] (drone_ignition_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.000852] (-) TimerEvent: {}
+[1.069948] (drone_ignition_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.071201] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.101030] (-) TimerEvent: {}
+[1.126573] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.157377] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.171699] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.190681] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.201206] (-) TimerEvent: {}
+[1.210005] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.220240] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found ros_gz_interfaces: 0.244.20 (/opt/ros/humble/share/ros_gz_interfaces/cmake)\n'}
+[1.242867] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.264513] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)\n'}
+[1.267337] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found ros_gz_bridge: 0.244.20 (/opt/ros/humble/share/ros_gz_bridge/cmake)\n'}
+[1.301400] (-) TimerEvent: {}
+[1.305717] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.385633] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.401591] (-) TimerEvent: {}
+[1.502000] (-) TimerEvent: {}
+[1.602409] (-) TimerEvent: {}
+[1.643499] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.648348] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.672333] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.687998] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.689359] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.689569] (drone_ignition_bringup) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.692550] (drone_ignition_bringup) StdoutLine: {'line': b'-- Found grid_map_ros: 2.0.1 (/opt/ros/humble/share/grid_map_ros/cmake)\n'}
+[1.702495] (-) TimerEvent: {}
+[1.802849] (-) TimerEvent: {}
+[1.892026] (drone_ignition_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.902966] (-) TimerEvent: {}
+[1.931701] (drone_ignition_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[1.947896] (drone_ignition_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/student/41068RS12025-Group18/build/drone_ignition_bringup\n'}
+[1.967960] (drone_ignition_bringup) CommandEnded: {'returncode': 0}
+[1.968872] (drone_ignition_bringup) JobProgress: {'identifier': 'drone_ignition_bringup', 'progress': 'build'}
+[1.970512] (drone_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/41068RS12025-Group18/build/drone_ignition_bringup', '--', '-j8', '-l8'], 'cwd': '/home/student/41068RS12025-Group18/build/drone_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1883'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5e4a8440_f0ef_410f_8338_b721451fbd41'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.126'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/drone_ignition_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[2.003085] (-) TimerEvent: {}
+[2.029200] (drone_ignition_bringup) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid.cpp.o\x1b[0m\n'}
+[2.029558] (drone_ignition_bringup) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/state_machine.dir/src/state_machine.cpp.o\x1b[0m\n'}
+[2.029749] (drone_ignition_bringup) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner.cpp.o\x1b[0m\n'}
+[2.029855] (drone_ignition_bringup) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/mission_executor.dir/src/mission_executor.cpp.o\x1b[0m\n'}
+[2.103252] (-) TimerEvent: {}
+[2.203723] (-) TimerEvent: {}
+[2.304266] (-) TimerEvent: {}
+[2.351694] (drone_ignition_bringup) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX shared library libpid_controller.so\x1b[0m\n'}
+[2.404405] (-) TimerEvent: {}
+[2.422441] (drone_ignition_bringup) StdoutLine: {'line': b'[ 31%] Built target pid_controller\n'}
+[2.448649] (drone_ignition_bringup) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/drone_control.dir/src/drone_control.cpp.o\x1b[0m\n'}
+[2.504554] (-) TimerEvent: {}
+[2.604997] (-) TimerEvent: {}
+[2.705482] (-) TimerEvent: {}
+[2.728692] (drone_ignition_bringup) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libpath_planner.so\x1b[0m\n'}
+[2.805626] (-) TimerEvent: {}
+[2.906070] (-) TimerEvent: {}
+[2.906515] (drone_ignition_bringup) StdoutLine: {'line': b'[ 43%] Built target path_planner\n'}
+[3.006275] (-) TimerEvent: {}
+[3.106715] (-) TimerEvent: {}
+[3.207214] (-) TimerEvent: {}
+[3.307700] (-) TimerEvent: {}
+[3.408140] (-) TimerEvent: {}
+[3.508629] (-) TimerEvent: {}
+[3.609116] (-) TimerEvent: {}
+[3.709607] (-) TimerEvent: {}
+[3.810100] (-) TimerEvent: {}
+[3.910560] (-) TimerEvent: {}
+[4.011012] (-) TimerEvent: {}
+[4.111491] (-) TimerEvent: {}
+[4.211966] (-) TimerEvent: {}
+[4.312476] (-) TimerEvent: {}
+[4.412975] (-) TimerEvent: {}
+[4.513484] (-) TimerEvent: {}
+[4.613981] (-) TimerEvent: {}
+[4.714455] (-) TimerEvent: {}
+[4.797603] (drone_ignition_bringup) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libmission_executor.so\x1b[0m\n'}
+[4.814574] (-) TimerEvent: {}
+[4.818354] (drone_ignition_bringup) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libstate_machine.so\x1b[0m\n'}
+[4.914718] (-) TimerEvent: {}
+[4.919664] (drone_ignition_bringup) StdoutLine: {'line': b'[ 56%] Built target state_machine\n'}
+[4.929074] (drone_ignition_bringup) StdoutLine: {'line': b'[ 56%] Built target mission_executor\n'}
+[4.953318] (drone_ignition_bringup) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/mission_planner_component.dir/src/mission_node.cpp.o\x1b[0m\n'}
+[5.014857] (-) TimerEvent: {}
+[5.115368] (-) TimerEvent: {}
+[5.215807] (-) TimerEvent: {}
+[5.316251] (-) TimerEvent: {}
+[5.416663] (-) TimerEvent: {}
+[5.517131] (-) TimerEvent: {}
+[5.617654] (-) TimerEvent: {}
+[5.677242] (drone_ignition_bringup) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libdrone_control.so\x1b[0m\n'}
+[5.717795] (-) TimerEvent: {}
+[5.818139] (drone_ignition_bringup) StdoutLine: {'line': b'[ 68%] Built target drone_control\n'}
+[5.819638] (-) TimerEvent: {}
+[5.842483] (drone_ignition_bringup) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/drone_controller_enhanced_component.dir/src/drone_node.cpp.o\x1b[0m\n'}
+[5.919884] (-) TimerEvent: {}
+[6.020380] (-) TimerEvent: {}
+[6.120823] (-) TimerEvent: {}
+[6.221237] (-) TimerEvent: {}
+[6.321639] (-) TimerEvent: {}
+[6.422099] (-) TimerEvent: {}
+[6.522571] (-) TimerEvent: {}
+[6.623042] (-) TimerEvent: {}
+[6.723493] (-) TimerEvent: {}
+[6.823913] (-) TimerEvent: {}
+[6.924323] (-) TimerEvent: {}
+[7.024740] (-) TimerEvent: {}
+[7.125150] (-) TimerEvent: {}
+[7.225594] (-) TimerEvent: {}
+[7.326086] (-) TimerEvent: {}
+[7.426560] (-) TimerEvent: {}
+[7.526971] (-) TimerEvent: {}
+[7.627403] (-) TimerEvent: {}
+[7.727895] (-) TimerEvent: {}
+[7.828369] (-) TimerEvent: {}
+[7.928783] (-) TimerEvent: {}
+[8.029275] (-) TimerEvent: {}
+[8.129778] (-) TimerEvent: {}
+[8.230226] (-) TimerEvent: {}
+[8.330633] (-) TimerEvent: {}
+[8.431052] (-) TimerEvent: {}
+[8.531496] (-) TimerEvent: {}
+[8.631876] (-) TimerEvent: {}
+[8.732264] (-) TimerEvent: {}
+[8.832661] (-) TimerEvent: {}
+[8.933087] (-) TimerEvent: {}
+[9.033544] (-) TimerEvent: {}
+[9.133980] (-) TimerEvent: {}
+[9.234431] (-) TimerEvent: {}
+[9.334855] (-) TimerEvent: {}
+[9.435371] (-) TimerEvent: {}
+[9.535887] (-) TimerEvent: {}
+[9.636393] (-) TimerEvent: {}
+[9.736915] (-) TimerEvent: {}
+[9.837379] (-) TimerEvent: {}
+[9.937861] (-) TimerEvent: {}
+[10.038340] (-) TimerEvent: {}
+[10.138842] (-) TimerEvent: {}
+[10.239372] (-) TimerEvent: {}
+[10.339801] (-) TimerEvent: {}
+[10.440277] (-) TimerEvent: {}
+[10.540801] (-) TimerEvent: {}
+[10.641259] (-) TimerEvent: {}
+[10.741743] (-) TimerEvent: {}
+[10.842289] (-) TimerEvent: {}
+[10.942804] (-) TimerEvent: {}
+[11.043302] (-) TimerEvent: {}
+[11.143825] (-) TimerEvent: {}
+[11.244293] (-) TimerEvent: {}
+[11.344822] (-) TimerEvent: {}
+[11.445356] (-) TimerEvent: {}
+[11.545774] (-) TimerEvent: {}
+[11.646274] (-) TimerEvent: {}
+[11.746734] (-) TimerEvent: {}
+[11.847257] (-) TimerEvent: {}
+[11.947713] (-) TimerEvent: {}
+[12.048186] (-) TimerEvent: {}
+[12.148682] (-) TimerEvent: {}
+[12.249197] (-) TimerEvent: {}
+[12.349666] (-) TimerEvent: {}
+[12.450217] (-) TimerEvent: {}
+[12.550739] (-) TimerEvent: {}
+[12.651258] (-) TimerEvent: {}
+[12.751746] (-) TimerEvent: {}
+[12.852269] (-) TimerEvent: {}
+[12.952793] (-) TimerEvent: {}
+[13.053314] (-) TimerEvent: {}
+[13.153832] (-) TimerEvent: {}
+[13.254283] (-) TimerEvent: {}
+[13.354813] (-) TimerEvent: {}
+[13.455306] (-) TimerEvent: {}
+[13.555827] (-) TimerEvent: {}
+[13.656288] (-) TimerEvent: {}
+[13.756705] (-) TimerEvent: {}
+[13.857209] (-) TimerEvent: {}
+[13.957649] (-) TimerEvent: {}
+[14.058136] (-) TimerEvent: {}
+[14.158603] (-) TimerEvent: {}
+[14.259032] (-) TimerEvent: {}
+[14.359469] (-) TimerEvent: {}
+[14.459952] (-) TimerEvent: {}
+[14.560404] (-) TimerEvent: {}
+[14.660778] (-) TimerEvent: {}
+[14.761223] (-) TimerEvent: {}
+[14.861664] (-) TimerEvent: {}
+[14.962192] (-) TimerEvent: {}
+[15.062689] (-) TimerEvent: {}
+[15.163132] (-) TimerEvent: {}
+[15.263625] (-) TimerEvent: {}
+[15.364081] (-) TimerEvent: {}
+[15.464552] (-) TimerEvent: {}
+[15.564965] (-) TimerEvent: {}
+[15.665386] (-) TimerEvent: {}
+[15.765913] (-) TimerEvent: {}
+[15.866431] (-) TimerEvent: {}
+[15.966897] (-) TimerEvent: {}
+[16.067370] (-) TimerEvent: {}
+[16.167771] (-) TimerEvent: {}
+[16.268210] (-) TimerEvent: {}
+[16.368612] (-) TimerEvent: {}
+[16.469025] (-) TimerEvent: {}
+[16.569448] (-) TimerEvent: {}
+[16.669923] (-) TimerEvent: {}
+[16.770445] (-) TimerEvent: {}
+[16.870946] (-) TimerEvent: {}
+[16.971453] (-) TimerEvent: {}
+[17.072004] (-) TimerEvent: {}
+[17.172544] (-) TimerEvent: {}
+[17.272987] (-) TimerEvent: {}
+[17.373525] (-) TimerEvent: {}
+[17.474108] (-) TimerEvent: {}
+[17.574633] (-) TimerEvent: {}
+[17.675134] (-) TimerEvent: {}
+[17.775639] (-) TimerEvent: {}
+[17.876185] (-) TimerEvent: {}
+[17.976690] (-) TimerEvent: {}
+[18.077214] (-) TimerEvent: {}
+[18.177776] (-) TimerEvent: {}
+[18.278251] (-) TimerEvent: {}
+[18.378746] (-) TimerEvent: {}
+[18.479265] (-) TimerEvent: {}
+[18.579778] (-) TimerEvent: {}
+[18.680278] (-) TimerEvent: {}
+[18.780761] (-) TimerEvent: {}
+[18.881221] (-) TimerEvent: {}
+[18.981656] (-) TimerEvent: {}
+[19.082153] (-) TimerEvent: {}
+[19.182674] (-) TimerEvent: {}
+[19.283224] (-) TimerEvent: {}
+[19.383748] (-) TimerEvent: {}
+[19.484263] (-) TimerEvent: {}
+[19.584719] (-) TimerEvent: {}
+[19.685138] (-) TimerEvent: {}
+[19.785564] (-) TimerEvent: {}
+[19.885969] (-) TimerEvent: {}
+[19.986402] (-) TimerEvent: {}
+[20.086820] (-) TimerEvent: {}
+[20.187252] (-) TimerEvent: {}
+[20.287721] (-) TimerEvent: {}
+[20.388120] (-) TimerEvent: {}
+[20.488534] (-) TimerEvent: {}
+[20.588933] (-) TimerEvent: {}
+[20.689310] (-) TimerEvent: {}
+[20.789698] (-) TimerEvent: {}
+[20.890124] (-) TimerEvent: {}
+[20.990535] (-) TimerEvent: {}
+[21.090938] (-) TimerEvent: {}
+[21.191354] (-) TimerEvent: {}
+[21.291765] (-) TimerEvent: {}
+[21.392275] (-) TimerEvent: {}
+[21.492696] (-) TimerEvent: {}
+[21.593105] (-) TimerEvent: {}
+[21.693518] (-) TimerEvent: {}
+[21.793994] (-) TimerEvent: {}
+[21.894434] (-) TimerEvent: {}
+[21.994855] (-) TimerEvent: {}
+[22.095256] (-) TimerEvent: {}
+[22.195657] (-) TimerEvent: {}
+[22.296063] (-) TimerEvent: {}
+[22.396509] (-) TimerEvent: {}
+[22.496900] (-) TimerEvent: {}
+[22.597294] (-) TimerEvent: {}
+[22.697690] (-) TimerEvent: {}
+[22.798088] (-) TimerEvent: {}
+[22.898502] (-) TimerEvent: {}
+[22.998964] (-) TimerEvent: {}
+[23.099419] (-) TimerEvent: {}
+[23.199835] (-) TimerEvent: {}
+[23.300245] (-) TimerEvent: {}
+[23.400626] (-) TimerEvent: {}
+[23.501044] (-) TimerEvent: {}
+[23.601520] (-) TimerEvent: {}
+[23.701954] (-) TimerEvent: {}
+[23.802398] (-) TimerEvent: {}
+[23.902844] (-) TimerEvent: {}
+[24.003296] (-) TimerEvent: {}
+[24.103729] (-) TimerEvent: {}
+[24.204183] (-) TimerEvent: {}
+[24.304631] (-) TimerEvent: {}
+[24.405070] (-) TimerEvent: {}
+[24.505595] (-) TimerEvent: {}
+[24.606118] (-) TimerEvent: {}
+[24.706634] (-) TimerEvent: {}
+[24.807069] (-) TimerEvent: {}
+[24.907583] (-) TimerEvent: {}
+[25.008076] (-) TimerEvent: {}
+[25.108573] (-) TimerEvent: {}
+[25.136002] (drone_ignition_bringup) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libmission_planner_component.so\x1b[0m\n'}
+[25.208797] (-) TimerEvent: {}
+[25.309294] (-) TimerEvent: {}
+[25.409785] (-) TimerEvent: {}
+[25.510301] (-) TimerEvent: {}
+[25.610805] (-) TimerEvent: {}
+[25.711247] (-) TimerEvent: {}
+[25.811740] (-) TimerEvent: {}
+[25.912234] (-) TimerEvent: {}
+[26.012709] (-) TimerEvent: {}
+[26.113251] (-) TimerEvent: {}
+[26.213689] (-) TimerEvent: {}
+[26.295481] (drone_ignition_bringup) StdoutLine: {'line': b'[ 81%] Built target mission_planner_component\n'}
+[26.313803] (-) TimerEvent: {}
+[26.414258] (-) TimerEvent: {}
+[26.514730] (-) TimerEvent: {}
+[26.615146] (-) TimerEvent: {}
+[26.715638] (-) TimerEvent: {}
+[26.816109] (-) TimerEvent: {}
+[26.916581] (-) TimerEvent: {}
+[27.016992] (-) TimerEvent: {}
+[27.117468] (-) TimerEvent: {}
+[27.217920] (-) TimerEvent: {}
+[27.318373] (-) TimerEvent: {}
+[27.418833] (-) TimerEvent: {}
+[27.519267] (-) TimerEvent: {}
+[27.619720] (-) TimerEvent: {}
+[27.720238] (-) TimerEvent: {}
+[27.820695] (-) TimerEvent: {}
+[27.921203] (-) TimerEvent: {}
+[28.021614] (-) TimerEvent: {}
+[28.122078] (-) TimerEvent: {}
+[28.222585] (-) TimerEvent: {}
+[28.323044] (-) TimerEvent: {}
+[28.423481] (-) TimerEvent: {}
+[28.523934] (-) TimerEvent: {}
+[28.624422] (-) TimerEvent: {}
+[28.724882] (-) TimerEvent: {}
+[28.825361] (-) TimerEvent: {}
+[28.925836] (-) TimerEvent: {}
+[29.026232] (-) TimerEvent: {}
+[29.126677] (-) TimerEvent: {}
+[29.227146] (-) TimerEvent: {}
+[29.327651] (-) TimerEvent: {}
+[29.428109] (-) TimerEvent: {}
+[29.528595] (-) TimerEvent: {}
+[29.629055] (-) TimerEvent: {}
+[29.729532] (-) TimerEvent: {}
+[29.829998] (-) TimerEvent: {}
+[29.930444] (-) TimerEvent: {}
+[30.030960] (-) TimerEvent: {}
+[30.131426] (-) TimerEvent: {}
+[30.231922] (-) TimerEvent: {}
+[30.332455] (-) TimerEvent: {}
+[30.432946] (-) TimerEvent: {}
+[30.533465] (-) TimerEvent: {}
+[30.633968] (-) TimerEvent: {}
+[30.734466] (-) TimerEvent: {}
+[30.834965] (-) TimerEvent: {}
+[30.935488] (-) TimerEvent: {}
+[31.036008] (-) TimerEvent: {}
+[31.136475] (-) TimerEvent: {}
+[31.236945] (-) TimerEvent: {}
+[31.337483] (-) TimerEvent: {}
+[31.437966] (-) TimerEvent: {}
+[31.538495] (-) TimerEvent: {}
+[31.638921] (-) TimerEvent: {}
+[31.739432] (-) TimerEvent: {}
+[31.839931] (-) TimerEvent: {}
+[31.940445] (-) TimerEvent: {}
+[32.040936] (-) TimerEvent: {}
+[32.141451] (-) TimerEvent: {}
+[32.241948] (-) TimerEvent: {}
+[32.342464] (-) TimerEvent: {}
+[32.442944] (-) TimerEvent: {}
+[32.543454] (-) TimerEvent: {}
+[32.643930] (-) TimerEvent: {}
+[32.744460] (-) TimerEvent: {}
+[32.844971] (-) TimerEvent: {}
+[32.945488] (-) TimerEvent: {}
+[33.045971] (-) TimerEvent: {}
+[33.121220] (drone_ignition_bringup) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libdrone_controller_enhanced_component.so\x1b[0m\n'}
+[33.146127] (-) TimerEvent: {}
+[33.246610] (-) TimerEvent: {}
+[33.347125] (-) TimerEvent: {}
+[33.447764] (-) TimerEvent: {}
+[33.548301] (-) TimerEvent: {}
+[33.648803] (-) TimerEvent: {}
+[33.749242] (-) TimerEvent: {}
+[33.849673] (-) TimerEvent: {}
+[33.950149] (-) TimerEvent: {}
+[34.050656] (-) TimerEvent: {}
+[34.151084] (-) TimerEvent: {}
+[34.251582] (-) TimerEvent: {}
+[34.352073] (-) TimerEvent: {}
+[34.452584] (-) TimerEvent: {}
+[34.553078] (-) TimerEvent: {}
+[34.653584] (-) TimerEvent: {}
+[34.753981] (-) TimerEvent: {}
+[34.854409] (-) TimerEvent: {}
+[34.859620] (drone_ignition_bringup) StdoutLine: {'line': b'[ 87%] Built target drone_controller_enhanced_component\n'}
+[34.886517] (drone_ignition_bringup) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/drone_mission_composed.dir/src/main_composition.cpp.o\x1b[0m\n'}
+[34.954629] (-) TimerEvent: {}
+[35.055118] (-) TimerEvent: {}
+[35.155643] (-) TimerEvent: {}
+[35.256059] (-) TimerEvent: {}
+[35.356549] (-) TimerEvent: {}
+[35.457021] (-) TimerEvent: {}
+[35.557512] (-) TimerEvent: {}
+[35.657957] (-) TimerEvent: {}
+[35.758455] (-) TimerEvent: {}
+[35.858946] (-) TimerEvent: {}
+[35.959453] (-) TimerEvent: {}
+[36.059937] (-) TimerEvent: {}
+[36.160412] (-) TimerEvent: {}
+[36.260896] (-) TimerEvent: {}
+[36.361489] (-) TimerEvent: {}
+[36.461988] (-) TimerEvent: {}
+[36.562486] (-) TimerEvent: {}
+[36.662904] (-) TimerEvent: {}
+[36.763419] (-) TimerEvent: {}
+[36.863913] (-) TimerEvent: {}
+[36.964450] (-) TimerEvent: {}
+[37.064934] (-) TimerEvent: {}
+[37.165385] (-) TimerEvent: {}
+[37.265899] (-) TimerEvent: {}
+[37.366409] (-) TimerEvent: {}
+[37.466920] (-) TimerEvent: {}
+[37.567421] (-) TimerEvent: {}
+[37.667896] (-) TimerEvent: {}
+[37.768410] (-) TimerEvent: {}
+[37.868910] (-) TimerEvent: {}
+[37.969376] (-) TimerEvent: {}
+[38.069860] (-) TimerEvent: {}
+[38.170285] (-) TimerEvent: {}
+[38.270792] (-) TimerEvent: {}
+[38.371274] (-) TimerEvent: {}
+[38.471760] (-) TimerEvent: {}
+[38.572213] (-) TimerEvent: {}
+[38.672678] (-) TimerEvent: {}
+[38.773110] (-) TimerEvent: {}
+[38.873617] (-) TimerEvent: {}
+[38.974105] (-) TimerEvent: {}
+[39.074596] (-) TimerEvent: {}
+[39.148451] (drone_ignition_bringup) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable drone_mission_composed\x1b[0m\n'}
+[39.174786] (-) TimerEvent: {}
+[39.275261] (-) TimerEvent: {}
+[39.375725] (-) TimerEvent: {}
+[39.476268] (-) TimerEvent: {}
+[39.576697] (-) TimerEvent: {}
+[39.677207] (-) TimerEvent: {}
+[39.734745] (drone_ignition_bringup) StdoutLine: {'line': b'[100%] Built target drone_mission_composed\n'}
+[39.747394] (drone_ignition_bringup) CommandEnded: {'returncode': 0}
+[39.748241] (drone_ignition_bringup) JobProgress: {'identifier': 'drone_ignition_bringup', 'progress': 'install'}
+[39.759748] (drone_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/41068RS12025-Group18/build/drone_ignition_bringup'], 'cwd': '/home/student/41068RS12025-Group18/build/drone_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1883'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5e4a8440_f0ef_410f_8338_b721451fbd41'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.126'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/drone_ignition_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[39.767369] (drone_ignition_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[39.767566] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libpid_controller.so\n'}
+[39.767972] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libpid_controller.so" to ""\n'}
+[39.768100] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libdrone_control.so\n'}
+[39.769262] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libdrone_control.so" to ""\n'}
+[39.769414] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libstate_machine.so\n'}
+[39.769834] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libstate_machine.so" to ""\n'}
+[39.769980] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libpath_planner.so\n'}
+[39.770459] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libpath_planner.so" to ""\n'}
+[39.770595] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libmission_executor.so\n'}
+[39.770946] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libmission_executor.so" to ""\n'}
+[39.771114] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libdrone_controller_enhanced_component.so\n'}
+[39.777220] (-) TimerEvent: {}
+[39.807636] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/libdrone_controller_enhanced_component.so" to ""\n'}
+[39.807870] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/drone_mission_composed\n'}
+[39.808416] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/drone_ignition_bringup/drone_mission_composed" to ""\n'}
+[39.808541] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/config\n'}
+[39.808652] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/config/drone.yaml\n'}
+[39.808777] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/config/gazebo_bridge.yaml\n'}
+[39.808890] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/config/nav2_params.yaml\n'}
+[39.809023] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/config/waypoints.yaml\n'}
+[39.809135] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/config/rs1_robot_config.rviz\n'}
+[39.809260] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/config/map.yaml\n'}
+[39.809383] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch\n'}
+[39.809491] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/rs1_robot_rviz.py\n'}
+[39.809601] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/rs1_drone_spawner.py\n'}
+[39.809730] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/rs1_robot_world.py\n'}
+[39.809826] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/rs1_robot_ignition.py\n'}
+[39.809937] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/__pycache__\n'}
+[39.810047] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/__pycache__/rs1_drone_spawner.cpython-310.pyc\n'}
+[39.810154] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/__pycache__/rs1_drone_spawner_fixed.cpython-310.pyc\n'}
+[39.810271] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/rs1_single_drone.py\n'}
+[39.810364] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models\n'}
+[39.810432] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/grass_plane\n'}
+[39.810503] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/grass_plane/model.config\n'}
+[39.810624] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/grass_plane/model.sdf\n'}
+[39.810682] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/grass_plane/materials\n'}
+[39.810735] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/grass_plane/materials/textures\n'}
+[39.810799] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png\n'}
+[39.814943] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/model.config\n'}
+[39.815137] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane\n'}
+[39.815254] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane/model.config\n'}
+[39.815387] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane/model.sdf\n'}
+[39.815452] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane/materials\n'}
+[39.815513] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane/materials/textures\n'}
+[39.815570] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png\n'}
+[39.818538] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png\n'}
+[39.822714] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png\n'}
+[39.826196] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/quadrotor_4.stl\n'}
+[39.826372] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall\n'}
+[39.826451] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall/model.config\n'}
+[39.826580] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall/model.sdf\n'}
+[39.826644] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall/materials\n'}
+[39.826734] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall/materials/textures\n'}
+[39.826793] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent.png\n'}
+[39.829730] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent_small.png\n'}
+[39.829913] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png\n'}
+[39.832919] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/quadrotor_4.dae\n'}
+[39.833063] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/models/sjtu_drone.sdf\n'}
+[39.833200] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/urdf\n'}
+[39.833276] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/urdf/rs1_drone.urdf.xacro\n'}
+[39.833381] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/urdf/model\n'}
+[39.833463] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/urdf/model/model.config\n'}
+[39.833573] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/urdf/rs1_drone.urdf\n'}
+[39.833738] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/worlds\n'}
+[39.833840] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/worlds/simple_test.world\n'}
+[39.833910] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/worlds/simple_trees.sdf\n'}
+[39.834036] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/worlds/simple_trees_builtin.sdf\n'}
+[39.834183] (drone_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup\n'}
+[39.834252] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/drone_control.h\n'}
+[39.834344] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/sensor_manager.h\n'}
+[39.834416] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/mission\n'}
+[39.834548] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/mission/state_machine.h\n'}
+[39.834610] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/mission/mission_executor.h\n'}
+[39.834693] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/mission/path_planner.h\n'}
+[39.834750] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/safety_monitor.h\n'}
+[39.834871] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/mission_node.h\n'}
+[39.834930] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/waypoint_nav_node.h\n'}
+[39.835031] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/drone_node.h\n'}
+[39.835125] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/pid.h\n'}
+[39.835225] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/mission_state.h\n'}
+[39.835385] (drone_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/rs1_drone_spawner.py\n'}
+[39.835494] (drone_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/launch/rs1_single_drone.py\n'}
+[39.835552] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libmission_planner_component.so\n'}
+[39.858141] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libmission_planner_component.so" to ""\n'}
+[39.858418] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libdrone_controller_enhanced_component.so\n'}
+[39.877417] (-) TimerEvent: {}
+[39.894258] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libdrone_controller_enhanced_component.so" to ""\n'}
+[39.894522] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libpid_controller.so\n'}
+[39.894638] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libpid_controller.so" to ""\n'}
+[39.894699] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libdrone_control.so\n'}
+[39.895557] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libdrone_control.so" to ""\n'}
+[39.895725] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libstate_machine.so\n'}
+[39.896005] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libstate_machine.so" to ""\n'}
+[39.896111] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libpath_planner.so\n'}
+[39.896504] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libpath_planner.so" to ""\n'}
+[39.896623] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libmission_executor.so\n'}
+[39.896909] (drone_ignition_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/drone_ignition_bringup/lib/libmission_executor.so" to ""\n'}
+[39.897057] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/drone_ignition_bringup\n'}
+[39.897237] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/drone_ignition_bringup\n'}
+[39.897415] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/environment/ament_prefix_path.sh\n'}
+[39.897551] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/environment/ament_prefix_path.dsv\n'}
+[39.897679] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/environment/path.sh\n'}
+[39.897821] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/environment/path.dsv\n'}
+[39.897940] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/local_setup.bash\n'}
+[39.898070] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/local_setup.sh\n'}
+[39.898210] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/local_setup.zsh\n'}
+[39.898347] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/local_setup.dsv\n'}
+[39.898470] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/package.dsv\n'}
+[39.898648] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/ament_index/resource_index/packages/drone_ignition_bringup\n'}
+[39.898803] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/ament_index/resource_index/rclcpp_components/drone_ignition_bringup\n'}
+[39.898981] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/cmake/export_mission_componentsExport.cmake\n'}
+[39.899139] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/cmake/export_mission_componentsExport-noconfig.cmake\n'}
+[39.899297] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[39.899438] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[39.899567] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/cmake/drone_ignition_bringupConfig.cmake\n'}
+[39.899674] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/cmake/drone_ignition_bringupConfig-version.cmake\n'}
+[39.899797] (drone_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/drone_ignition_bringup/share/drone_ignition_bringup/package.xml\n'}
+[39.902196] (drone_ignition_bringup) CommandEnded: {'returncode': 0}
+[39.923544] (drone_ignition_bringup) JobEnded: {'identifier': 'drone_ignition_bringup', 'rc': 0}
+[39.924325] (-) EventReactorShutdown: {}

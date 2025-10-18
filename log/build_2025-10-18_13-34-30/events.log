@@ -1,0 +1,410 @@
+[0.000000] (-) TimerEvent: {}
+[0.000778] (rs1_robot) JobQueued: {'identifier': 'rs1_robot', 'dependencies': OrderedDict()}
+[0.000847] (rs1_robot) JobStarted: {'identifier': 'rs1_robot'}
+[0.009304] (rs1_robot) JobProgress: {'identifier': 'rs1_robot', 'progress': 'cmake'}
+[0.010000] (rs1_robot) JobProgress: {'identifier': 'rs1_robot', 'progress': 'build'}
+[0.010898] (rs1_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/41068RS12025-Group18/build/rs1_robot', '--', '-j8', '-l8'], 'cwd': '/home/student/41068RS12025-Group18/build/rs1_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1860'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2901189c_c7bd_46af_a7b2_fa7f7e3b36f1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/rs1_robot'), ('LC_ALL', 'en_US.UTF-8'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[0.077909] (rs1_robot) StdoutLine: {'line': b'[ 12%] Built target pid_controller\n'}
+[0.078379] (rs1_robot) StdoutLine: {'line': b'[ 25%] Built target path_planner\n'}
+[0.080402] (rs1_robot) StdoutLine: {'line': b'[ 37%] Built target state_machine\n'}
+[0.081113] (rs1_robot) StdoutLine: {'line': b'[ 50%] Built target mission_executor\n'}
+[0.094548] (rs1_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mission_planner_component\x1b[0m\n'}
+[0.099441] (-) TimerEvent: {}
+[0.105365] (rs1_robot) StdoutLine: {'line': b'[ 62%] Built target drone_control\n'}
+[0.115423] (rs1_robot) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/mission_planner_component.dir/src/mission_node.cpp.o\x1b[0m\n'}
+[0.136212] (rs1_robot) StdoutLine: {'line': b'[ 81%] Built target drone_controller_enhanced_component\n'}
+[0.199649] (-) TimerEvent: {}
+[0.300163] (-) TimerEvent: {}
+[0.400615] (-) TimerEvent: {}
+[0.501126] (-) TimerEvent: {}
+[0.601632] (-) TimerEvent: {}
+[0.702123] (-) TimerEvent: {}
+[0.802615] (-) TimerEvent: {}
+[0.903106] (-) TimerEvent: {}
+[1.003618] (-) TimerEvent: {}
+[1.104055] (-) TimerEvent: {}
+[1.204605] (-) TimerEvent: {}
+[1.305158] (-) TimerEvent: {}
+[1.405697] (-) TimerEvent: {}
+[1.506204] (-) TimerEvent: {}
+[1.606687] (-) TimerEvent: {}
+[1.707116] (-) TimerEvent: {}
+[1.807631] (-) TimerEvent: {}
+[1.908115] (-) TimerEvent: {}
+[2.008614] (-) TimerEvent: {}
+[2.109051] (-) TimerEvent: {}
+[2.209542] (-) TimerEvent: {}
+[2.310002] (-) TimerEvent: {}
+[2.410454] (-) TimerEvent: {}
+[2.510939] (-) TimerEvent: {}
+[2.611445] (-) TimerEvent: {}
+[2.711972] (-) TimerEvent: {}
+[2.812466] (-) TimerEvent: {}
+[2.913052] (-) TimerEvent: {}
+[3.013589] (-) TimerEvent: {}
+[3.114058] (-) TimerEvent: {}
+[3.214606] (-) TimerEvent: {}
+[3.315087] (-) TimerEvent: {}
+[3.415625] (-) TimerEvent: {}
+[3.516109] (-) TimerEvent: {}
+[3.616616] (-) TimerEvent: {}
+[3.717093] (-) TimerEvent: {}
+[3.817623] (-) TimerEvent: {}
+[3.918138] (-) TimerEvent: {}
+[4.018639] (-) TimerEvent: {}
+[4.119106] (-) TimerEvent: {}
+[4.219575] (-) TimerEvent: {}
+[4.320007] (-) TimerEvent: {}
+[4.420416] (-) TimerEvent: {}
+[4.520891] (-) TimerEvent: {}
+[4.621422] (-) TimerEvent: {}
+[4.721937] (-) TimerEvent: {}
+[4.822436] (-) TimerEvent: {}
+[4.922952] (-) TimerEvent: {}
+[5.023475] (-) TimerEvent: {}
+[5.124009] (-) TimerEvent: {}
+[5.224513] (-) TimerEvent: {}
+[5.325059] (-) TimerEvent: {}
+[5.425619] (-) TimerEvent: {}
+[5.526214] (-) TimerEvent: {}
+[5.626734] (-) TimerEvent: {}
+[5.727197] (-) TimerEvent: {}
+[5.827704] (-) TimerEvent: {}
+[5.928219] (-) TimerEvent: {}
+[6.028668] (-) TimerEvent: {}
+[6.129186] (-) TimerEvent: {}
+[6.229709] (-) TimerEvent: {}
+[6.330223] (-) TimerEvent: {}
+[6.430679] (-) TimerEvent: {}
+[6.531198] (-) TimerEvent: {}
+[6.631712] (-) TimerEvent: {}
+[6.732173] (-) TimerEvent: {}
+[6.832672] (-) TimerEvent: {}
+[6.933203] (-) TimerEvent: {}
+[7.033716] (-) TimerEvent: {}
+[7.134168] (-) TimerEvent: {}
+[7.234683] (-) TimerEvent: {}
+[7.335398] (-) TimerEvent: {}
+[7.435915] (-) TimerEvent: {}
+[7.536402] (-) TimerEvent: {}
+[7.636921] (-) TimerEvent: {}
+[7.737453] (-) TimerEvent: {}
+[7.837968] (-) TimerEvent: {}
+[7.938468] (-) TimerEvent: {}
+[8.038997] (-) TimerEvent: {}
+[8.139584] (-) TimerEvent: {}
+[8.240073] (-) TimerEvent: {}
+[8.340637] (-) TimerEvent: {}
+[8.441158] (-) TimerEvent: {}
+[8.541620] (-) TimerEvent: {}
+[8.642117] (-) TimerEvent: {}
+[8.742631] (-) TimerEvent: {}
+[8.843130] (-) TimerEvent: {}
+[8.943586] (-) TimerEvent: {}
+[9.044011] (-) TimerEvent: {}
+[9.144503] (-) TimerEvent: {}
+[9.244933] (-) TimerEvent: {}
+[9.345426] (-) TimerEvent: {}
+[9.445961] (-) TimerEvent: {}
+[9.546407] (-) TimerEvent: {}
+[9.646914] (-) TimerEvent: {}
+[9.747420] (-) TimerEvent: {}
+[9.847858] (-) TimerEvent: {}
+[9.948342] (-) TimerEvent: {}
+[10.048882] (-) TimerEvent: {}
+[10.149380] (-) TimerEvent: {}
+[10.249894] (-) TimerEvent: {}
+[10.350408] (-) TimerEvent: {}
+[10.450915] (-) TimerEvent: {}
+[10.551424] (-) TimerEvent: {}
+[10.651928] (-) TimerEvent: {}
+[10.752344] (-) TimerEvent: {}
+[10.852834] (-) TimerEvent: {}
+[10.953316] (-) TimerEvent: {}
+[11.053753] (-) TimerEvent: {}
+[11.154239] (-) TimerEvent: {}
+[11.254744] (-) TimerEvent: {}
+[11.355220] (-) TimerEvent: {}
+[11.455687] (-) TimerEvent: {}
+[11.556100] (-) TimerEvent: {}
+[11.656556] (-) TimerEvent: {}
+[11.757039] (-) TimerEvent: {}
+[11.857544] (-) TimerEvent: {}
+[11.958004] (-) TimerEvent: {}
+[12.058534] (-) TimerEvent: {}
+[12.158939] (-) TimerEvent: {}
+[12.259391] (-) TimerEvent: {}
+[12.359909] (-) TimerEvent: {}
+[12.460400] (-) TimerEvent: {}
+[12.560852] (-) TimerEvent: {}
+[12.661325] (-) TimerEvent: {}
+[12.761833] (-) TimerEvent: {}
+[12.862292] (-) TimerEvent: {}
+[12.962724] (-) TimerEvent: {}
+[13.063239] (-) TimerEvent: {}
+[13.163657] (-) TimerEvent: {}
+[13.264127] (-) TimerEvent: {}
+[13.364619] (-) TimerEvent: {}
+[13.465047] (-) TimerEvent: {}
+[13.565555] (-) TimerEvent: {}
+[13.666042] (-) TimerEvent: {}
+[13.766464] (-) TimerEvent: {}
+[13.866961] (-) TimerEvent: {}
+[13.967453] (-) TimerEvent: {}
+[14.067894] (-) TimerEvent: {}
+[14.168364] (-) TimerEvent: {}
+[14.268859] (-) TimerEvent: {}
+[14.369272] (-) TimerEvent: {}
+[14.469725] (-) TimerEvent: {}
+[14.570201] (-) TimerEvent: {}
+[14.670618] (-) TimerEvent: {}
+[14.771086] (-) TimerEvent: {}
+[14.871579] (-) TimerEvent: {}
+[14.972062] (-) TimerEvent: {}
+[15.072568] (-) TimerEvent: {}
+[15.173072] (-) TimerEvent: {}
+[15.273574] (-) TimerEvent: {}
+[15.373993] (-) TimerEvent: {}
+[15.474458] (-) TimerEvent: {}
+[15.574990] (-) TimerEvent: {}
+[15.675418] (-) TimerEvent: {}
+[15.775899] (-) TimerEvent: {}
+[15.876374] (-) TimerEvent: {}
+[15.976858] (-) TimerEvent: {}
+[16.077364] (-) TimerEvent: {}
+[16.177857] (-) TimerEvent: {}
+[16.278348] (-) TimerEvent: {}
+[16.378848] (-) TimerEvent: {}
+[16.479261] (-) TimerEvent: {}
+[16.579718] (-) TimerEvent: {}
+[16.680181] (-) TimerEvent: {}
+[16.780662] (-) TimerEvent: {}
+[16.881146] (-) TimerEvent: {}
+[16.981624] (-) TimerEvent: {}
+[17.082098] (-) TimerEvent: {}
+[17.182510] (-) TimerEvent: {}
+[17.282973] (-) TimerEvent: {}
+[17.383461] (-) TimerEvent: {}
+[17.483968] (-) TimerEvent: {}
+[17.584455] (-) TimerEvent: {}
+[17.684919] (-) TimerEvent: {}
+[17.785388] (-) TimerEvent: {}
+[17.885882] (-) TimerEvent: {}
+[17.986387] (-) TimerEvent: {}
+[18.086880] (-) TimerEvent: {}
+[18.187361] (-) TimerEvent: {}
+[18.287840] (-) TimerEvent: {}
+[18.388337] (-) TimerEvent: {}
+[18.488827] (-) TimerEvent: {}
+[18.589296] (-) TimerEvent: {}
+[18.689766] (-) TimerEvent: {}
+[18.790225] (-) TimerEvent: {}
+[18.890676] (-) TimerEvent: {}
+[18.991137] (-) TimerEvent: {}
+[19.091621] (-) TimerEvent: {}
+[19.192089] (-) TimerEvent: {}
+[19.292573] (-) TimerEvent: {}
+[19.393070] (-) TimerEvent: {}
+[19.493595] (-) TimerEvent: {}
+[19.594109] (-) TimerEvent: {}
+[19.694616] (-) TimerEvent: {}
+[19.795052] (-) TimerEvent: {}
+[19.895561] (-) TimerEvent: {}
+[19.996035] (-) TimerEvent: {}
+[20.096547] (-) TimerEvent: {}
+[20.197097] (-) TimerEvent: {}
+[20.297620] (-) TimerEvent: {}
+[20.398119] (-) TimerEvent: {}
+[20.419600] (rs1_robot) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libmission_planner_component.so\x1b[0m\n'}
+[20.498259] (-) TimerEvent: {}
+[20.598781] (-) TimerEvent: {}
+[20.699278] (-) TimerEvent: {}
+[20.799723] (-) TimerEvent: {}
+[20.900199] (-) TimerEvent: {}
+[21.000696] (-) TimerEvent: {}
+[21.101219] (-) TimerEvent: {}
+[21.201728] (-) TimerEvent: {}
+[21.302210] (-) TimerEvent: {}
+[21.402736] (-) TimerEvent: {}
+[21.503202] (-) TimerEvent: {}
+[21.554808] (rs1_robot) StdoutLine: {'line': b'[ 87%] Built target mission_planner_component\n'}
+[21.577222] (rs1_robot) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/drone_mission_composed.dir/src/main_composition.cpp.o\x1b[0m\n'}
+[21.603403] (-) TimerEvent: {}
+[21.703887] (-) TimerEvent: {}
+[21.804376] (-) TimerEvent: {}
+[21.904828] (-) TimerEvent: {}
+[22.005312] (-) TimerEvent: {}
+[22.105765] (-) TimerEvent: {}
+[22.206175] (-) TimerEvent: {}
+[22.306640] (-) TimerEvent: {}
+[22.407145] (-) TimerEvent: {}
+[22.507660] (-) TimerEvent: {}
+[22.608166] (-) TimerEvent: {}
+[22.708672] (-) TimerEvent: {}
+[22.809194] (-) TimerEvent: {}
+[22.909709] (-) TimerEvent: {}
+[23.010231] (-) TimerEvent: {}
+[23.110753] (-) TimerEvent: {}
+[23.211260] (-) TimerEvent: {}
+[23.311728] (-) TimerEvent: {}
+[23.412213] (-) TimerEvent: {}
+[23.512734] (-) TimerEvent: {}
+[23.613240] (-) TimerEvent: {}
+[23.713779] (-) TimerEvent: {}
+[23.814270] (-) TimerEvent: {}
+[23.914731] (-) TimerEvent: {}
+[24.015189] (-) TimerEvent: {}
+[24.115680] (-) TimerEvent: {}
+[24.216171] (-) TimerEvent: {}
+[24.316664] (-) TimerEvent: {}
+[24.417162] (-) TimerEvent: {}
+[24.517653] (-) TimerEvent: {}
+[24.618097] (-) TimerEvent: {}
+[24.718607] (-) TimerEvent: {}
+[24.819095] (-) TimerEvent: {}
+[24.919596] (-) TimerEvent: {}
+[25.020069] (-) TimerEvent: {}
+[25.120566] (-) TimerEvent: {}
+[25.220976] (-) TimerEvent: {}
+[25.321449] (-) TimerEvent: {}
+[25.421916] (-) TimerEvent: {}
+[25.522401] (-) TimerEvent: {}
+[25.622946] (-) TimerEvent: {}
+[25.723452] (-) TimerEvent: {}
+[25.823959] (-) TimerEvent: {}
+[25.906255] (rs1_robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable drone_mission_composed\x1b[0m\n'}
+[25.924080] (-) TimerEvent: {}
+[26.024517] (-) TimerEvent: {}
+[26.125026] (-) TimerEvent: {}
+[26.225550] (-) TimerEvent: {}
+[26.326026] (-) TimerEvent: {}
+[26.426446] (-) TimerEvent: {}
+[26.517373] (rs1_robot) StdoutLine: {'line': b'[100%] Built target drone_mission_composed\n'}
+[26.526570] (-) TimerEvent: {}
+[26.529742] (rs1_robot) CommandEnded: {'returncode': 0}
+[26.530673] (rs1_robot) JobProgress: {'identifier': 'rs1_robot', 'progress': 'install'}
+[26.540852] (rs1_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/41068RS12025-Group18/build/rs1_robot'], 'cwd': '/home/student/41068RS12025-Group18/build/rs1_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('SSH_AGENT_PID', '1766'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/student/ros2_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1860'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labNVXMF8:@/tmp/.ICE-unix/1860,unix/labNVXMF8:/tmp/.ICE-unix/1860'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2901189c_c7bd_46af_a7b2_fa7f7e3b36f1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':10.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble'), ('UID', '1002'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1002/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/41068RS12025-Group18/build/rs1_robot'), ('LC_ALL', 'en_US.UTF-8'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1002/bus,guid=34120b6765ae66b111d69bd468f38e71'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[26.548618] (rs1_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.548864] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpid_controller.so\n'}
+[26.549236] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpid_controller.so" to ""\n'}
+[26.549422] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_control.so\n'}
+[26.550176] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_control.so" to ""\n'}
+[26.550352] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libstate_machine.so\n'}
+[26.550660] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libstate_machine.so" to ""\n'}
+[26.550821] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpath_planner.so\n'}
+[26.551122] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpath_planner.so" to ""\n'}
+[26.551307] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libmission_executor.so\n'}
+[26.551533] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libmission_executor.so" to ""\n'}
+[26.551734] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_controller_enhanced_component.so\n'}
+[26.591756] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_controller_enhanced_component.so" to ""\n'}
+[26.592060] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/drone_mission_composed\n'}
+[26.592405] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/drone_mission_composed" to ""\n'}
+[26.592600] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config\n'}
+[26.592735] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/drone.yaml\n'}
+[26.592888] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/gazebo_bridge.yaml\n'}
+[26.593006] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/nav2_params.yaml\n'}
+[26.593177] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/waypoints.yaml\n'}
+[26.593285] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/rs1_robot_config.rviz\n'}
+[26.593408] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/map.yaml\n'}
+[26.593553] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch\n'}
+[26.593743] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_robot_rviz.py\n'}
+[26.593873] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_drone_spawner.py\n'}
+[26.593982] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_robot_world.py\n'}
+[26.594089] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_robot_ignition.py\n'}
+[26.594196] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/__pycache__\n'}
+[26.594343] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/__pycache__/rs1_drone_spawner.cpython-310.pyc\n'}
+[26.597359] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/__pycache__/rs1_drone_spawner_fixed.cpython-310.pyc\n'}
+[26.601676] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_single_drone.py\n'}
+[26.601918] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models\n'}
+[26.602022] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane\n'}
+[26.602116] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/model.config\n'}
+[26.604482] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/model.sdf\n'}
+[26.607272] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/materials\n'}
+[26.607452] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/materials/textures\n'}
+[26.607573] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/materials/textures/empty_grass.png\n'}
+[26.626798] (-) TimerEvent: {}
+[26.666103] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/model.config\n'}
+[26.666386] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane\n'}
+[26.666493] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/model.config\n'}
+[26.667538] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/model.sdf\n'}
+[26.670648] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials\n'}
+[26.671156] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures\n'}
+[26.671233] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures/forest_overhead.png\n'}
+[26.715666] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures/empty_grass.png\n'}
+[26.726911] (-) TimerEvent: {}
+[26.768453] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures/leaf_litter.png\n'}
+[26.812447] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/quadrotor_4.stl\n'}
+[26.820480] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall\n'}
+[26.820784] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/model.config\n'}
+[26.822856] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/model.sdf\n'}
+[26.825121] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials\n'}
+[26.825302] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures\n'}
+[26.825376] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures/forest_wall_transparent.png\n'}
+[26.826974] (-) TimerEvent: {}
+[26.868685] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures/forest_wall_transparent_small.png\n'}
+[26.875737] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures/forest_wall.png\n'}
+[26.915051] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/quadrotor_4.dae\n'}
+[26.919026] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/sjtu_drone.sdf\n'}
+[26.919227] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf\n'}
+[26.919316] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/rs1_drone.urdf.xacro\n'}
+[26.922342] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/model\n'}
+[26.922478] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/model/model.config\n'}
+[26.924895] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/rs1_drone.urdf\n'}
+[26.926809] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds\n'}
+[26.926943] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds/simple_test.world\n'}
+[26.927012] (-) TimerEvent: {}
+[26.929333] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds/simple_trees.sdf\n'}
+[26.931499] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds/simple_trees_builtin.sdf\n'}
+[26.933729] (rs1_robot) StdoutLine: {'line': b'-- Up-to-date: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot\n'}
+[26.933915] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/drone_control.h\n'}
+[26.934019] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/sensor_manager.h\n'}
+[26.934174] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission\n'}
+[26.934266] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission/state_machine.h\n'}
+[26.934356] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission/mission_executor.h\n'}
+[26.934504] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission/path_planner.h\n'}
+[26.934606] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/safety_monitor.h\n'}
+[26.934693] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission_node.h\n'}
+[26.934831] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/waypoint_nav_node.h\n'}
+[26.934911] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/drone_node.h\n'}
+[26.935041] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/pid.h\n'}
+[26.935171] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission_state.h\n'}
+[26.935318] (rs1_robot) StdoutLine: {'line': b'-- Up-to-date: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_drone_spawner.py\n'}
+[26.935460] (rs1_robot) StdoutLine: {'line': b'-- Up-to-date: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_single_drone.py\n'}
+[26.935547] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_planner_component.so\n'}
+[26.959641] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_planner_component.so" to ""\n'}
+[26.960072] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_controller_enhanced_component.so\n'}
+[27.000712] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_controller_enhanced_component.so" to ""\n'}
+[27.000980] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libpid_controller.so\n'}
+[27.001211] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libpid_controller.so" to ""\n'}
+[27.001349] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_control.so\n'}
+[27.002045] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_control.so" to ""\n'}
+[27.002274] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libstate_machine.so\n'}
+[27.002580] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libstate_machine.so" to ""\n'}
+[27.002749] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libpath_planner.so\n'}
+[27.003128] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libpath_planner.so" to ""\n'}
+[27.003309] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_executor.so\n'}
+[27.003639] (rs1_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_executor.so" to ""\n'}
+[27.003831] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/package_run_dependencies/rs1_robot\n'}
+[27.004034] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/parent_prefix_path/rs1_robot\n'}
+[27.004237] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/ament_prefix_path.sh\n'}
+[27.004410] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/ament_prefix_path.dsv\n'}
+[27.004595] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/path.sh\n'}
+[27.004772] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/path.dsv\n'}
+[27.004930] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.bash\n'}
+[27.005083] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.sh\n'}
+[27.005239] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.zsh\n'}
+[27.005421] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.dsv\n'}
+[27.005589] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/package.dsv\n'}
+[27.005822] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/packages/rs1_robot\n'}
+[27.006013] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/rclcpp_components/rs1_robot\n'}
+[27.006219] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/export_mission_componentsExport.cmake\n'}
+[27.006402] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/export_mission_componentsExport-noconfig.cmake\n'}
+[27.006602] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[27.006767] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[27.006939] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/rs1_robotConfig.cmake\n'}
+[27.007081] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/rs1_robotConfig-version.cmake\n'}
+[27.007239] (rs1_robot) StdoutLine: {'line': b'-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/package.xml\n'}
+[27.009599] (rs1_robot) CommandEnded: {'returncode': 0}
+[27.027188] (-) TimerEvent: {}
+[27.042796] (rs1_robot) JobEnded: {'identifier': 'rs1_robot', 'rc': 0}
+[27.043558] (-) EventReactorShutdown: {}

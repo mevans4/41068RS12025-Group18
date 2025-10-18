@@ -1,0 +1,198 @@
+[0.011s] Invoking command in '/home/student/41068RS12025-Group18/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/student/41068RS12025-Group18/src/41068_ignition_bringup -DCMAKE_INSTALL_PREFIX=/home/student/41068RS12025-Group18/install/41068_ignition_bringup
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.136s] -- The CXX compiler identification is GNU 11.4.0
+[0.149s] -- Detecting C compiler ABI info
+[0.223s] -- Detecting C compiler ABI info - done
+[0.231s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.232s] -- Detecting C compile features
+[0.232s] -- Detecting C compile features - done
+[0.238s] -- Detecting CXX compiler ABI info
+[0.327s] -- Detecting CXX compiler ABI info - done
+[0.338s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.338s] -- Detecting CXX compile features
+[0.339s] -- Detecting CXX compile features - done
+[0.342s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.503s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.603s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.649s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.655s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.664s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.676s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.693s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.741s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.744s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.833s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.866s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.913s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.922s] -- Looking for pthread.h
+[1.006s] -- Looking for pthread.h - found
+[1.007s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.092s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.093s] -- Found Threads: TRUE  
+[1.153s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.182s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.196s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.216s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.241s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.248s] -- Found ros_gz_interfaces: 0.244.20 (/opt/ros/humble/share/ros_gz_interfaces/cmake)
+[1.269s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.291s] -- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)
+[1.293s] -- Found ros_gz_bridge: 0.244.20 (/opt/ros/humble/share/ros_gz_bridge/cmake)
+[1.332s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.412s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.675s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[1.680s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.704s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.719s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.720s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.720s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.723s] -- Found grid_map_ros: 2.0.1 (/opt/ros/humble/share/grid_map_ros/cmake)
+[1.910s] WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.924s] -- Configuring done
+[1.966s] -- Generating done
+[1.982s] -- Build files have been written to: /home/student/41068RS12025-Group18/build/41068_ignition_bringup
+[2.003s] Invoked command in '/home/student/41068RS12025-Group18/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/student/41068RS12025-Group18/src/41068_ignition_bringup -DCMAKE_INSTALL_PREFIX=/home/student/41068RS12025-Group18/install/41068_ignition_bringup
+[2.006s] Invoking command in '/home/student/41068RS12025-Group18/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/41068RS12025-Group18/build/41068_ignition_bringup -- -j8 -l8
+[2.070s] [  6%] [32mBuilding CXX object CMakeFiles/mission_executor.dir/src/mission_executor.cpp.o[0m
+[2.070s] [ 12%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid.cpp.o[0m
+[2.073s] [ 25%] [32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner.cpp.o[0m
+[2.073s] [ 25%] [32mBuilding CXX object CMakeFiles/state_machine.dir/src/state_machine.cpp.o[0m
+[2.411s] [ 31%] [32m[1mLinking CXX shared library libpid_controller.so[0m
+[2.486s] [ 31%] Built target pid_controller
+[2.511s] [ 37%] [32mBuilding CXX object CMakeFiles/drone_control.dir/src/drone_control.cpp.o[0m
+[2.789s] [ 43%] [32m[1mLinking CXX shared library libpath_planner.so[0m
+[2.971s] [ 43%] Built target path_planner
+[4.942s] [ 50%] [32m[1mLinking CXX shared library libstate_machine.so[0m
+[4.960s] [ 56%] [32m[1mLinking CXX shared library libmission_executor.so[0m
+[5.045s] [ 56%] Built target state_machine
+[5.083s] [ 56%] Built target mission_executor
+[5.107s] [ 62%] [32mBuilding CXX object CMakeFiles/mission_planner_component.dir/src/mission_node.cpp.o[0m
+[5.893s] [ 68%] [32m[1mLinking CXX shared library libdrone_control.so[0m
+[6.038s] [ 68%] Built target drone_control
+[6.064s] [ 75%] [32mBuilding CXX object CMakeFiles/drone_controller_enhanced_component.dir/src/drone_node.cpp.o[0m
+[25.627s] [ 81%] [32m[1mLinking CXX shared library libmission_planner_component.so[0m
+[26.771s] [ 81%] Built target mission_planner_component
+[33.898s] [ 87%] [32m[1mLinking CXX shared library libdrone_controller_enhanced_component.so[0m
+[35.679s] [ 87%] Built target drone_controller_enhanced_component
+[35.705s] [ 93%] [32mBuilding CXX object CMakeFiles/drone_mission_composed.dir/src/main_composition.cpp.o[0m
+[40.084s] [100%] [32m[1mLinking CXX executable drone_mission_composed[0m
+[40.709s] [100%] Built target drone_mission_composed
+[40.722s] Invoked command in '/home/student/41068RS12025-Group18/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/41068RS12025-Group18/build/41068_ignition_bringup -- -j8 -l8
+[40.735s] Invoking command in '/home/student/41068RS12025-Group18/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/41068RS12025-Group18/build/41068_ignition_bringup
+[40.744s] -- Install configuration: ""
+[40.745s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libpid_controller.so
+[40.745s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libpid_controller.so" to ""
+[40.745s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libdrone_control.so
+[40.747s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libdrone_control.so" to ""
+[40.747s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libstate_machine.so
+[40.747s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libstate_machine.so" to ""
+[40.747s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libpath_planner.so
+[40.748s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libpath_planner.so" to ""
+[40.748s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libmission_executor.so
+[40.748s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libmission_executor.so" to ""
+[40.748s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libdrone_controller_enhanced_component.so
+[40.787s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/libdrone_controller_enhanced_component.so" to ""
+[40.787s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/drone_mission_composed
+[40.788s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/41068_ignition_bringup/drone_mission_composed" to ""
+[40.788s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/config
+[40.788s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/config/drone.yaml
+[40.788s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml
+[40.788s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml
+[40.788s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/config/waypoints.yaml
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/config/rs1_robot_config.rviz
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/config/map.yaml
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/rs1_robot_rviz.py
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/rs1_drone_spawner.py
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/rs1_robot_world.py
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/rs1_robot_ignition.py
+[40.789s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/__pycache__
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/__pycache__/rs1_drone_spawner.cpython-310.pyc
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/__pycache__/rs1_drone_spawner_fixed.cpython-310.pyc
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/rs1_single_drone.py
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.config
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.sdf
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures
+[40.790s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png
+[40.794s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/model.config
+[40.794s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane
+[40.794s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.config
+[40.795s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.sdf
+[40.795s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials
+[40.795s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures
+[40.795s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png
+[40.798s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png
+[40.803s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png
+[40.807s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/quadrotor_4.stl
+[40.807s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall
+[40.807s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.config
+[40.807s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.sdf
+[40.807s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials
+[40.807s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures
+[40.807s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent.png
+[40.810s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent_small.png
+[40.810s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png
+[40.814s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/quadrotor_4.dae
+[40.814s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/models/sjtu_drone.sdf
+[40.814s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf
+[40.814s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/rs1_drone.urdf.xacro
+[40.814s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/model
+[40.814s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/model/model.config
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/rs1_drone.urdf
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_test.world
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees.sdf
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees_builtin.sdf
+[40.815s] -- Up-to-date: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/drone_control.h
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/sensor_manager.h
+[40.815s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/mission
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/mission/state_machine.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/mission/mission_executor.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/mission/path_planner.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/safety_monitor.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/mission_node.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/waypoint_nav_node.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/drone_node.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/pid.h
+[40.816s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/mission_state.h
+[40.816s] -- Up-to-date: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/rs1_drone_spawner.py
+[40.817s] -- Up-to-date: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/rs1_single_drone.py
+[40.817s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libmission_planner_component.so
+[40.841s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libmission_planner_component.so" to ""
+[40.841s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libdrone_controller_enhanced_component.so
+[40.881s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libdrone_controller_enhanced_component.so" to ""
+[40.881s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libpid_controller.so
+[40.881s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libpid_controller.so" to ""
+[40.881s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libdrone_control.so
+[40.882s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libdrone_control.so" to ""
+[40.882s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libstate_machine.so
+[40.882s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libstate_machine.so" to ""
+[40.883s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libpath_planner.so
+[40.883s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libpath_planner.so" to ""
+[40.883s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libmission_executor.so
+[40.883s] -- Set runtime path of "/home/student/41068RS12025-Group18/install/41068_ignition_bringup/lib/libmission_executor.so" to ""
+[40.883s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup
+[40.884s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup
+[40.884s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.sh
+[40.884s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.dsv
+[40.884s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.sh
+[40.884s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.dsv
+[40.885s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.bash
+[40.885s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.sh
+[40.885s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.zsh
+[40.885s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.dsv
+[40.885s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv
+[40.885s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/ament_index/resource_index/packages/41068_ignition_bringup
+[40.886s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/ament_index/resource_index/rclcpp_components/41068_ignition_bringup
+[40.886s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/export_mission_componentsExport.cmake
+[40.886s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/export_mission_componentsExport-noconfig.cmake
+[40.886s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/ament_cmake_export_dependencies-extras.cmake
+[40.886s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/ament_cmake_export_targets-extras.cmake
+[40.886s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig.cmake
+[40.887s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig-version.cmake
+[40.887s] -- Installing: /home/student/41068RS12025-Group18/install/41068_ignition_bringup/share/41068_ignition_bringup/package.xml
+[40.889s] Invoked command in '/home/student/41068RS12025-Group18/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/41068RS12025-Group18/build/41068_ignition_bringup

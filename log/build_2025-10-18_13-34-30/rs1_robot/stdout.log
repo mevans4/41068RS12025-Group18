@@ -1,0 +1,129 @@
+[ 12%] Built target pid_controller
+[ 25%] Built target path_planner
+[ 37%] Built target state_machine
+[ 50%] Built target mission_executor
+[35m[1mConsolidate compiler generated dependencies of target mission_planner_component[0m
+[ 62%] Built target drone_control
+[ 68%] [32mBuilding CXX object CMakeFiles/mission_planner_component.dir/src/mission_node.cpp.o[0m
+[ 81%] Built target drone_controller_enhanced_component
+[ 87%] [32m[1mLinking CXX shared library libmission_planner_component.so[0m
+[ 87%] Built target mission_planner_component
+[ 93%] [32mBuilding CXX object CMakeFiles/drone_mission_composed.dir/src/main_composition.cpp.o[0m
+[100%] [32m[1mLinking CXX executable drone_mission_composed[0m
+[100%] Built target drone_mission_composed
+-- Install configuration: ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpid_controller.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpid_controller.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_control.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_control.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libstate_machine.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libstate_machine.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpath_planner.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libpath_planner.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libmission_executor.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libmission_executor.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_controller_enhanced_component.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/libdrone_controller_enhanced_component.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/drone_mission_composed
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/rs1_robot/drone_mission_composed" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/drone.yaml
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/gazebo_bridge.yaml
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/nav2_params.yaml
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/waypoints.yaml
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/rs1_robot_config.rviz
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/config/map.yaml
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_robot_rviz.py
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_drone_spawner.py
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_robot_world.py
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_robot_ignition.py
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/__pycache__
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/__pycache__/rs1_drone_spawner.cpython-310.pyc
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/__pycache__/rs1_drone_spawner_fixed.cpython-310.pyc
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_single_drone.py
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/model.config
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/model.sdf
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/materials
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/materials/textures
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/grass_plane/materials/textures/empty_grass.png
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/model.config
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/model.config
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/model.sdf
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures/forest_overhead.png
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures/empty_grass.png
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_plane/materials/textures/leaf_litter.png
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/quadrotor_4.stl
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/model.config
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/model.sdf
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures/forest_wall_transparent.png
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures/forest_wall_transparent_small.png
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/forest_wall/materials/textures/forest_wall.png
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/quadrotor_4.dae
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/models/sjtu_drone.sdf
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/rs1_drone.urdf.xacro
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/model
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/model/model.config
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/urdf/rs1_drone.urdf
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds/simple_test.world
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds/simple_trees.sdf
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/worlds/simple_trees_builtin.sdf
+-- Up-to-date: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/drone_control.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/sensor_manager.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission/state_machine.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission/mission_executor.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission/path_planner.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/safety_monitor.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission_node.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/waypoint_nav_node.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/drone_node.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/pid.h
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/mission_state.h
+-- Up-to-date: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_drone_spawner.py
+-- Up-to-date: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/launch/rs1_single_drone.py
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_planner_component.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_planner_component.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_controller_enhanced_component.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_controller_enhanced_component.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libpid_controller.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libpid_controller.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_control.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libdrone_control.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libstate_machine.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libstate_machine.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libpath_planner.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libpath_planner.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_executor.so
+-- Set runtime path of "/home/student/41068RS12025-Group18/install/rs1_robot/lib/libmission_executor.so" to ""
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/package_run_dependencies/rs1_robot
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/parent_prefix_path/rs1_robot
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/ament_prefix_path.sh
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/ament_prefix_path.dsv
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/path.sh
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/environment/path.dsv
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.bash
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.sh
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.zsh
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/local_setup.dsv
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/package.dsv
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/packages/rs1_robot
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/ament_index/resource_index/rclcpp_components/rs1_robot
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/export_mission_componentsExport.cmake
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/export_mission_componentsExport-noconfig.cmake
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/rs1_robotConfig.cmake
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/cmake/rs1_robotConfig-version.cmake
+-- Installing: /home/student/41068RS12025-Group18/install/rs1_robot/share/rs1_robot/package.xml

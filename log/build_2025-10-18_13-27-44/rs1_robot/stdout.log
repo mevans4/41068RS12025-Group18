@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target mission_executor[0m
+[35m[1mConsolidate compiler generated dependencies of target state_machine[0m
+[ 12%] Built target path_planner
+[ 18%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mission_executor.dir/src/mission_executor.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/state_machine.dir/src/state_machine.cpp.o[0m
+[ 37%] [32m[1mLinking CXX shared library libpid_controller.so[0m
+[ 37%] Built target pid_controller
+[35m[1mConsolidate compiler generated dependencies of target drone_control[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/drone_control.dir/src/drone_control.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libmission_executor.so[0m
+[ 56%] [32m[1mLinking CXX shared library libstate_machine.so[0m
+[ 56%] Built target state_machine
+[ 56%] Built target mission_executor
+[ 62%] [32mBuilding CXX object CMakeFiles/mission_planner_component.dir/src/mission_node.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library libdrone_control.so[0m
+[ 68%] Built target drone_control
+[ 75%] [32mBuilding CXX object CMakeFiles/drone_controller_enhanced_component.dir/src/drone_node.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libdrone_controller_enhanced_component.so[0m
+[ 81%] Built target drone_controller_enhanced_component

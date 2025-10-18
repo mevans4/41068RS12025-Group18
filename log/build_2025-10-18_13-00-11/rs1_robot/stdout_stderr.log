@@ -1,0 +1,349 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found ros_gz_interfaces: 0.244.20 (/opt/ros/humble/share/ros_gz_interfaces/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)
+-- Found ros_gz_bridge: 0.244.20 (/opt/ros/humble/share/ros_gz_bridge/cmake)
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found grid_map_ros: 2.0.1 (/opt/ros/humble/share/grid_map_ros/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/student/41068RS12025-Group18/build/rs1_robot
+[  6%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/mission_executor.dir/src/mission_executor.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/state_machine.dir/src/state_machine.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner.cpp.o[0m
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ does not name a type
+    8 |   [01;31m[KPIDController[m[K::PIDController()
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:20:3:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ does not name a type
+   20 |   [01;31m[KPIDController[m[K::PIDController(double kp, double ki, double kd)
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:32:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+   32 |   void [01;31m[KPIDController[m[K::setGains(double kp, double ki, double kd) {
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kvoid drone::setGains(double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:34:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkp_[m[K’ was not declared in this scope; did you mean ‘[01m[Kkp[m[K’?
+   34 |     [01;31m[Kkp_[m[K = kp;
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kkp[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kki_[m[K’ was not declared in this scope; did you mean ‘[01m[Kki[m[K’?
+   35 |     [01;31m[Kki_[m[K = ki;
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kki[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkd_[m[K’ was not declared in this scope; did you mean ‘[01m[Kkd[m[K’?
+   36 |     [01;31m[Kkd_[m[K = kd;
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kkd[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:39:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+   39 |   void [01;31m[KPIDController[m[K::setLimits(double min_output, double max_output) {
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kvoid drone::setLimits(double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_output_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmin_output[m[K’?
+   41 |     [01;31m[Kmin_output_[m[K = min_output;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Kmin_output[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:42:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_output_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_output[m[K’?
+   42 |     [01;31m[Kmax_output_[m[K = max_output;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Kmax_output[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:45:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+   45 |   void [01;31m[KPIDController[m[K::setIntegralLimits(double min_integral, double max_integral) {
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kvoid drone::setIntegralLimits(double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_integral_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmin_integral[m[K’?
+   47 |     [01;31m[Kmin_integral_[m[K = min_integral;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kmin_integral[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:48:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_integral_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_integral[m[K’?
+   48 |     [01;31m[Kmax_integral_[m[K = max_integral;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kmax_integral[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:51:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+   51 |   void [01;31m[KPIDController[m[K::setIntegralThreshold(double threshold) {
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kvoid drone::setIntegralThreshold(double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_threshold_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetIntegralThreshold[m[K’?
+   53 |     [01;31m[Kintegral_threshold_[m[K = threshold;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KsetIntegralThreshold[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:56:10:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+   56 |   double [01;31m[KPIDController[m[K::calculate(double setpoint, double process_variable, double dt) {
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kdouble drone::calculate(double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kproportional_term_[m[K’ was not declared in this scope
+   61 |     [01;31m[Kproportional_term_[m[K = kp_ * error;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:61:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kkp_[m[K’ was not declared in this scope
+   61 |     proportional_term_ = [01;31m[Kkp_[m[K * error;
+      |                          [01;31m[K^~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_[m[K’ was not declared in this scope
+   64 |     [01;31m[Kintegral_[m[K += error * dt;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[KclampIntegral[m[K’ was not declared in this scope
+   65 |     [01;31m[KclampIntegral[m[K();  // Apply windup protection
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:66:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_term_[m[K’ was not declared in this scope
+   66 |     [01;31m[Kintegral_term_[m[K = ki_ * integral_;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:66:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kki_[m[K’ was not declared in this scope
+   66 |     integral_term_ = [01;31m[Kki_[m[K * integral_;
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:69:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_run_[m[K’ was not declared in this scope
+   69 |     if ([01;31m[Kfirst_run_[m[K) {
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:70:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kderivative_term_[m[K’ was not declared in this scope
+   70 |       [01;31m[Kderivative_term_[m[K = 0.0;  // No derivative on first iteration
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:73:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kderivative_term_[m[K’ was not declared in this scope
+   73 |       [01;31m[Kderivative_term_[m[K = kd_ * (error - previous_error_) / dt;
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:73:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kkd_[m[K’ was not declared in this scope
+   73 |       derivative_term_ = [01;31m[Kkd_[m[K * (error - previous_error_) / dt;
+      |                          [01;31m[K^~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:73:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_[m[K’ was not declared in this scope
+   73 |       derivative_term_ = kd_ * (error - [01;31m[Kprevious_error_[m[K) / dt;
+      |                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:77:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_[m[K’ was not declared in this scope
+   77 |     [01;31m[Kprevious_error_[m[K = error;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:80:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kderivative_term_[m[K’ was not declared in this scope
+   80 |     double output = proportional_term_ + integral_term_ + [01;31m[Kderivative_term_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:83:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_output_[m[K’ was not declared in this scope
+   83 |     return std::clamp(output, [01;31m[Kmin_output_[m[K, max_output_);
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:83:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_output_[m[K’ was not declared in this scope
+   83 |     return std::clamp(output, min_output_, [01;31m[Kmax_output_[m[K);
+      |                                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:86:10:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+   86 |   double [01;31m[KPIDController[m[K::calculateWithWindupProtection(double setpoint, double process_variable, double dt, double windup_threshold) {
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kdouble drone::calculateWithWindupProtection(double, double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:91:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kproportional_term_[m[K’ was not declared in this scope
+   91 |     [01;31m[Kproportional_term_[m[K = kp_ * error;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:91:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kkp_[m[K’ was not declared in this scope
+   91 |     proportional_term_ = [01;31m[Kkp_[m[K * error;
+      |                          [01;31m[K^~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:96:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_[m[K’ was not declared in this scope
+   96 |       [01;31m[Kintegral_[m[K += error * dt;
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:97:7:[m[K [01;31m[Kerror: [m[K‘[01m[KclampIntegral[m[K’ was not declared in this scope
+   97 |       [01;31m[KclampIntegral[m[K();  // Apply integral limits
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:99:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_term_[m[K’ was not declared in this scope
+   99 |     [01;31m[Kintegral_term_[m[K = ki_ * integral_;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:99:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kki_[m[K’ was not declared in this scope
+   99 |     integral_term_ = [01;31m[Kki_[m[K * integral_;
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:99:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_[m[K’ was not declared in this scope
+   99 |     integral_term_ = ki_ * [01;31m[Kintegral_[m[K;
+      |                            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:102:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_run_[m[K’ was not declared in this scope
+  102 |     if ([01;31m[Kfirst_run_[m[K) {
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:103:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kderivative_term_[m[K’ was not declared in this scope
+  103 |       [01;31m[Kderivative_term_[m[K = 0.0;  // No derivative on first iteration
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:106:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kderivative_term_[m[K’ was not declared in this scope
+  106 |       [01;31m[Kderivative_term_[m[K = kd_ * (error - previous_error_) / dt;
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:106:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kkd_[m[K’ was not declared in this scope
+  106 |       derivative_term_ = [01;31m[Kkd_[m[K * (error - previous_error_) / dt;
+      |                          [01;31m[K^~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:106:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_[m[K’ was not declared in this scope
+  106 |       derivative_term_ = kd_ * (error - [01;31m[Kprevious_error_[m[K) / dt;
+      |                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:110:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_[m[K’ was not declared in this scope
+  110 |     [01;31m[Kprevious_error_[m[K = error;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:113:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kderivative_term_[m[K’ was not declared in this scope
+  113 |     double output = proportional_term_ + integral_term_ + [01;31m[Kderivative_term_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:116:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_output_[m[K’ was not declared in this scope
+  116 |     return std::clamp(output, [01;31m[Kmin_output_[m[K, max_output_);
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:116:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_output_[m[K’ was not declared in this scope
+  116 |     return std::clamp(output, min_output_, [01;31m[Kmax_output_[m[K);
+      |                                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:119:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+  119 |   void [01;31m[KPIDController[m[K::reset() {
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kvoid drone::reset()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:121:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_[m[K’ was not declared in this scope
+  121 |     [01;31m[Kprevious_error_[m[K = 0.0;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:122:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_[m[K’ was not declared in this scope
+  122 |     [01;31m[Kintegral_[m[K = 0.0;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kproportional_term_[m[K’ was not declared in this scope
+  123 |     [01;31m[Kproportional_term_[m[K = 0.0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:124:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_term_[m[K’ was not declared in this scope
+  124 |     [01;31m[Kintegral_term_[m[K = 0.0;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:125:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kderivative_term_[m[K’ was not declared in this scope
+  125 |     [01;31m[Kderivative_term_[m[K = 0.0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:126:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_run_[m[K’ was not declared in this scope
+  126 |     [01;31m[Kfirst_run_[m[K = true;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:129:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPIDController[m[K’ has not been declared
+  129 |   void [01;31m[KPIDController[m[K::clampIntegral() {
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:[m[K In function ‘[01m[Kvoid drone::clampIntegral()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:131:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kintegral_[m[K’ was not declared in this scope
+  131 |     [01;31m[Kintegral_[m[K = std::clamp(integral_, min_integral_, max_integral_);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:131:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_integral_[m[K’ was not declared in this scope
+  131 |     integral_ = std::clamp(integral_, [01;31m[Kmin_integral_[m[K, max_integral_);
+      |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/pid.cpp:131:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_integral_[m[K’ was not declared in this scope
+  131 |     integral_ = std::clamp(integral_, min_integral_, [01;31m[Kmax_integral_[m[K);
+      |                                                      [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pid_controller.dir/build.make:76: CMakeFiles/pid_controller.dir/src/pid.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:151: CMakeFiles/pid_controller.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:7:3:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ does not name a type
+    7 |   [01;31m[KPathPlanner[m[K::PathPlanner() : current_waypoint_index_(0) {}
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:9:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+    9 |   void [01;31m[KPathPlanner[m[K::setWaypoints(const std::vector<geometry_msgs::msg::PoseStamped>& waypoints) {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kvoid drone::setWaypoints(const std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >&)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints[m[K’?
+   11 |     [01;31m[Kwaypoints_[m[K = waypoints;
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[Kwaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   12 |     [01;31m[Kcurrent_waypoint_index_[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:20:35:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   20 |   geometry_msgs::msg::PoseStamped [01;31m[KPathPlanner[m[K::getNextWaypoint() {
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::PoseStamped drone::getNextWaypoint()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[KhasNextWaypoint[m[K’ was not declared in this scope; did you mean ‘[01m[KgetNextWaypoint[m[K’?
+   22 |     if ([01;31m[KhasNextWaypoint[m[K()) {
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KgetNextWaypoint[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:23:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   23 |       return [01;31m[Kwaypoints_[m[K[current_waypoint_index_++];
+      |              [01;31m[K^~~~~~~~~~[m[K
+      |              [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:23:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   23 |       return waypoints_[[01;31m[Kcurrent_waypoint_index_[m[K++];
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:28:35:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   28 |   geometry_msgs::msg::PoseStamped [01;31m[KPathPlanner[m[K::getCurrentWaypoint() const {
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:28:69:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kgeometry_msgs::msg::PoseStamped drone::getCurrentWaypoint()[m[K’ cannot have cv-qualifier
+   28 |   geometry_msgs::msg::PoseStamped PathPlanner::getCurrentWaypoint() [01;31m[Kconst[m[K {
+      |                                                                     [01;31m[K^~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::PoseStamped drone::getCurrentWaypoint()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[KhasNextWaypoint[m[K’ was not declared in this scope; did you mean ‘[01m[KgetNextWaypoint[m[K’?
+   30 |     if ([01;31m[KhasNextWaypoint[m[K()) {
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KgetNextWaypoint[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:31:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   31 |       return [01;31m[Kwaypoints_[m[K[current_waypoint_index_];
+      |              [01;31m[K^~~~~~~~~~[m[K
+      |              [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:31:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   31 |       return waypoints_[[01;31m[Kcurrent_waypoint_index_[m[K];
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:36:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   36 |   bool [01;31m[KPathPlanner[m[K::hasNextWaypoint() const {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:36:39:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kbool drone::hasNextWaypoint()[m[K’ cannot have cv-qualifier
+   36 |   bool PathPlanner::hasNextWaypoint() [01;31m[Kconst[m[K {
+      |                                       [01;31m[K^~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kbool drone::hasNextWaypoint()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:37:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   37 |     return [01;31m[Kcurrent_waypoint_index_[m[K < waypoints_.size();
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:37:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   37 |     return current_waypoint_index_ < [01;31m[Kwaypoints_[m[K.size();
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+      |                                      [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:40:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   40 |   void [01;31m[KPathPlanner[m[K::reset() {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kvoid drone::reset()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   41 |     [01;31m[Kcurrent_waypoint_index_[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:44:10:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   44 |   double [01;31m[KPathPlanner[m[K::getDistanceToWaypoint(const geometry_msgs::msg::PoseStamped& current_pose) const {
+      |          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:44:98:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble drone::getDistanceToWaypoint(const PoseStamped&)[m[K’ cannot have cv-qualifier
+   44 |   double PathPlanner::getDistanceToWaypoint(const geometry_msgs::msg::PoseStamped& current_pose) [01;31m[Kconst[m[K {
+      |                                                                                                  [01;31m[K^~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kdouble drone::getDistanceToWaypoint(const PoseStamped&)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:47:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   47 |     const auto& target = [01;31m[Kwaypoints_[m[K[current_waypoint_index_];
+      |                          [01;31m[K^~~~~~~~~~[m[K
+      |                          [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:47:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   47 |     const auto& target = waypoints_[[01;31m[Kcurrent_waypoint_index_[m[K];
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/path_planner.dir/all] Error 2
+[ 31%] [32m[1mLinking CXX shared library libmission_executor.so[0m
+[ 37%] [32m[1mLinking CXX shared library libstate_machine.so[0m
+[ 37%] Built target state_machine
+[ 37%] Built target mission_executor
+gmake: *** [Makefile:146: all] Error 2

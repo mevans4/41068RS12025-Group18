@@ -1,0 +1,361 @@
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:7:3:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ does not name a type
+    7 |   [01;31m[KPathPlanner[m[K::PathPlanner() : current_waypoint_index_(0) {}
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:9:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+    9 |   void [01;31m[KPathPlanner[m[K::setWaypoints(const std::vector<geometry_msgs::msg::PoseStamped>& waypoints) {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kvoid drone::setWaypoints(const std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >&)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints[m[K’?
+   11 |     [01;31m[Kwaypoints_[m[K = waypoints;
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[Kwaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   12 |     [01;31m[Kcurrent_waypoint_index_[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:20:35:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   20 |   geometry_msgs::msg::PoseStamped [01;31m[KPathPlanner[m[K::getNextWaypoint() {
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::PoseStamped drone::getNextWaypoint()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[KhasNextWaypoint[m[K’ was not declared in this scope; did you mean ‘[01m[KgetNextWaypoint[m[K’?
+   22 |     if ([01;31m[KhasNextWaypoint[m[K()) {
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KgetNextWaypoint[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:23:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   23 |       return [01;31m[Kwaypoints_[m[K[current_waypoint_index_++];
+      |              [01;31m[K^~~~~~~~~~[m[K
+      |              [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:23:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   23 |       return waypoints_[[01;31m[Kcurrent_waypoint_index_[m[K++];
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:28:35:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   28 |   geometry_msgs::msg::PoseStamped [01;31m[KPathPlanner[m[K::getCurrentWaypoint() const {
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:28:69:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kgeometry_msgs::msg::PoseStamped drone::getCurrentWaypoint()[m[K’ cannot have cv-qualifier
+   28 |   geometry_msgs::msg::PoseStamped PathPlanner::getCurrentWaypoint() [01;31m[Kconst[m[K {
+      |                                                                     [01;31m[K^~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::PoseStamped drone::getCurrentWaypoint()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[KhasNextWaypoint[m[K’ was not declared in this scope; did you mean ‘[01m[KgetNextWaypoint[m[K’?
+   30 |     if ([01;31m[KhasNextWaypoint[m[K()) {
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KgetNextWaypoint[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:31:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   31 |       return [01;31m[Kwaypoints_[m[K[current_waypoint_index_];
+      |              [01;31m[K^~~~~~~~~~[m[K
+      |              [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:31:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   31 |       return waypoints_[[01;31m[Kcurrent_waypoint_index_[m[K];
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:36:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   36 |   bool [01;31m[KPathPlanner[m[K::hasNextWaypoint() const {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:36:39:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kbool drone::hasNextWaypoint()[m[K’ cannot have cv-qualifier
+   36 |   bool PathPlanner::hasNextWaypoint() [01;31m[Kconst[m[K {
+      |                                       [01;31m[K^~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kbool drone::hasNextWaypoint()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:37:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   37 |     return [01;31m[Kcurrent_waypoint_index_[m[K < waypoints_.size();
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:37:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   37 |     return current_waypoint_index_ < [01;31m[Kwaypoints_[m[K.size();
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+      |                                      [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:40:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   40 |   void [01;31m[KPathPlanner[m[K::reset() {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kvoid drone::reset()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   41 |     [01;31m[Kcurrent_waypoint_index_[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:44:10:[m[K [01;31m[Kerror: [m[K‘[01m[KPathPlanner[m[K’ has not been declared
+   44 |   double [01;31m[KPathPlanner[m[K::getDistanceToWaypoint(const geometry_msgs::msg::PoseStamped& current_pose) const {
+      |          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:44:98:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble drone::getDistanceToWaypoint(const PoseStamped&)[m[K’ cannot have cv-qualifier
+   44 |   double PathPlanner::getDistanceToWaypoint(const geometry_msgs::msg::PoseStamped& current_pose) [01;31m[Kconst[m[K {
+      |                                                                                                  [01;31m[K^~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:[m[K In function ‘[01m[Kdouble drone::getDistanceToWaypoint(const PoseStamped&)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:47:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetWaypoints[m[K’?
+   47 |     const auto& target = [01;31m[Kwaypoints_[m[K[current_waypoint_index_];
+      |                          [01;31m[K^~~~~~~~~~[m[K
+      |                          [32m[KsetWaypoints[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/path_planner.cpp:47:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_waypoint_index_[m[K’ was not declared in this scope
+   47 |     const auto& target = waypoints_[[01;31m[Kcurrent_waypoint_index_[m[K];
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/path_planner.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:12:3:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ does not name a type
+   12 |   [01;31m[KDroneControl[m[K::DroneControl()
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:34:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   34 |   void [01;31m[KDroneControl[m[K::initialise(double mass, double max_thrust) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::initialise(double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_mass_[m[K’ was not declared in this scope
+   36 |     [01;31m[Kdrone_mass_[m[K = mass;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_thrust_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_thrust[m[K’?
+   37 |     [01;31m[Kmax_thrust_[m[K = max_thrust;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Kmax_thrust[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:40:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   40 |   void [01;31m[KDroneControl[m[K::setLogger(rclcpp::Logger logger) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::setLogger(rclcpp::Logger)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:42:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope; did you mean ‘[01m[Klogger[m[K’?
+   42 |     [01;31m[Klogger_[m[K = logger;
+      |     [01;31m[K^~~~~~~[m[K
+      |     [32m[Klogger[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:45:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   45 |   void [01;31m[KDroneControl[m[K::setCmdVelPublisher(rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::setCmdVelPublisher(rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >::SharedPtr)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+   47 |     [01;31m[Kcmd_vel_pub_[m[K = pub;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:50:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   50 |   void [01;31m[KDroneControl[m[K::updatePositionPIDGains(double kp, double ki, double kd) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::updatePositionPIDGains(double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+   52 |     [01;31m[Kpid_x_[m[K->setGains(kp, ki, kd);
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+   53 |     [01;31m[Kpid_y_[m[K->setGains(kp, ki, kd);
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_z_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+   54 |     [01;31m[Kpid_z_[m[K->setGains(kp, ki, kd);
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:57:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   57 |   void [01;31m[KDroneControl[m[K::updateVelocityPIDGains(double kp, double ki, double kd) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:62:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   62 |   void [01;31m[KDroneControl[m[K::updateAttitudePIDGains(double kp, double ki, double kd) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:67:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   67 |   void [01;31m[KDroneControl[m[K::setControlLimits(double max_velocity, double max_angular_velocity) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::setControlLimits(double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_velocity_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_velocity[m[K’?
+   69 |     [01;31m[Kmax_velocity_[m[K = max_velocity;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kmax_velocity[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_angular_velocity_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_angular_velocity[m[K’?
+   70 |     [01;31m[Kmax_angular_velocity_[m[K = max_angular_velocity;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kmax_angular_velocity[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:73:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   73 |   void [01;31m[KDroneControl[m[K::resetControllers() {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::resetControllers()[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+   75 |     [01;31m[Kpid_x_[m[K->reset();
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+   76 |     [01;31m[Kpid_y_[m[K->reset();
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:77:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_z_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+   77 |     [01;31m[Kpid_z_[m[K->reset();
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_yaw_[m[K’ was not declared in this scope
+   78 |     [01;31m[Kpid_yaw_[m[K->reset();
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_command_[m[K’ was not declared in this scope
+   80 |     [01;31m[Kfirst_command_[m[K = true;  // Reset smoothing filter
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:81:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_data_available_[m[K’ was not declared in this scope
+   81 |     [01;31m[Kimu_data_available_[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:84:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+   84 |   geometry_msgs::msg::Twist [01;31m[KDroneControl[m[K::calculateAdvancedPositionControl(
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::Twist drone_swarm::calculateAdvancedPositionControl(const PoseStamped&, const PoseStamped&, double, bool)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:102:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_data_available_[m[K’ was not declared in this scope
+  102 |     if ([01;31m[Kimu_data_available_[m[K && horizontal_distance > 0.3) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:104:27:[m[K [01;31m[Kerror: [m[K‘[01m[KcalculateYawToTarget[m[K’ was not declared in this scope
+  104 |       double target_yaw = [01;31m[KcalculateYawToTarget[m[K(current_pose.pose.position, target_pose.pose.position);
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:107:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_pose[m[K’?
+  107 |       raw_cmd.angular.z = calculateYawControl(target_yaw, [01;31m[Kcurrent_yaw_[m[K, dt);
+      |                                                           [01;31m[K^~~~~~~~~~~~[m[K
+      |                                                           [32m[Kcurrent_pose[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:107:27:[m[K [01;31m[Kerror: [m[K‘[01m[KcalculateYawControl[m[K’ was not declared in this scope
+  107 |       raw_cmd.angular.z = [01;31m[KcalculateYawControl[m[K(target_yaw, current_yaw_, dt);
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:110:26:[m[K [01;31m[Kerror: [m[K‘[01m[KnormalizeAngle[m[K’ was not declared in this scope
+  110 |       double yaw_error = [01;31m[KnormalizeAngle[m[K(target_yaw - current_yaw_);
+      |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:130:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+  130 |         raw_cmd.linear.y = [01;31m[Kpid_y_[m[K->calculateWithWindupProtection(target_pose.pose.position.y, current_pose.pose.position.y, dt, 1.0) * 0.3;
+      |                            [01;31m[K^~~~~~[m[K
+      |                            [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:135:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+  135 |       raw_cmd.linear.x = [01;31m[Kpid_x_[m[K->calculateWithWindupProtection(target_pose.pose.position.x, current_pose.pose.position.x, dt, 2.0);
+      |                          [01;31m[K^~~~~~[m[K
+      |                          [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:136:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+  136 |       raw_cmd.linear.y = [01;31m[Kpid_y_[m[K->calculateWithWindupProtection(target_pose.pose.position.y, current_pose.pose.position.y, dt, 2.0);
+      |                          [01;31m[K^~~~~~[m[K
+      |                          [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:160:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_z_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+  160 |       raw_cmd.linear.z = [01;31m[Kpid_z_[m[K->calculateWithWindupProtection(target_pose.pose.position.z, current_pose.pose.position.z, dt, 1.0);
+      |                          [01;31m[K^~~~~~[m[K
+      |                          [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:174:5:[m[K [01;31m[Kerror: [m[K‘[01m[KapplySmoothingFilter[m[K’ was not declared in this scope
+  174 |     [01;31m[KapplySmoothingFilter[m[K(cmd_vel, raw_cmd);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:182:5:[m[K [01;31m[Kerror: [m[K‘[01m[KscaleForBasicVelocityControl[m[K’ was not declared in this scope
+  182 |     [01;31m[KscaleForBasicVelocityControl[m[K(cmd_vel);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  187 |   bool [01;31m[KDroneControl[m[K::flyToGoal(VehicleData& vehicle, const geometry_msgs::msg::Pose& goal) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:32:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleData[m[K’ was not declared in this scope; did you mean ‘[01m[Kdrone::VehicleData[m[K’?
+  187 |   bool DroneControl::flyToGoal([01;31m[KVehicleData[m[K& vehicle, const geometry_msgs::msg::Pose& goal) {
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+      |                                [32m[Kdrone::VehicleData[m[K
+In file included from [01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:1[m[K:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/include/drone_control.h:32:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdrone::VehicleData[m[K’ declared here
+   32 | struct [01;36m[KVehicleData[m[K {
+      |        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle[m[K’ was not declared in this scope
+  187 |   bool DroneControl::flyToGoal(VehicleData& [01;31m[Kvehicle[m[K, const geometry_msgs::msg::Pose& goal) {
+      |                                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+  187 |   bool DroneControl::flyToGoal(VehicleData& vehicle, [01;31m[Kconst[m[K geometry_msgs::msg::Pose& goal) {
+      |                                                      [01;31m[K^~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:187:90:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  187 |   bool DroneControl::flyToGoal(VehicleData& vehicle, const geometry_msgs::msg::Pose& goal[01;31m[K)[m[K {
+      |                                                                                          [01;31m[K^[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:292:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  292 |   void [01;31m[KDroneControl[m[K::applySmoothingFilter(geometry_msgs::msg::Twist& cmd_vel, const geometry_msgs::msg::Twist& raw_cmd, double alpha) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::applySmoothingFilter(geometry_msgs::msg::Twist&, const Twist&, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:294:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_command_[m[K’ was not declared in this scope
+  294 |     if ([01;31m[Kfirst_command_[m[K) {
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:298:69:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_cmd_[m[K’ was not declared in this scope
+  298 |       cmd_vel.linear.x = alpha * raw_cmd.linear.x + (1.0 - alpha) * [01;31m[Klast_cmd_[m[K.linear.x;
+      |                                                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:306:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_cmd_[m[K’ was not declared in this scope
+  306 |     [01;31m[Klast_cmd_[m[K = cmd_vel;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:309:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  309 |   void [01;31m[KDroneControl[m[K::scaleForBasicVelocityControl(geometry_msgs::msg::Twist& cmd_vel) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:315:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  315 |   bool [01;31m[KDroneControl[m[K::isGoalReached(const geometry_msgs::msg::Point& current_pos, const geometry_msgs::msg::Pose& goal, bool use_manual_altitude) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:328:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  328 |   void [01;31m[KDroneControl[m[K::applyControlLimits(geometry_msgs::msg::Twist& cmd_vel) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::applyControlLimits(geometry_msgs::msg::Twist&)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:330:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_velocity_[m[K’ was not declared in this scope
+  330 |     cmd_vel.linear.x = std::clamp(cmd_vel.linear.x, -[01;31m[Kmax_velocity_[m[K, max_velocity_);
+      |                                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:334:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_angular_velocity_[m[K’ was not declared in this scope
+  334 |     cmd_vel.angular.x = std::clamp(cmd_vel.angular.x, -[01;31m[Kmax_angular_velocity_[m[K, max_angular_velocity_);
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:340:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  340 |   geometry_msgs::msg::Twist [01;31m[KDroneControl[m[K::calculateControlOutput(
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::Twist drone_swarm::calculateControlOutput(const PoseStamped&, const PoseStamped&, const Twist&, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:347:44:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kgeometry_msgs::msg::Twist drone_swarm::calculateAdvancedPositionControl(const PoseStamped&, const PoseStamped&, double, bool)[m[K’
+  347 |     return [01;31m[KcalculateAdvancedPositionControl(current_pose, target_pose, dt)[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:84:29:[m[K [01;36m[Knote: [m[Kdeclared here
+   84 |   geometry_msgs::msg::Twist [01;36m[KDroneControl[m[K::calculateAdvancedPositionControl(
+      |                             [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:350:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  350 |   geometry_msgs::msg::Twist [01;31m[KDroneControl[m[K::calculatePositionControl(
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kgeometry_msgs::msg::Twist drone_swarm::calculatePositionControl(const PoseStamped&, const PoseStamped&, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:354:44:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kgeometry_msgs::msg::Twist drone_swarm::calculateAdvancedPositionControl(const PoseStamped&, const PoseStamped&, double, bool)[m[K’
+  354 |     return [01;31m[KcalculateAdvancedPositionControl(current_pose, target_pose, dt)[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:84:29:[m[K [01;36m[Knote: [m[Kdeclared here
+   84 |   geometry_msgs::msg::Twist [01;36m[KDroneControl[m[K::calculateAdvancedPositionControl(
+      |                             [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:373:10:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  373 |   double [01;31m[KDroneControl[m[K::calculateXControl(double target_x, double current_x, double dt) {
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kdouble drone_swarm::calculateXControl(double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:374:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+  374 |     return [01;31m[Kpid_x_[m[K->calculate(target_x, current_x, dt);
+      |            [01;31m[K^~~~~~[m[K
+      |            [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:377:10:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  377 |   double [01;31m[KDroneControl[m[K::calculateYControl(double target_y, double current_y, double dt) {
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kdouble drone_swarm::calculateYControl(double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:378:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+  378 |     return [01;31m[Kpid_y_[m[K->calculate(target_y, current_y, dt);
+      |            [01;31m[K^~~~~~[m[K
+      |            [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:381:10:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  381 |   double [01;31m[KDroneControl[m[K::calculateZControl(double target_z, double current_z, double dt) {
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kdouble drone_swarm::calculateZControl(double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:382:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_z_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_t[m[K’?
+  382 |     return [01;31m[Kpid_z_[m[K->calculate(target_z, current_z, dt);
+      |            [01;31m[K^~~~~~[m[K
+      |            [32m[Kpid_t[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:385:8:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  385 |   void [01;31m[KDroneControl[m[K::updateCurrentYaw(double yaw) {
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kvoid drone_swarm::updateCurrentYaw(double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:386:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+  386 |     [01;31m[Kcurrent_yaw_[m[K = normalizeAngle(yaw);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:386:20:[m[K [01;31m[Kerror: [m[K‘[01m[KnormalizeAngle[m[K’ was not declared in this scope
+  386 |     current_yaw_ = [01;31m[KnormalizeAngle[m[K(yaw);
+      |                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:387:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_data_available_[m[K’ was not declared in this scope
+  387 |     [01;31m[Kimu_data_available_[m[K = true;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:390:10:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  390 |   double [01;31m[KDroneControl[m[K::calculateYawToTarget(const geometry_msgs::msg::Point& current_pos, const geometry_msgs::msg::Point& target_pos) {
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:396:10:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  396 |   double [01;31m[KDroneControl[m[K::calculateYawControl(double target_yaw, double current_yaw, double dt) {
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K In function ‘[01m[Kdouble drone_swarm::calculateYawControl(double, double, double)[m[K’:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:398:24:[m[K [01;31m[Kerror: [m[K‘[01m[KnormalizeAngle[m[K’ was not declared in this scope
+  398 |     double yaw_error = [01;31m[KnormalizeAngle[m[K(target_yaw - current_yaw);
+      |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:399:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_yaw_[m[K’ was not declared in this scope
+  399 |     return [01;31m[Kpid_yaw_[m[K->calculate(0.0, -yaw_error, dt);  // Negative error for proper direction
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:[m[K At global scope:
+[01m[K/home/student/41068RS12025-Group18/src/41068_ignition_bringup/src/drone_control.cpp:402:10:[m[K [01;31m[Kerror: [m[K‘[01m[KDroneControl[m[K’ has not been declared
+  402 |   double [01;31m[KDroneControl[m[K::normalizeAngle(double angle) {
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/drone_control.dir/build.make:76: CMakeFiles/drone_control.dir/src/drone_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:177: CMakeFiles/drone_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
