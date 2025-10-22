@@ -1003,7 +1003,7 @@ void MissionPlannerNode::loadMissionParams() {
     }
   }
 
-  // Apparently removing inside of the lock could cause issues but idc for now, @jackson can look into this
+  // Apparently removing inside of the lock could cause issues but idc for now, can look into this later
   void MissionPlannerNode::removePeerSubscriptionForId(int id) {
     std::lock_guard<std::mutex> lock(peers_mutex_);
     peer_odom_subs_.erase(id);
