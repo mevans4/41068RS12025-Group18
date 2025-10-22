@@ -1,11 +1,3 @@
-/**
- * @file mission_node.h
- * @brief Mission planning and coordination node for autonomous drone operations
- * @author Jackson Russell
- * @author Matthew Chua
- * ADD OTHER AUTHORS ADD HERE AND BELOW
- * @date Aug-2025
- */
 
 #ifndef DRONE_MISSION_NODE_H_
 #define DRONE_MISSION_NODE_H_
