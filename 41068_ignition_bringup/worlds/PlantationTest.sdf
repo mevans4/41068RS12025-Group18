@@ -72,7 +72,8 @@
     </include> -->
     
     
-        <!-- Pine trees (centered around 0,0) -->
+        // ...existing code...
+    <!-- Pine trees (centered around 0,0) -->
     <include>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
@@ -85,6 +86,7 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine2</name>
+      <scale>2 2 2</scale> <!-- doubled -->
       <pose>0 -6 0 0 -0 0.3</pose>
     </include>
     <include>
@@ -127,6 +129,7 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine8</name>
+      <scale>2 2 2</scale> <!-- doubled -->
       <pose>-4 -6 0 0 -0 0.5</pose>
     </include>
     <include>
@@ -148,6 +151,7 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine11</name>
+      <scale>2 2 2</scale> <!-- doubled -->
       <pose>-4 6 0 0 -0 0.9</pose>
     </include>
     <include>
@@ -169,6 +173,7 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine14</name>
+      <scale>2 2 2</scale> <!-- doubled -->
       <pose>4 -6 0 0 -0 0.9</pose>
     </include>
     <include>
@@ -176,6 +181,7 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree
       </uri>
       <name>pine15</name>
+      <scale>2 2 2</scale> <!-- doubled -->
       <pose>4 -2 0 0 -0 0.9</pose>
     </include>
     <include>
@@ -199,15 +205,7 @@
       <name>pine18</name>
       <pose>4 10 0 0 -0 0.9</pose>
     </include>
-
-    <!-- Platypus
-    <include>
-      <uri>
-        https://fuel.gazebosim.org/1.0/OpenRobotics/models/platypus
-      </uri>
-      <name>platypus1</name>
-      <pose>-10 5 0 0 0 0</pose>
-    </include> -->
+    
 
     <!-- Rocks -->
     <!-- <include>

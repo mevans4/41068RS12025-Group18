@@ -1,8 +1,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <nav_msgs/msg/odometry.hpp>
-#include <std_msgs/msg/string.hpp>
-
+#include <std_msgs/msg/int32_multi_array.hpp>
+#include "lidar_tree_detector/msg/tree_detection_array.hpp"
 #include <vector>
 #include <mutex>
 #include <cmath>
@@ -50,8 +50,8 @@ public:
             "/scan", 10, std::bind(&LidarTreeDetectorNode::scan_callback, this, std::placeholders::_1));
         odom_sub_ = create_subscription<nav_msgs::msg::Odometry>(
             "/odometry", 10, std::bind(&LidarTreeDetectorNode::odom_callback, this, std::placeholders::_1));
-        pub_ = create_publisher<std_msgs::msg::String>("detected_trees", 10);
-
+        // publish as Int32MultiArray: flattened rows of [width, center_x, center_y] (integers)
+        rclcpp::Publisher<lidar_tree_detector::msg::TreeDetectionArray>::SharedPtr pub_;
         RCLCPP_INFO(get_logger(), "lidar_tree_detector_minimal started");
     }
 
@@ -74,7 +74,7 @@ private:
     // ROS
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_;
+    rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr pub_;
 
     // callbacks
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
@@ -190,19 +190,38 @@ private:
 
     void publish_known_tree_widths()
     {
-        std_msgs::msg::String out;
-        std::ostringstream oss;
-        oss << "Detected known trees:";
-        bool any = false;
+        std_msgs::msg::Int32MultiArray msg;
+        // collect rows for trees that have measurements
+        std::vector<int> flat;
+        int rows = 0;
         for (const auto &kt : known_trees_) {
             if (kt.width_count == 0) continue;
             double avg = kt.width_sum / static_cast<double>(kt.width_count);
-            oss << " [id=" << kt.id << " loc=(" << kt.x << "," << kt.y << ") avg_width=" << avg << " samples=" << kt.width_count << "]";
-            any = true;
+            int width_i = static_cast<int>(std::lround(avg));
+            int x_i = static_cast<int>(std::lround(kt.x));
+            int y_i = static_cast<int>(std::lround(kt.y));
+            flat.push_back(width_i);
+            flat.push_back(x_i);
+            flat.push_back(y_i);
+            rows++;
         }
-        if (!any) oss << " none";
-        out.data = oss.str();
-        pub_->publish(out);
+
+        // Setup layout: dims[0]=rows, dims[1]=3
+        std_msgs::msg::MultiArrayDimension dim0;
+        std_msgs::msg::MultiArrayDimension dim1;
+        dim0.label = "rows";
+        dim0.size = static_cast<size_t>(rows);
+        dim0.stride = static_cast<size_t>(rows * 3);
+        dim1.label = "fields";
+        dim1.size = 3;
+        dim1.stride = 3;
+        msg.layout.dim.clear();
+        if (rows > 0) {
+            msg.layout.dim.push_back(dim0);
+            msg.layout.dim.push_back(dim1);
+        }
+        msg.data = std::move(flat);
+        pub_->publish(msg);
     }
 };
 
