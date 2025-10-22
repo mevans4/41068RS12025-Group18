@@ -1,11 +1,3 @@
-/**
- * @file mission_state.h
- * @brief Mission state enumeration for drone mission management
- * @author Jackson Russell
- * @author Matthew Chua
- * OTHER AUTHORS ADD HERE AND BELOW
- * @date August-2025
- */
 
 #ifndef MISSION_STATE_H_
 #define MISSION_STATE_H_
