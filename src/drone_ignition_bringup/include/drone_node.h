@@ -1,11 +1,3 @@
-/**
- * @file drone_node.h
- * @brief Drone controller node for autonomous flight operations
- * @author Jackson Russell
- * ADD AUTHORS HERE AND BELOW
- * @date Aug-2025
- */
-
 #ifndef DRONE_CONTROLLER_NODE_H_
 #define DRONE_CONTROLLER_NODE_H_
 
