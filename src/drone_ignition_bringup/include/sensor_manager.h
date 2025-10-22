@@ -1,10 +1,4 @@
-/**
- * @file sensor_manager.h
- * @brief Sensor management class for drone operations.
- * @author Jackson Russell
- * OTHER AUTHORS ADD HERE AND BELOW
- * @date August-2025
- */
+
 
 #ifndef DRONE_SENSOR_MANAGER_
 #define DRONE_SENSOR_MANAGER_
