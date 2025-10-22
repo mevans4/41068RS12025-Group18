@@ -3,7 +3,7 @@
 
 waypoint_configs:
   rs1_drone_1:
-    mission_name: "perimeter_patrol_south_west_brown"
+    mission_name: "Move to Tree to Scan"
     waypoints:
       - position: {x: -18.99, y: 14.61, z: 15.63}
         dwell_time: 2.0
@@ -32,4 +32,3 @@ mission_params:
     x: 0.0
     y: 0.0
     z: 0.0
-  # fire_bag_location: {0, 0}
