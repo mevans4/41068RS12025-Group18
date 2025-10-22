@@ -1,10 +1,3 @@
-/**
- * @file safety_monitor.h
- * @brief Safety monitoring class for drone operations.
- * @author Jackson Russell
- * OTHER AUTHORS ADD HERE AND BELOW
- * @date August-2025
- */
 
 #ifndef DRONE_SAFETY_MONITOR_H
 #define DRONE_SAFETY_MONITOR_H
