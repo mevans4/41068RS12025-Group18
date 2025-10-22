@@ -1,9 +1,4 @@
-/**
- * @file pid.h
- * @brief Enhanced PID Controller with windup protection for drone control systems
- * @author RS1 Robot Team
- * @date 2025
- */
+
 
 #ifndef PID_CONTROLLER_H_
 #define PID_CONTROLLER_H_
