@@ -1,11 +1,3 @@
-/**
- * @file drone_control.h
- * @brief Advanced drone control class with PID controllers and flight navigation
- * @author Jackson Russell
- * OTHER AUTHORS ADD HERE AND BELOW
- * @date August-2025
- */
-
 #ifndef DRONE_CONTROL_H_
 #define DRONE_CONTROL_H_
 
