@@ -93,6 +93,7 @@ def generate_launch_description():
         arguments=['-topic', '/robot_description',
                     '-x', '-2.0',
 <<<<<<< HEAD
+<<<<<<< HEAD
                     '-y', '-12.0',
 =======
                     '-y', '-12.0'
@@ -101,6 +102,13 @@ def generate_launch_description():
                     '-R', '0.0',
                     '-P', '0.0',
                     '-Y', '1.5708']  # spawn at end of leftmost row facing down the row (+y)
+=======
+                    '-y', '-12.0',
+                    '-z', '0.5',
+                    '-R', '0.0',
+                    '-P', '0.0',
+                    '-Y', '1.57']
+>>>>>>> 74eb005308c69e0ab3a4ba26c7c9ea0ebf09bac2
     )
     ld.add_action(robot_spawner)
 
