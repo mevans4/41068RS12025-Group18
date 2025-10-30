@@ -16,6 +16,7 @@ find_package(nav2_msgs REQUIRED)
 # Add this block to create the executable and link dependencies:
 add_executable(drone_controller_node src/drone_controller.cpp)
 add_executable(mission_node src/mission_node.cpp)
+add_executable(altitude_controller src/altitude_controller.cpp)
 
 ament_target_dependencies(drone_controller_node
   rclcpp
@@ -30,9 +31,16 @@ ament_target_dependencies(mission_node
   geometry_msgs
 )
 
+ament_target_dependencies(altitude_controller 
+  rclcpp 
+  geometry_msgs 
+  nav_msgs
+)
+
 install(TARGETS
   drone_controller_node
   mission_node
+  altitude_controller
   DESTINATION lib/${PROJECT_NAME}
 )
 
