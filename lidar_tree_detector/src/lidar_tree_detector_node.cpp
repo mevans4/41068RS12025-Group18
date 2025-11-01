@@ -9,6 +9,8 @@
 #include <limits>
 #include <sstream>
 #include <algorithm>
+#include <fstream>
+#include <iomanip>
 
 struct KnownTree {
     int id;
@@ -222,9 +224,33 @@ private:
         }
         msg.data = std::move(flat);
         pub_->publish(msg);
+
+        // write CSV atomically by truncating and writing full list each iteration
+        save_csv();
+    }
+
+    void save_csv()
+    {
+        std::ofstream ofs("detected_trees.csv", std::ofstream::out | std::ofstream::trunc);
+        if (!ofs.is_open()) {
+            RCLCPP_ERROR(get_logger(), "Failed to open detected_trees.csv for writing");
+            return;
+        }
+        ofs << "id,width,center_x,center_y,samples\n";
+        for (const auto &kt : known_trees_) {
+            // round average width if samples exist, otherwise 0
+            int width_i = 0;
+            if (kt.width_count > 0) {
+                double avg = kt.width_sum / static_cast<double>(kt.width_count);
+                width_i = static_cast<int>(std::lround(avg));
+            }
+            int x_i = static_cast<int>(std::lround(kt.x));
+            int y_i = static_cast<int>(std::lround(kt.y));
+            ofs << kt.id << ',' << width_i << ',' << x_i << ',' << y_i << ',' << kt.width_count << '\n';
+        }
+        ofs.close();
     }
 };
-
 int main(int argc, char ** argv)
 {
     rclcpp::init(argc, argv);
