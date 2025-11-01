@@ -11,6 +11,8 @@
 #include <algorithm>
 #include <fstream>
 #include <iomanip>
+#include <visualization_msgs/msg/marker_array.hpp>
+#include <visualization_msgs/msg/marker.hpp>
 
 struct KnownTree {
     int id;
@@ -54,6 +56,7 @@ public:
             "/odometry", 10, std::bind(&LidarTreeDetectorNode::odom_callback, this, std::placeholders::_1));
         // publish as Int32MultiArray: flattened rows of [width, center_x, center_y] (integers)
         rclcpp::Publisher<lidar_tree_detector::msg::TreeDetectionArray>::SharedPtr pub_;
+        marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>("detected_trees_markers", 10);
         RCLCPP_INFO(get_logger(), "lidar_tree_detector_minimal started");
     }
 
@@ -77,6 +80,7 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
     rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr pub_;
+    rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr marker_pub_;
 
     // callbacks
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
@@ -190,7 +194,7 @@ private:
         return maxd;
     }
 
-    void publish_known_tree_widths()
+        void publish_known_tree_widths()
     {
         std_msgs::msg::Int32MultiArray msg;
         // collect rows for trees that have measurements
@@ -227,6 +231,54 @@ private:
 
         // write CSV atomically by truncating and writing full list each iteration
         save_csv();
+
+        // --- build and publish visualization markers for RViz ---
+        visualization_msgs::msg::MarkerArray ma;
+        rclcpp::Time now = this->now();
+        for (const auto &kt : known_trees_) {
+            if (kt.width_count == 0) continue;
+            double avg = kt.width_sum / static_cast<double>(kt.width_count);
+            int width_i = static_cast<int>(std::lround(avg));
+            int x_i = static_cast<int>(std::lround(kt.x));
+            int y_i = static_cast<int>(std::lround(kt.y));
+
+            visualization_msgs::msg::Marker m;
+            m.header.frame_id = "world";
+            m.header.stamp = now;
+            m.ns = "detected_trees";
+            m.id = kt.id; // unique per tree
+            m.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING;
+            m.action = visualization_msgs::msg::Marker::ADD;
+
+            m.pose.position.x = static_cast<double>(x_i);
+            m.pose.position.y = static_cast<double>(y_i);
+            m.pose.position.z = 2.0; // place text above tree
+            m.pose.orientation.w = 1.0;
+
+            // text content: "<width>m x:<x> y:<y>"
+            std::ostringstream oss;
+            oss << width_i << "m  x:" << x_i << " y:" << y_i;
+            m.text = oss.str();
+
+            // scale.z is the height of the text
+            m.scale.z = 0.35f;
+
+            // color (green)
+            m.color.r = 0.0f;
+            m.color.g = 1.0f;
+            m.color.b = 0.0f;
+            m.color.a = 1.0f;
+
+            // optional: keep marker persistent (lifetime = 0)
+            m.lifetime = builtin_interfaces::msg::Duration();
+
+            ma.markers.push_back(m);
+        }
+
+        // publish marker array (RViz subscribe to /detected_trees_markers)
+        if (!ma.markers.empty()) {
+            marker_pub_->publish(ma);
+        }
     }
 
     void save_csv()
