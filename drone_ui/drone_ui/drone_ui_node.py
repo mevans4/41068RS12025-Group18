@@ -6,6 +6,8 @@ from PyQt5 import QtWidgets
 from drone_ui.drone_ui_code import Ui_MainWindow
 from std_msgs.msg import Bool
 
+#Ive got the row and column publishers here for the tree selection but i havent added anything for them to work yet
+
 class DroneUINode(Node):
     def __init__(self):
         super().__init__('drone_ui_node')
@@ -15,11 +17,12 @@ class DroneUINode(Node):
         self.stop_pub = self.create_publisher(Bool, '/drone/cmd/stop', 10)
         self.home_pub = self.create_publisher(Bool, '/drone/cmd/return_home', 10)
         self.height_pub = self.create_publisher(Float32, '/drone/cmd/height', 10)
-        self.tree_pub = self.create_publisher(Float32, '/drone/cmd/tree_select', 10)
+        self.tree_row_pub = self.create_publisher(Float32, '/drone/cmd/tree_row_select', 10)
+        self.tree_column_pub = self.create_publisher(Float32, '/drone/cmd/tree_column_select', 10)
 
         # Subscribers
         self.create_subscription(String, '/drone/status', self.status_callback, 10)
-        self.create_subscription(Float32, '/drone/tree_width', self.width_callback, 10)
+        self.create_subscription(Float32, '/drone/tree_width', self.width_callback, 10) #This will be changed depending on the LIDAR topic
 
         # Setup Qt
         self.app = QtWidgets.QApplication(sys.argv)
@@ -64,8 +67,10 @@ class DroneUINode(Node):
     def get_width(self):
         msg = Float32()
         msg.data = float(self.ui.TreeSelect.value())
-        self.tree_pub.publish(msg)
-        self.get_logger().info(f"Tree {msg.data} selected")
+        # publish selected tree index/row using the existing publisher
+        # (TreeSelect appears to represent a tree row/selection)
+        self.tree_row_pub.publish(msg)
+        self.get_logger().info(f"Tree row {msg.data} selected")
 
     # --- Subscriber callbacks ---
     def status_callback(self, msg):

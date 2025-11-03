@@ -51,11 +51,17 @@ private:
         // pose3.pose.orientation.z = -0.707;
         // pose3.pose.orientation.w = 0.707;
 
+        // pose1.header.frame_id = "map";
+        // pose1.pose.position.x = 0.5;
+        // pose1.pose.position.y = 7.2;
+        // pose1.pose.orientation.z = 0.2;
+        // pose1.pose.orientation.w = 1.0;
+
         pose1.header.frame_id = "map";
-        pose1.pose.position.x = 0.5;
-        pose1.pose.position.y = 7.2;
-        pose1.pose.orientation.z = 0.2;
-        pose1.pose.orientation.w = 1.0;
+        pose1.pose.position.x = 0.9557;
+        pose1.pose.position.y = 7.5768;
+        pose1.pose.orientation.z = 0.17897474707207528;
+        pose1.pose.orientation.w = 0.9838536679356776;
 
         pose2.header.frame_id = "map";
         pose2.pose.position.x = 2.0;

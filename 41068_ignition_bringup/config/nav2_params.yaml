@@ -471,13 +471,13 @@ amcl:
     recovery_alpha_fast: 0.0
     recovery_alpha_slow: 0.0
     resample_interval: 1
-    robot_model_type: "nav2_amcl::DifferentialMotionModel"
-    # robot_model_type: "nav2_amcl::OmniMotionModel"
+    # robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    robot_model_type: "nav2_amcl::OmniMotionModel"
     save_pose_rate: 0.5
     sigma_hit: 0.2
     tf_broadcast: true
-    transform_tolerance: 1.0
-    # transform_tolerance: 0.2
+    # transform_tolerance: 1.0
+    transform_tolerance: 0.2
     update_min_a: 0.2
     update_min_d: 0.25
     z_hit: 0.5
@@ -618,7 +618,7 @@ controller_server:
       max_vel_y: 0.5      # ← Enable sideways movement!
       max_vel_theta: 1.0   # Faster rotation for drones
       min_speed_xy: 0.0
-      max_speed_xy: 0.2    # Combined XY speed limit
+      max_speed_xy: 0.7    # Combined XY speed limit
       min_speed_theta: 0.0
       
       acc_lim_x: 2.5
@@ -745,8 +745,8 @@ global_costmap:
         
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.65
+        cost_scaling_factor: 20.0
+        inflation_radius: 0.2
       always_send_full_costmap: True
 
 map_server:
@@ -764,16 +764,38 @@ map_saver:
     occupied_thresh_default: 0.65
     map_subscribe_transient_local: True
 
+# planner_server:
+#   ros__parameters:
+#     expected_planner_frequency: 20.0
+#     use_sim_time: True
+#     planner_plugins: ["GridBased"]
+#     GridBased:
+#       plugin: "nav2_navfn_planner/NavfnPlanner"
+#       tolerance: 0.5
+#       use_astar: false
+#       allow_unknown: true
+
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 20.0
-    use_sim_time: True
     planner_plugins: ["GridBased"]
+
     GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.5
-      use_astar: false
-      allow_unknown: true
+      plugin: "nav2_smac_planner/SmacPlanner2D" # In Iron and older versions, "/" was used instead of "::"
+      tolerance: 0.125                      # tolerance for planning if unable to reach exact pose, in meters
+      downsample_costmap: false             # whether or not to downsample the map
+      downsampling_factor: 1                # multiplier for the resolution of the costmap layer (e.g. 2 on a 5cm costmap would be 10cm)
+      allow_unknown: true                   # allow traveling in unknown space
+      max_iterations: 1000000               # maximum total iterations to search for before failing (in case unreachable), set to -1 to disable
+      max_on_approach_iterations: 1000      # maximum number of iterations to attempt to reach goal once in tolerance
+      max_planning_time: 2.0                # max time in s for planner to plan, smooth
+      cost_travel_multiplier: 0.5           # Cost multiplier to apply to search to steer away from high cost areas. Larger values will place in the center of aisles more exactly (if non-`FREE` cost potential field exists) but take slightly longer to compute. To optimize for speed, a value of 1.0 is reasonable. A reasonable tradeoff value is 2.0. A value of 0.0 effective disables steering away from obstacles and acts like a naive binary search A*.
+      use_final_approach_orientation: false # Whether to set the final path pose at the goal's orientation to the requested orientation (false) or in line with the approach angle so the robot doesn't rotate to heading (true)
+      motion_model_for_search: "MOORE"      # 8-directional
+      smoother:
+        max_iterations: 1000
+        w_smooth: 0.8
+        w_data: 0.2
+        tolerance: 1.0e-10
 
 # planner_server:
 #   ros__parameters:

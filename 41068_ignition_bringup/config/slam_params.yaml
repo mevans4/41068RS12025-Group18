@@ -21,7 +21,7 @@ slam_toolbox:
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    map_file_name: /home/b/41068_ws/src/41068RS12025-Group18/TreePlantation1_Serial
+    map_file_name: /home/b/41068_ws/src/41068RS12025-Group18/TreePlatation2_Serial
     #map_start_pose: [-2.0, -12.0, 0.5]
     map_start_at_dock: true
 
