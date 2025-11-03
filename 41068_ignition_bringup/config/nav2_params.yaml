@@ -618,7 +618,7 @@ controller_server:
       max_vel_y: 0.5      # ← Enable sideways movement!
       max_vel_theta: 1.0   # Faster rotation for drones
       min_speed_xy: 0.0
-      max_speed_xy: 0.7    # Combined XY speed limit
+      max_speed_xy: 0.5    # Combined XY speed limit
       min_speed_theta: 0.0
       
       acc_lim_x: 2.5
