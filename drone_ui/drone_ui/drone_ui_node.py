@@ -78,12 +78,6 @@ class DroneUINode(Node):
         self.height_pub.publish(msg)
         self.get_logger().info(f"Height set to {value:.2f} m")
 
-    # def get_width(self):
-    #     msg = Float32()
-    #     msg.data = float(self.ui.TreeSelect.value())
-    #     self.tree_pub.publish(msg)
-    #     self.get_logger().info(f"Tree {msg.data} selected")
-
     def get_width(self):
         row = int(self.ui.TreeRow.value()) 
         column = int(self.ui.TreeColumn.value()) 
@@ -99,47 +93,6 @@ class DroneUINode(Node):
             self.ui.WidthLabel.setText(f"Width: {width}cm") 
         else:
             self.ui.WidthLabel.setText(f"Width: N/A") 
-
-    def on_get_width_clicked(self):
-        # ask user for row and column
-        row, ok1 = QtWidgets.QInputDialog.getInt(self.window, "Select Row", "Row (1=left,2=center,3=right):", 2, 1, 3, 1)
-        if not ok1:
-            return
-        col, ok2 = QtWidgets.QInputDialog.getInt(self.window, "Select Column", "Column (1..6, bottom->top):", 1, 1, 6, 1)
-        if not ok2:
-            return
-        self.get_width_by_row_col(row, col)
-
-    def get_width_by_row_col(self, row: int, col: int):
-        # validate inputs
-        if row not in self.row_to_x or col not in self.col_to_y:
-            self.ui.label.setText("Width: invalid")
-            return
-        tx = self.row_to_x[row]
-        ty = self.col_to_y[col]
-
-        # try to find measurement in latest_trees by matching x,y
-        for entry in self.latest_trees:
-            if entry['x'] == tx and entry['y'] == ty:
-                w = float(entry['width'])
-                self.ui.label.setText(f"Width: {w:.2f} m")
-                # publish selected tree index consistent with detector ordering:
-                # detector order: center column (x=0) ids 1..6, left column (x=-4) ids 7..12, right column (x=4) ids 13..18
-                base = 0
-                if row == 1:   # left
-                    base = 6
-                elif row == 2: # center
-                    base = 0
-                elif row == 3: # right
-                    base = 12
-                idx = base + (col - 1) + 1  # 1-based id
-                msg = Float32()
-                msg.data = float(idx)
-                self.tree_pub.publish(msg)
-                self.get_logger().info(f"Tree (row={row},col={col}) selected -> id {idx}")
-                return
-        # not found
-        self.ui.label.setText("Width: no data")
 
     # --- Subscriber callbacks ---
     def status_callback(self, msg):

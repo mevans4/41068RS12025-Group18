@@ -92,23 +92,11 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}],
         arguments=['-topic', '/robot_description',
                     '-x', '-2.0',
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    '-y', '-12.0',
-=======
-                    '-y', '-12.0'
->>>>>>> 8e7f93009be9df36664c0b4fdaa258aed8e1a435
-                    '-z', '0.5',
-                    '-R', '0.0',
-                    '-P', '0.0',
-                    '-Y', '1.5708']  # spawn at end of leftmost row facing down the row (+y)
-=======
                     '-y', '-12.0',
                     '-z', '0.5',
                     '-R', '0.0',
                     '-P', '0.0',
                     '-Y', '1.57']
->>>>>>> 74eb005308c69e0ab3a4ba26c7c9ea0ebf09bac2
     )
     ld.add_action(robot_spawner)
 

@@ -2,7 +2,6 @@
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <std_msgs/msg/int32_multi_array.hpp>
-#include "lidar_tree_detector/msg/tree_detection_array.hpp"
 #include <vector>
 #include <mutex>
 #include <cmath>
@@ -54,13 +53,8 @@ public:
             "/scan", 10, std::bind(&LidarTreeDetectorNode::scan_callback, this, std::placeholders::_1));
         odom_sub_ = create_subscription<nav_msgs::msg::Odometry>(
             "/odometry", 10, std::bind(&LidarTreeDetectorNode::odom_callback, this, std::placeholders::_1));
-        // publish as Int32MultiArray: flattened rows of [width, center_x, center_y] (integers)
-        // rclcpp::Publisher<lidar_tree_detector::msg::TreeDetectionArray>::SharedPtr pub_;
-        // marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>("detected_trees_markers", 10);
         pub_ = create_publisher<std_msgs::msg::Int32MultiArray>(
             "known_tree_widths", 10);
-        // pub_ = create_publisher<lidar_tree_detector::msg::TreeDetectionArray>(
-        //     "/detected_trees", 10);
         marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>(
             "detected_trees_markers", 10);
     
@@ -77,7 +71,7 @@ private:
     // known trees
     std::vector<KnownTree> known_trees_;
 
-    // robot pose (from odom)
+    // robot pose 
     mutable std::mutex pose_mtx_;
     double robot_x_ = std::numeric_limits<double>::quiet_NaN();
     double robot_y_ = std::numeric_limits<double>::quiet_NaN();
@@ -125,7 +119,7 @@ private:
                 double wy = ry + (s * lx + c * ly);
                 pts.emplace_back(wx, wy);
             } else {
-                // no odom yet: use scan-local coordinates (not ideal)
+                // no odom yet: use scan-local coordinates 
                 pts.emplace_back(lx, ly);
             }
             angle += msg->angle_increment;
@@ -134,8 +128,8 @@ private:
         // cluster points (simple region growing / DBSCAN-like)
         auto clusters = cluster_points(pts);
 
-        // For each cluster compute centroid and width (max pairwise distance)
-        for (auto &cluster : clusters) {
+        // For each cluster compute centroid and width
+        for (const auto &cluster : clusters) {
             if (cluster.size() < CLUSTER_MIN) continue;
             auto cen = cluster_centroid(cluster);
             double width = cluster_width(cluster);
@@ -182,7 +176,7 @@ private:
         return clusters;
     }
 
-    // simple centroid (mean)
+    // simple centre (mean)
     std::pair<double,double> cluster_centroid(const std::vector<std::pair<double,double>>& pts) const
     {
         double sx = 0.0, sy = 0.0;
@@ -237,38 +231,38 @@ private:
         msg.data = std::move(flat);
         pub_->publish(msg);
 
-        // write CSV atomically by truncating and writing full list each iteration
+        // write CSV atomically for logging
         save_csv();
 
-        // --- build and publish visualization markers for RViz ---
+        // build and publish visualization markers for RViz
         visualization_msgs::msg::MarkerArray ma;
         rclcpp::Time now = this->now();
         for (const auto &kt : known_trees_) {
             if (kt.width_count == 0) continue;
             double avg = kt.width_sum / static_cast<double>(kt.width_count);
-            int width_i = static_cast<int>(std::lround(avg));
+            int width_i = static_cast<int>(std::lround(avg*100));
             int x_i = static_cast<int>(std::lround(kt.x));
             int y_i = static_cast<int>(std::lround(kt.y));
 
             visualization_msgs::msg::Marker m;
-            m.header.frame_id = "world";
+            m.header.frame_id = "map";
             m.header.stamp = now;
             m.ns = "detected_trees";
-            m.id = kt.id; // unique per tree
+            m.id = kt.id; // tree id
             m.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING;
             m.action = visualization_msgs::msg::Marker::ADD;
 
             m.pose.position.x = static_cast<double>(x_i);
             m.pose.position.y = static_cast<double>(y_i);
-            m.pose.position.z = 2.0; // place text above tree
+            m.pose.position.z = 2.0; 
             m.pose.orientation.w = 1.0;
 
-            // text content: "<width>m x:<x> y:<y>"
+            // text: "<width>cm"
             std::ostringstream oss;
-            oss << width_i << "m  x:" << x_i << " y:" << y_i;
+            oss << width_i << "cm";
             m.text = oss.str();
 
-            // scale.z is the height of the text
+            // scale
             m.scale.z = 0.35f;
 
             // color (green)
@@ -277,13 +271,13 @@ private:
             m.color.b = 0.0f;
             m.color.a = 1.0f;
 
-            // optional: keep marker persistent (lifetime = 0)
+            // lifetime
             m.lifetime = builtin_interfaces::msg::Duration();
 
             ma.markers.push_back(m);
         }
 
-        // publish marker array (RViz subscribe to /detected_trees_markers)
+        // publish marker array
         if (!ma.markers.empty()) {
             marker_pub_->publish(ma);
         }
@@ -298,11 +292,10 @@ private:
         }
         ofs << "id,width,center_x,center_y,samples\n";
         for (const auto &kt : known_trees_) {
-            // round average width if samples exist, otherwise 0
             int width_i = 0;
             if (kt.width_count > 0) {
                 double avg = kt.width_sum / static_cast<double>(kt.width_count);
-                width_i = static_cast<int>(std::lround(avg));
+                width_i = static_cast<int>(std::lround(avg*100));
             }
             int x_i = static_cast<int>(std::lround(kt.x));
             int y_i = static_cast<int>(std::lround(kt.y));
