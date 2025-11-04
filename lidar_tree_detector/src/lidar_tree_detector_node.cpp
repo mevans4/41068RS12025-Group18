@@ -55,8 +55,13 @@ public:
         odom_sub_ = create_subscription<nav_msgs::msg::Odometry>(
             "/odometry", 10, std::bind(&LidarTreeDetectorNode::odom_callback, this, std::placeholders::_1));
         // publish as Int32MultiArray: flattened rows of [width, center_x, center_y] (integers)
-        rclcpp::Publisher<lidar_tree_detector::msg::TreeDetectionArray>::SharedPtr pub_;
-        marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>("detected_trees_markers", 10);
+        // rclcpp::Publisher<lidar_tree_detector::msg::TreeDetectionArray>::SharedPtr pub_;
+        // marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>("detected_trees_markers", 10);
+        pub_ = create_publisher<std_msgs::msg::Int32MultiArray>(
+            "known_tree_widths", 10);
+        marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>(
+            "detected_trees_markers", 10);
+    
         RCLCPP_INFO(get_logger(), "lidar_tree_detector_minimal started");
     }
 

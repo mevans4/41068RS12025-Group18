@@ -1,29 +1,34 @@
 import sys
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String, Float32, Bool
-from lidar_tree_detector.msg import TreeDetectionArray
+from std_msgs.msg import String, Float32, Bool, Int32MultiArray
 from PyQt5 import QtWidgets
 from drone_ui.drone_ui_code import Ui_MainWindow
 from std_msgs.msg import Bool
+import threading
+
+#Ive got the row and column publishers here for the tree selection but i havent added anything for them to work yet
 
 class DroneUINode(Node):
     def __init__(self):
         super().__init__('drone_ui_node')
+
+        self.ros_thread = threading.Thread(target=self.spin_ros, daemon=True)
+        self.ros_thread.start()
+
+        self.tree_data = {}
 
         # Publishers
         self.start_pub = self.create_publisher(Bool, '/drone/cmd/start', 10)
         self.stop_pub = self.create_publisher(Bool, '/drone/cmd/stop', 10)
         self.home_pub = self.create_publisher(Bool, '/drone/cmd/return_home', 10)
         self.height_pub = self.create_publisher(Float32, '/drone/cmd/height', 10)
-        self.tree_pub = self.create_publisher(Float32, '/drone/cmd/tree_select', 10)
+        self.tree_row_pub = self.create_publisher(Float32, '/drone/cmd/tree_row_select', 10)
+        self.tree_column_pub = self.create_publisher(Float32, '/drone/cmd/tree_column_select', 10)
 
         # Subscribers
         self.create_subscription(String, '/drone/status', self.status_callback, 10)
-        self.create_subscription(TreeDetectionArray, 'detected_trees', self.trees_callback, 10)
-
-        # store latest detector results as list of dicts: [{'width':int,'x':int,'y':int}, ...]
-        self.latest_trees = []
+        self.create_subscription(Int32MultiArray, '/known_tree_widths', self.width_callback, 10) #This will be changed depending on the LIDAR topic
 
         # Setup Qt
         self.app = QtWidgets.QApplication(sys.argv)
@@ -36,18 +41,17 @@ class DroneUINode(Node):
         self.ui.Stop.clicked.connect(self.stop_drone)
         self.ui.ReturnHome.clicked.connect(self.return_home)
         self.ui.HeightControl.valueChanged.connect(self.set_height)
-        self.ui.pushButton.clicked.connect(self.get_width)
-
-        # prompt for row/column when Get Width pressed
-        self.ui.pushButton.clicked.connect(self.on_get_width_clicked)
-
-        # mapping: columns (along y) and rows (x positions)
-        # user-facing row numbers: 1=left (-4), 2=center (0), 3=right (4)
-        self.row_to_x = {1: -4, 2: 0, 3: 4}
-        # columns 1..6 map to y positions bottom->top
-        self.col_to_y = {1: -10, 2: -6, 3: -2, 4: 2, 5: 6, 6: 10}
+        self.ui.GetWidth.clicked.connect(self.get_width)
 
         self.window.show()
+
+
+    def spin_ros(self):
+        rclpy.spin(self)
+
+    def run(self):
+        sys.exit(self.app.exec_())
+
 
     # --- Publisher callbacks ---
     def start_drone(self):
@@ -81,12 +85,20 @@ class DroneUINode(Node):
     #     self.get_logger().info(f"Tree {msg.data} selected")
 
     def get_width(self):
-        # retained for compatibility: treat TreeSelect as linear index (1..18)
-        sel = int(self.ui.TreeSelect.value())
-        msg = Float32()
-        msg.data = float(sel)
-        self.tree_pub.publish(msg)
-        self.get_logger().info(f"Tree {msg.data} selected")
+        row = int(self.ui.TreeRow.value()) 
+        column = int(self.ui.TreeColumn.value()) 
+
+        x_map = {1: -4, 2: 0, 3: 4}      
+        y_map = {1: -10, 2: -6, 3: -2, 4: 2, 5: 6, 6: 10}  
+
+        x = x_map[column]
+        y = y_map[row]
+        
+        if (x, y) in self.tree_data:
+            width = self.tree_data[(x, y)]
+            self.ui.WidthLabel.setText(f"Width: {width}m") 
+        else:
+            self.ui.WidthLabel.setText(f"Width: N/A") 
 
     def on_get_width_clicked(self):
         # ask user for row and column
@@ -134,15 +146,16 @@ class DroneUINode(Node):
         self.ui.statusbar.showMessage(msg.data)
 
     def width_callback(self, msg):
-        self.ui.label.setText(f"Width: {msg.data:.2f} m")
-
-    def trees_callback(self, msg: TreeDetectionArray):
-        # msg.trees is a sequence of TreeDetection messages (id,x,y,width)
-        parsed = []
-        for t in msg.trees:
-            # use integer width,x,y (rounding)
-            parsed.append({'width': int(round(t.width)), 'x': int(round(t.x)), 'y': int(round(t.y))})
-        self.latest_trees = parsed
+        data = msg.data
+    
+        for i in range(0, len(data), 3):
+            width = data[i]
+            x = data[i + 1]
+            y = data[i + 2]
+            
+            # if width > 0:
+            self.tree_data[(x, y)] = width
+            self.get_logger().debug(f"Tree at ({x}, {y}): {width}m")
 
     def run(self):
         sys.exit(self.app.exec_())
