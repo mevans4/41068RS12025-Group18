@@ -59,6 +59,8 @@ public:
         // marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>("detected_trees_markers", 10);
         pub_ = create_publisher<std_msgs::msg::Int32MultiArray>(
             "known_tree_widths", 10);
+        // pub_ = create_publisher<lidar_tree_detector::msg::TreeDetectionArray>(
+        //     "/detected_trees", 10);
         marker_pub_ = create_publisher<visualization_msgs::msg::MarkerArray>(
             "detected_trees_markers", 10);
     
@@ -202,13 +204,14 @@ private:
         void publish_known_tree_widths()
     {
         std_msgs::msg::Int32MultiArray msg;
+        //lidar_tree_detector::msg::TreeDetectionArray msg;
         // collect rows for trees that have measurements
         std::vector<int> flat;
         int rows = 0;
         for (const auto &kt : known_trees_) {
             if (kt.width_count == 0) continue;
             double avg = kt.width_sum / static_cast<double>(kt.width_count);
-            int width_i = static_cast<int>(std::lround(avg));
+            int width_i = static_cast<int>(std::lround(avg*100));
             int x_i = static_cast<int>(std::lround(kt.x));
             int y_i = static_cast<int>(std::lround(kt.y));
             flat.push_back(width_i);

@@ -90,7 +90,7 @@ class DroneUINode(Node):
         
         if (x, y) in self.tree_data:
             width = self.tree_data[(x, y)]
-            self.ui.WidthLabel.setText(f"Width: {width}m") 
+            self.ui.WidthLabel.setText(f"Width: {width}cm") 
         else:
             self.ui.WidthLabel.setText(f"Width: N/A") 
 
@@ -108,7 +108,6 @@ class DroneUINode(Node):
             
             # if width > 0:
             self.tree_data[(x, y)] = width
-            self.get_logger().debug(f"Tree at ({x}, {y}): {width}m")
 
     def run(self):
         sys.exit(self.app.exec_())
