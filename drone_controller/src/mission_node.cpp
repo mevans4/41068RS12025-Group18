@@ -64,21 +64,28 @@ private:
         pose1.pose.orientation.w = 0.9838536679356776;
 
         pose2.header.frame_id = "map";
-        pose2.pose.position.x = 2.0;
-        pose2.pose.position.y = 3.5;
-        pose2.pose.orientation.z = -1.0;
-        pose2.pose.orientation.w = 0.2;
+        pose2.pose.position.x = 2.3621;
+        pose2.pose.position.y = 3.8324;
+        pose2.pose.orientation.z = 0.9838536679356776;
+        pose2.pose.orientation.w = -0.17897474707207522;
 
         pose3.header.frame_id = "map";
-        pose3.pose.position.x = -20.0;
-        pose3.pose.position.y = -4.5;
-        pose3.pose.orientation.z = -1.0;
-        pose3.pose.orientation.w = 0.2;
+        pose3.pose.position.x = -20.121241879882;
+        pose3.pose.position.y = -4.557335017706;
+        pose3.pose.orientation.z = 0.9838536679356776;
+        pose3.pose.orientation.w = -0.17897474707207522;
+        
+        // pose4.header.frame_id = "map";
+        // pose4.pose.position.x = -21.529921570879463;
+        // pose4.pose.position.y = -0.8135906984216432;
+        // pose4.pose.orientation.z = 0.17897474707207528;
+        // pose4.pose.orientation.w = 0.9838536679356776;
 
         // Fill in the goal details
         goal.poses.push_back(pose1);
         goal.poses.push_back(pose2);
         goal.poses.push_back(pose3);
+        //goal.poses.push_back(pose4);
 
         auto send_goal_options = rclcpp_action::Client<NavigateThroughPoses>::SendGoalOptions();
         send_goal_options.feedback_callback =
