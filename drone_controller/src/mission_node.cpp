@@ -7,6 +7,7 @@
 #include <nav_msgs/msg/odometry.hpp>
 #include <nav2_msgs/action/navigate_to_pose.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <std_msgs/msg/string.hpp>
 
 using NavigateThroughPoses = nav2_msgs::action::NavigateThroughPoses;
 using GoalHandle = rclcpp_action::ClientGoalHandle<NavigateThroughPoses>;
@@ -30,7 +31,8 @@ public:
       "/odometry", 10, std::bind(&MissionNode::odometry_callback, this, std::placeholders::_1));
 
     cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
-    
+    status_pub_ = this->create_publisher<std_msgs::msg::String>("/drone/status", 10);
+
     start_sub_ = create_subscription<std_msgs::msg::Bool>(
         "/drone/cmd/start", 10,
         std::bind(&MissionNode::start_callback, this, std::placeholders::_1));
@@ -55,6 +57,9 @@ public:
     }
     RCLCPP_INFO(this->get_logger(), "Action server available.");
 
+    // Publish initial status
+    publish_status("Status: IDLE");
+
     run();
     }
 
@@ -63,6 +68,7 @@ private:
     rclcpp_action::Client<NavigateToPose>::SharedPtr topose_client_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr status_pub_;
     rclcpp::TimerBase::SharedPtr run_timer_;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr start_sub_;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
@@ -81,6 +87,14 @@ private:
     int number_of_waypoints_left = 0;
     int number_of_waypoints_total = 0;
     int starting_waypoint = 0;
+    std::string current_status_ = "Status: IDLE";
+
+    void publish_status(const std::string& status) {
+        std_msgs::msg::String msg;
+        msg.data = status;
+        status_pub_->publish(msg);
+        current_status_ = status;
+    }
 
     void odometry_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
@@ -130,18 +144,20 @@ private:
         RCLCPP_INFO(this->get_logger(), "Taking off to height: %.2f meters", flight_height);
         // Implement takeoff logic here
         if (!takeoff_complete) {
+            publish_status("Status: TAKING OFF");
             error = flight_height - current_height;
             if (error > 0.05) {
-                vz = 0.3; 
+                vz = 0.3;
                 geometry_msgs::msg::Twist cmd_vel;
                 cmd_vel.linear.z = vz;
                 cmd_vel_pub_->publish(cmd_vel);
             } else {
-                vz = 0.0; 
+                vz = 0.0;
                 geometry_msgs::msg::Twist cmd_vel;
                 cmd_vel.linear.z = vz;
                 cmd_vel_pub_->publish(cmd_vel);
                 takeoff_complete = true;
+                publish_status("Status: TAKEOFF COMPLETE");
             }
         }
 
@@ -149,6 +165,7 @@ private:
 
     void return_home()
     {
+        publish_status("Status: RETURNING HOME");
         NavigateToPose::Goal home_pose_;
         home_pose_.pose.header.frame_id = "map";
         home_pose_.pose.pose.position.x = -21.529921570879463;
@@ -173,9 +190,11 @@ private:
                     mission_complete = false;
                     home_status = false;
                     takeoff_complete = false;
+                    publish_status("Status: IDLE");
                     RCLCPP_INFO(this->get_logger(), "Mission complete!");
                 } else {
                     RCLCPP_WARN(this->get_logger(), "Mission did not succeed!");
+                    publish_status("Status: ERROR - Return home failed");
                 }
             };
         // Send the goal to the action server
@@ -190,6 +209,7 @@ private:
         }
 
         RCLCPP_INFO(this->get_logger(), "Stopping current mission...");
+        publish_status("Status: STOPPED");
 
         auto cancel_future = throughpose_client_->async_cancel_all_goals();
         running_ = false;
@@ -200,6 +220,7 @@ private:
 
     void send_mission()
     {
+        publish_status("Status: FLYING MISSION");
         NavigateThroughPoses::Goal goal;
 
         geometry_msgs::msg::PoseStamped pose1, pose2, pose3;
@@ -251,9 +272,11 @@ private:
                 RCLCPP_INFO(this->get_logger(), "Mission finished with result code: %d", result.code);
                 if (result.code == rclcpp_action::ResultCode::SUCCEEDED) {
                     mission_complete = true;
+                    publish_status("Status: MISSION COMPLETE");
                     RCLCPP_INFO(this->get_logger(), "Mission complete!");
                 } else {
                     RCLCPP_WARN(this->get_logger(), "Mission did not succeed!");
+                    publish_status("Status: ERROR - Mission failed");
                 }
             };
 
