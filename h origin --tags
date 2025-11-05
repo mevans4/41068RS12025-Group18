@@ -1,0 +1,350 @@
+ 41068_ignition_bringup/.gitattributes                                              |     4 [32m+[m
+ 41068_ignition_bringup/.gitattributes:Zone.Identifier                              |     0
+ 41068_ignition_bringup/CMakeLists.txt                                              |    23 [32m+[m
+ 41068_ignition_bringup/CMakeLists.txt:Zone.Identifier                              |     0
+ 41068_ignition_bringup/README.md                                                   |   122 [32m+[m
+ 41068_ignition_bringup/README.md:Zone.Identifier                                   |     0
+ 41068_ignition_bringup/config/41068.rviz                                           |   421 [32m+[m
+ 41068_ignition_bringup/config/41068.rviz:Zone.Identifier                           |     0
+ 41068_ignition_bringup/config/gazebo_bridge.yaml                                   |    69 [32m+[m
+ 41068_ignition_bringup/config/gazebo_bridge.yaml:Zone.Identifier                   |     0
+ 41068_ignition_bringup/config/nav2_params.yaml                                     |   348 [32m+[m
+ 41068_ignition_bringup/config/nav2_params.yaml:Zone.Identifier                     |     0
+ 41068_ignition_bringup/config/robot_localization.yaml                              |    25 [32m+[m
+ 41068_ignition_bringup/config/robot_localization.yaml:Zone.Identifier              |     0
+ 41068_ignition_bringup/config/slam_params.yaml                                     |    77 [32m+[m
+ 41068_ignition_bringup/config/slam_params.yaml:Zone.Identifier                     |     0
+ 41068_ignition_bringup/launch/41068_ignition.launch.py                             |   131 [32m+[m
+ 41068_ignition_bringup/launch/41068_ignition.launch.py:Zone.Identifier             |     0
+ 41068_ignition_bringup/launch/41068_ignition_drone.launch.py                       |   137 [32m+[m
+ 41068_ignition_bringup/launch/41068_ignition_drone.launch.py:Zone.Identifier       |     0
+ 41068_ignition_bringup/launch/41068_navigation.launch.py                           |    44 [32m+[m
+ 41068_ignition_bringup/launch/41068_navigation.launch.py:Zone.Identifier           |     0
+ 41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png      |   Bin [31m0[m -> [32m2825324[m bytes
+ .../models/forest_plane/materials/textures/empty_grass.png:Zone.Identifier         |     0
+ 41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png  |   Bin [31m0[m -> [32m2195289[m bytes
+ .../models/forest_plane/materials/textures/forest_overhead.png:Zone.Identifier     |     0
+ 41068_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png      |   Bin [31m0[m -> [32m2254066[m bytes
+ .../models/forest_plane/materials/textures/leaf_litter.png:Zone.Identifier         |     0
+ 41068_ignition_bringup/models/forest_plane/model.config                            |    15 [32m+[m
+ 41068_ignition_bringup/models/forest_plane/model.config:Zone.Identifier            |     0
+ 41068_ignition_bringup/models/forest_plane/model.sdf                               |    45 [32m+[m
+ 41068_ignition_bringup/models/forest_plane/model.sdf:Zone.Identifier               |     0
+ 41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png       |   Bin [31m0[m -> [32m1973119[m bytes
+ .../models/forest_wall/materials/textures/forest_wall.png:Zone.Identifier          |     0
+ .../models/forest_wall/materials/textures/forest_wall_transparent.png              |   Bin [31m0[m -> [32m2000697[m bytes
+ .../forest_wall/materials/textures/forest_wall_transparent.png:Zone.Identifier     |     0
+ .../models/forest_wall/materials/textures/forest_wall_transparent_small.png        |   Bin [31m0[m -> [32m77115[m bytes
+ .../materials/textures/forest_wall_transparent_small.png:Zone.Identifier           |     0
+ 41068_ignition_bringup/models/forest_wall/model.config                             |    15 [32m+[m
+ 41068_ignition_bringup/models/forest_wall/model.config:Zone.Identifier             |     0
+ 41068_ignition_bringup/models/forest_wall/model.sdf                                |    46 [32m+[m
+ 41068_ignition_bringup/models/forest_wall/model.sdf:Zone.Identifier                |     0
+ 41068_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png       |   Bin [31m0[m -> [32m2825324[m bytes
+ .../models/grass_plane/materials/textures/empty_grass.png:Zone.Identifier          |     0
+ 41068_ignition_bringup/models/grass_plane/model.config                             |    15 [32m+[m
+ 41068_ignition_bringup/models/grass_plane/model.config:Zone.Identifier             |     0
+ 41068_ignition_bringup/models/grass_plane/model.sdf                                |    45 [32m+[m
+ 41068_ignition_bringup/models/grass_plane/model.sdf:Zone.Identifier                |     0
+ 41068_ignition_bringup/models/pine_tree/materials/scripts/caster_fp.glsl           |    16 [32m+[m
+ .../models/pine_tree/materials/scripts/caster_fp.glsl:Zone.Identifier              |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/materials/scripts/caster_vp.glsl           |    16 [32m+[m
+ .../models/pine_tree/materials/scripts/caster_vp.glsl:Zone.Identifier              |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/materials/scripts/pine_tree.material       |    85 [32m+[m
+ .../models/pine_tree/materials/scripts/pine_tree.material:Zone.Identifier          |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/materials/textures/bark_diffuse.png        |   Bin [31m0[m -> [32m174219[m bytes
+ .../models/pine_tree/materials/textures/bark_diffuse.png:Zone.Identifier           |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/materials/textures/branch_2_diffuse.png    |   Bin [31m0[m -> [32m354118[m bytes
+ .../models/pine_tree/materials/textures/branch_2_diffuse.png:Zone.Identifier       |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/meshes/pine_tree.dae                       |   269 [32m+[m
+ 41068_ignition_bringup/models/pine_tree/meshes/pine_tree.dae:Zone.Identifier       |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/model.config                               |    16 [32m+[m
+ 41068_ignition_bringup/models/pine_tree/model.config:Zone.Identifier               |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/model.sdf                                  |    65 [32m+[m
+ 41068_ignition_bringup/models/pine_tree/model.sdf:Zone.Identifier                  |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/1.png                           |   Bin [31m0[m -> [32m58698[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/1.png:Zone.Identifier           |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/2.png                           |   Bin [31m0[m -> [32m56433[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/2.png:Zone.Identifier           |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/3.png                           |   Bin [31m0[m -> [32m71899[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/3.png:Zone.Identifier           |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/4.png                           |   Bin [31m0[m -> [32m74641[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/4.png:Zone.Identifier           |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/5.png                           |   Bin [31m0[m -> [32m70973[m bytes
+ 41068_ignition_bringup/models/pine_tree/thumbnails/5.png:Zone.Identifier           |   Bin [31m0[m -> [32m25[m bytes
+ 41068_ignition_bringup/package.xml                                                 |    28 [32m+[m
+ 41068_ignition_bringup/package.xml:Zone.Identifier                                 |     0
+ 41068_ignition_bringup/urdf/common_properties.urdf.xacro                           |    45 [32m+[m
+ 41068_ignition_bringup/urdf/common_properties.urdf.xacro:Zone.Identifier           |     0
+ 41068_ignition_bringup/urdf/husky.gazebo.xacro                                     |   181 [32m+[m
+ 41068_ignition_bringup/urdf/husky.gazebo.xacro:Zone.Identifier                     |     0
+ 41068_ignition_bringup/urdf/husky.urdf.xacro                                       |   184 [32m+[m
+ 41068_ignition_bringup/urdf/husky.urdf.xacro:Zone.Identifier                       |     0
+ 41068_ignition_bringup/urdf/meshes/base_link.dae                                   |    99 [32m+[m
+ 41068_ignition_bringup/urdf/meshes/base_link.dae:Zone.Identifier                   |     0
+ 41068_ignition_bringup/urdf/meshes/bumper.dae                                      |   103 [32m+[m
+ 41068_ignition_bringup/urdf/meshes/bumper.dae:Zone.Identifier                      |     0
+ 41068_ignition_bringup/urdf/meshes/jpl04_arch_nosensor.stl                         |   Bin [31m0[m -> [32m185434[m bytes
+ 41068_ignition_bringup/urdf/meshes/jpl04_arch_nosensor.stl:Zone.Identifier         |     0
+ 41068_ignition_bringup/urdf/meshes/top_chassis.dae                                 |    99 [32m+[m
+ 41068_ignition_bringup/urdf/meshes/top_chassis.dae:Zone.Identifier                 |     0
+ 41068_ignition_bringup/urdf/meshes/top_plate.dae                                   |    99 [32m+[m
+ 41068_ignition_bringup/urdf/meshes/top_plate.dae:Zone.Identifier                   |     0
+ 41068_ignition_bringup/urdf/meshes/wheel.dae                                       | 49570 [32m++++++++++++++++++++++++++++++++++++++[m
+ 41068_ignition_bringup/urdf/meshes/wheel.dae:Zone.Identifier                       |     0
+ 41068_ignition_bringup/urdf/wheel.urdf.xacro                                       |    44 [32m+[m
+ 41068_ignition_bringup/urdf/wheel.urdf.xacro:Zone.Identifier                       |     0
+ 41068_ignition_bringup/urdf_drone/common_properties.urdf.xacro                     |    45 [32m+[m
+ 41068_ignition_bringup/urdf_drone/common_properties.urdf.xacro:Zone.Identifier     |     0
+ 41068_ignition_bringup/urdf_drone/meshes/hull.dae                                  |   244 [32m+[m
+ 41068_ignition_bringup/urdf_drone/meshes/hull.dae:Zone.Identifier                  |     0
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_fl.dae                          |   172 [32m+[m
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_fl.dae:Zone.Identifier          |     0
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_fr.dae                          |   172 [32m+[m
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_fr.dae:Zone.Identifier          |     0
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_rl.dae                          |   202 [32m+[m
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_rl.dae:Zone.Identifier          |     0
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_rr.dae                          |   202 [32m+[m
+ 41068_ignition_bringup/urdf_drone/meshes/propeller_rr.dae:Zone.Identifier          |     0
+ 41068_ignition_bringup/urdf_drone/model.config                                     |    15 [32m+[m
+ 41068_ignition_bringup/urdf_drone/model.config:Zone.Identifier                     |     0
+ 41068_ignition_bringup/urdf_drone/model.sdf                                        |    92 [32m+[m
+ 41068_ignition_bringup/urdf_drone/model.sdf:Zone.Identifier                        |     0
+ 41068_ignition_bringup/urdf_drone/parrot.gazebo.xacro                              |   182 [32m+[m
+ 41068_ignition_bringup/urdf_drone/parrot.gazebo.xacro:Zone.Identifier              |     0
+ 41068_ignition_bringup/urdf_drone/parrot.urdf.xacro                                |   142 [32m+[m
+ 41068_ignition_bringup/urdf_drone/parrot.urdf.xacro:Zone.Identifier                |     0
+ 41068_ignition_bringup/urdf_drone/thumbnails/1.png                                 |   Bin [31m0[m -> [32m22785[m bytes
+ 41068_ignition_bringup/urdf_drone/thumbnails/1.png:Zone.Identifier                 |     0
+ 41068_ignition_bringup/urdf_drone/thumbnails/2.png                                 |   Bin [31m0[m -> [32m39585[m bytes
+ 41068_ignition_bringup/urdf_drone/thumbnails/2.png:Zone.Identifier                 |     0
+ 41068_ignition_bringup/urdf_drone/thumbnails/3.png                                 |   Bin [31m0[m -> [32m17248[m bytes
+ 41068_ignition_bringup/urdf_drone/thumbnails/3.png:Zone.Identifier                 |     0
+ 41068_ignition_bringup/urdf_drone/thumbnails/4.png                                 |   Bin [31m0[m -> [32m13946[m bytes
+ 41068_ignition_bringup/urdf_drone/thumbnails/4.png:Zone.Identifier                 |     0
+ 41068_ignition_bringup/urdf_drone/thumbnails/5.png                                 |   Bin [31m0[m -> [32m11985[m bytes
+ 41068_ignition_bringup/urdf_drone/thumbnails/5.png:Zone.Identifier                 |     0
+ 41068_ignition_bringup/worlds/Plantation2.sdf                                      |   188 [32m+[m
+ 41068_ignition_bringup/worlds/PlantationTest.sdf                                   |   223 [32m+[m
+ 41068_ignition_bringup/worlds/PlantationTest.sdf:Zone.Identifier                   |     3 [32m+[m
+ 41068_ignition_bringup/worlds/large_demo.sdf                                       |   298 [32m+[m
+ 41068_ignition_bringup/worlds/large_demo.sdf:Zone.Identifier                       |     0
+ 41068_ignition_bringup/worlds/simple_trees.sdf                                     |    73 [32m+[m
+ 41068_ignition_bringup/worlds/simple_trees.sdf:Zone.Identifier                     |     0
+ Drone_UI.ui                                                                        |   238 [32m+[m
+ LICENSE                                                                            |    21 [32m+[m
+ README.md                                                                          |     2 [32m+[m
+ TreePlantation1_Save.pgm                                                           |   Bin [31m0[m -> [32m265591[m bytes
+ TreePlantation1_Save.yaml                                                          |     7 [32m+[m
+ TreePlantation1_Serial.data                                                        |   Bin [31m0[m -> [32m13410543[m bytes
+ TreePlantation1_Serial.posegraph                                                   |   Bin [31m0[m -> [32m36531175[m bytes
+ TreePlatation2_Save.pgm                                                            |     4 [32m+[m
+ TreePlatation2_Save.yaml                                                           |     7 [32m+[m
+ TreePlatation2_Serial.data                                                         |   Bin [31m0[m -> [32m11131468[m bytes
+ TreePlatation2_Serial.posegraph                                                    |   Bin [31m0[m -> [32m34142766[m bytes
+ drone_controller/CMakeLists.txt                                                    |    59 [32m+[m
+ drone_controller/package.xml                                                       |    24 [32m+[m
+ drone_controller/src/altitude_controller.cpp                                       |   110 [32m+[m
+ drone_controller/src/drone_controller.cpp                                          |   147 [32m+[m
+ drone_controller/src/mission_node.cpp                                              |   274 [32m+[m
+ drone_ui/drone_ui/__init__.py                                                      |     0
+ drone_ui/drone_ui/__pycache__/__init__.cpython-310.pyc                             |   Bin [31m0[m -> [32m145[m bytes
+ drone_ui/drone_ui/__pycache__/drone_ui_code.cpython-310.pyc                        |   Bin [31m0[m -> [32m3104[m bytes
+ drone_ui/drone_ui/__pycache__/drone_ui_node.cpython-310.pyc                        |   Bin [31m0[m -> [32m4118[m bytes
+ drone_ui/drone_ui/drone_ui_code.py                                                 |   112 [32m+[m
+ drone_ui/drone_ui/drone_ui_node.py                                                 |   122 [32m+[m
+ drone_ui/package.xml                                                               |    21 [32m+[m
+ drone_ui/resource/drone_ui                                                         |     0
+ drone_ui/setup.cfg                                                                 |     4 [32m+[m
+ drone_ui/setup.py                                                                  |    26 [32m+[m
+ drone_ui/test/test_copyright.py                                                    |    25 [32m+[m
+ drone_ui/test/test_flake8.py                                                       |    25 [32m+[m
+ drone_ui/test/test_pep257.py                                                       |    23 [32m+[m
+ drone_ui_code2                                                                     |   112 [32m+[m
+ lidar_tree_detector/.vscode/c_cpp_properties.json                                  |    21 [32m+[m
+ lidar_tree_detector/.vscode/c_cpp_properties.json:Zone.Identifier                  |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/.vscode/settings.json                                          |   109 [32m+[m
+ lidar_tree_detector/.vscode/settings.json:Zone.Identifier                          |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/CMakeLists.txt                                                 |    55 [32m+[m
+ lidar_tree_detector/CMakeLists.txt:Zone.Identifier                                 |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/ReadME.txt                                                     |    33 [32m+[m
+ lidar_tree_detector/ReadME.txt:Zone.Identifier                                     |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/.cmake/api/v1/query/client-vscode/query.json             |     1 [32m+[m
+ .../build/.cmake/api/v1/query/client-vscode/query.json:Zone.Identifier             |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/.cmake/api/v1/reply/cache-v2-35278834af9330e5b56e.json   |  3015 [32m+++[m
+ .../build/.cmake/api/v1/reply/cache-v2-35278834af9330e5b56e.json:Zone.Identifier   |   Bin [31m0[m -> [32m99[m bytes
+ .../build/.cmake/api/v1/reply/cmakeFiles-v1-e79ba6f0f49d73aa1c51.json              |  5643 [32m+++++[m
+ .../.cmake/api/v1/reply/cmakeFiles-v1-e79ba6f0f49d73aa1c51.json:Zone.Identifier    |   Bin [31m0[m -> [32m99[m bytes
+ .../build/.cmake/api/v1/reply/codemodel-v2-ccb30f24b0c8cfce6e4e.json               |    79 [32m+[m
+ .../.cmake/api/v1/reply/codemodel-v2-ccb30f24b0c8cfce6e4e.json:Zone.Identifier     |   Bin [31m0[m -> [32m99[m bytes
+ .../build/.cmake/api/v1/reply/directory-.-Debug-ebcb0437db1371f08bca.json          |   385 [32m+[m
+ .../api/v1/reply/directory-.-Debug-ebcb0437db1371f08bca.json:Zone.Identifier       |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/.cmake/api/v1/reply/index-2025-10-21T23-28-29-0548.json  |   132 [32m+[m
+ .../build/.cmake/api/v1/reply/index-2025-10-21T23-28-29-0548.json:Zone.Identifier  |   Bin [31m0[m -> [32m99[m bytes
+ .../api/v1/reply/target-lidar_tree_detector_node-Debug-9c4801b1087d60c3458f.json   |   855 [32m+[m
+ ...target-lidar_tree_detector_node-Debug-9c4801b1087d60c3458f.json:Zone.Identifier |   Bin [31m0[m -> [32m99[m bytes
+ .../v1/reply/target-lidar_tree_detector_uninstall-Debug-96dd638c13c4c7f84839.json  |   112 [32m+[m
+ ...t-lidar_tree_detector_uninstall-Debug-96dd638c13c4c7f84839.json:Zone.Identifier |   Bin [31m0[m -> [32m99[m bytes
+ .../build/.cmake/api/v1/reply/target-uninstall-Debug-b915bcbfcb441803e439.json     |    95 [32m+[m
+ .../api/v1/reply/target-uninstall-Debug-b915bcbfcb441803e439.json:Zone.Identifier  |   Bin [31m0[m -> [32m99[m bytes
+ .../build/.cmake/api/v1/reply/toolchains-v1-99265b04de7ada3aac9e.json              |   107 [32m+[m
+ .../.cmake/api/v1/reply/toolchains-v1-99265b04de7ada3aac9e.json:Zone.Identifier    |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeCache.txt                                           |   750 [32m+[m
+ lidar_tree_detector/build/CMakeCache.txt:Zone.Identifier                           |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake                   |    72 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake:Zone.Identifier   |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake                 |    83 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake:Zone.Identifier |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin        |   Bin [31m0[m -> [32m15968[m bytes
+ .../build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin:Zone.Identifier        |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin      |   Bin [31m0[m -> [32m15992[m bytes
+ .../build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeSystem.cmake                      |    15 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CMakeSystem.cmake:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c         |   803 [32m+[m
+ .../build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c:Zone.Identifier         |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CompilerIdC/a.out                      |   Bin [31m0[m -> [32m16088[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CompilerIdC/a.out:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp   |   791 [32m+[m
+ .../build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:Zone.Identifier   |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out                    |   Bin [31m0[m -> [32m16096[m bytes
+ lidar_tree_detector/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out:Zone.Identifier    |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/CMakeDirectoryInformation.cmake               |    16 [32m+[m
+ .../build/CMakeFiles/CMakeDirectoryInformation.cmake:Zone.Identifier               |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/CMakeOutput.log                               |  1491 [32m++[m
+ lidar_tree_detector/build/CMakeFiles/CMakeOutput.log:Zone.Identifier               |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/CMakeRuleHashes.txt                           |     2 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/CMakeRuleHashes.txt:Zone.Identifier           |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/Makefile.cmake                                |   948 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/Makefile.cmake:Zone.Identifier                |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/Makefile2                                     |   166 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/Makefile2:Zone.Identifier                     |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/TargetDirectories.txt                         |    10 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/TargetDirectories.txt:Zone.Identifier         |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/cmake.check_cache                             |     1 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/cmake.check_cache:Zone.Identifier             |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/lidar_tree_detector_node.dir/DependInfo.cmake |    19 [32m+[m
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/DependInfo.cmake:Zone.Identifier |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/lidar_tree_detector_node.dir/build.make       |   227 [32m+[m
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/build.make:Zone.Identifier       |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/cmake_clean.cmake                |    11 [32m+[m
+ .../CMakeFiles/lidar_tree_detector_node.dir/cmake_clean.cmake:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/compiler_depend.make             |     2 [32m+[m
+ .../CMakeFiles/lidar_tree_detector_node.dir/compiler_depend.make:Zone.Identifier   |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/compiler_depend.ts               |     2 [32m+[m
+ .../CMakeFiles/lidar_tree_detector_node.dir/compiler_depend.ts:Zone.Identifier     |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/lidar_tree_detector_node.dir/depend.make      |     2 [32m+[m
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/depend.make:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/lidar_tree_detector_node.dir/flags.make       |    10 [32m+[m
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/flags.make:Zone.Identifier       |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/lidar_tree_detector_node.dir/link.txt         |     1 [32m+[m
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/link.txt:Zone.Identifier         |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/lidar_tree_detector_node.dir/progress.make    |     3 [32m+[m
+ .../build/CMakeFiles/lidar_tree_detector_node.dir/progress.make:Zone.Identifier    |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_uninstall.dir/DependInfo.cmake            |    18 [32m+[m
+ .../CMakeFiles/lidar_tree_detector_uninstall.dir/DependInfo.cmake:Zone.Identifier  |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/lidar_tree_detector_uninstall.dir/build.make  |    87 [32m+[m
+ .../build/CMakeFiles/lidar_tree_detector_uninstall.dir/build.make:Zone.Identifier  |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_uninstall.dir/cmake_clean.cmake           |     8 [32m+[m
+ .../CMakeFiles/lidar_tree_detector_uninstall.dir/cmake_clean.cmake:Zone.Identifier |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_uninstall.dir/compiler_depend.make        |     2 [32m+[m
+ .../lidar_tree_detector_uninstall.dir/compiler_depend.make:Zone.Identifier         |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_uninstall.dir/compiler_depend.ts          |     2 [32m+[m
+ .../lidar_tree_detector_uninstall.dir/compiler_depend.ts:Zone.Identifier           |   Bin [31m0[m -> [32m99[m bytes
+ .../build/CMakeFiles/lidar_tree_detector_uninstall.dir/progress.make               |     1 [32m+[m
+ .../CMakeFiles/lidar_tree_detector_uninstall.dir/progress.make:Zone.Identifier     |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/progress.marks                                |     1 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/progress.marks:Zone.Identifier                |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/DependInfo.cmake                |    18 [32m+[m
+ .../build/CMakeFiles/uninstall.dir/DependInfo.cmake:Zone.Identifier                |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/build.make                      |    83 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/build.make:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/cmake_clean.cmake               |     5 [32m+[m
+ .../build/CMakeFiles/uninstall.dir/cmake_clean.cmake:Zone.Identifier               |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/compiler_depend.make            |     2 [32m+[m
+ .../build/CMakeFiles/uninstall.dir/compiler_depend.make:Zone.Identifier            |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/compiler_depend.ts              |     2 [32m+[m
+ .../build/CMakeFiles/uninstall.dir/compiler_depend.ts:Zone.Identifier              |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/progress.make                   |     1 [32m+[m
+ lidar_tree_detector/build/CMakeFiles/uninstall.dir/progress.make:Zone.Identifier   |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CTestConfiguration.ini                                   |   105 [32m+[m
+ lidar_tree_detector/build/CTestConfiguration.ini:Zone.Identifier                   |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CTestCustom.cmake                                        |     2 [32m+[m
+ lidar_tree_detector/build/CTestCustom.cmake:Zone.Identifier                        |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/CTestTestfile.cmake                                      |     6 [32m+[m
+ lidar_tree_detector/build/CTestTestfile.cmake:Zone.Identifier                      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Makefile                                                 |   269 [32m+[m
+ lidar_tree_detector/build/Makefile:Zone.Identifier                                 |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Testing/20251013-2309/Test.xml                           |    34 [32m+[m
+ lidar_tree_detector/build/Testing/20251013-2309/Test.xml:Zone.Identifier           |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Testing/20251016-0414/Test.xml                           |    34 [32m+[m
+ lidar_tree_detector/build/Testing/20251016-0414/Test.xml:Zone.Identifier           |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Testing/20251021-2328/Test.xml                           |    34 [32m+[m
+ lidar_tree_detector/build/Testing/20251021-2328/Test.xml:Zone.Identifier           |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Testing/TAG                                              |     3 [32m+[m
+ lidar_tree_detector/build/Testing/TAG:Zone.Identifier                              |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Testing/Temporary/LastTest_20251013-2309.log             |     3 [32m+[m
+ .../build/Testing/Temporary/LastTest_20251013-2309.log:Zone.Identifier             |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Testing/Temporary/LastTest_20251016-0414.log             |     3 [32m+[m
+ .../build/Testing/Temporary/LastTest_20251016-0414.log:Zone.Identifier             |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/Testing/Temporary/LastTest_20251021-2328.log             |     3 [32m+[m
+ .../build/Testing/Temporary/LastTest_20251021-2328.log:Zone.Identifier             |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/lidar_tree_detectorConfig-version.cmake |    14 [32m+[m
+ .../build/ament_cmake_core/lidar_tree_detectorConfig-version.cmake:Zone.Identifier |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/lidar_tree_detectorConfig.cmake         |    42 [32m+[m
+ .../build/ament_cmake_core/lidar_tree_detectorConfig.cmake:Zone.Identifier         |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/package.cmake                           |    14 [32m+[m
+ lidar_tree_detector/build/ament_cmake_core/package.cmake:Zone.Identifier           |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/stamps/ament_prefix_path.sh.stamp       |     4 [32m+[m
+ .../build/ament_cmake_core/stamps/ament_prefix_path.sh.stamp:Zone.Identifier       |   Bin [31m0[m -> [32m99[m bytes
+ .../build/ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp                |    14 [32m+[m
+ .../ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/stamps/nameConfig.cmake.in.stamp        |    42 [32m+[m
+ .../build/ament_cmake_core/stamps/nameConfig.cmake.in.stamp:Zone.Identifier        |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/stamps/package.xml.stamp                |    21 [32m+[m
+ .../build/ament_cmake_core/stamps/package.xml.stamp:Zone.Identifier                |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/stamps/package_xml_2_cmake.py.stamp     |   150 [32m+[m
+ .../build/ament_cmake_core/stamps/package_xml_2_cmake.py.stamp:Zone.Identifier     |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/stamps/path.sh.stamp                    |     5 [32m+[m
+ lidar_tree_detector/build/ament_cmake_core/stamps/path.sh.stamp:Zone.Identifier    |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_core/stamps/templates_2_cmake.py.stamp       |   112 [32m+[m
+ .../build/ament_cmake_core/stamps/templates_2_cmake.py.stamp:Zone.Identifier       |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_environment_hooks/ament_prefix_path.dsv      |     1 [32m+[m
+ .../build/ament_cmake_environment_hooks/ament_prefix_path.dsv:Zone.Identifier      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_environment_hooks/local_setup.bash           |    46 [32m+[m
+ .../build/ament_cmake_environment_hooks/local_setup.bash:Zone.Identifier           |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_environment_hooks/local_setup.dsv            |     2 [32m+[m
+ .../build/ament_cmake_environment_hooks/local_setup.dsv:Zone.Identifier            |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_environment_hooks/local_setup.sh             |   184 [32m+[m
+ .../build/ament_cmake_environment_hooks/local_setup.sh:Zone.Identifier             |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_environment_hooks/local_setup.zsh            |    59 [32m+[m
+ .../build/ament_cmake_environment_hooks/local_setup.zsh:Zone.Identifier            |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_environment_hooks/package.dsv                |     4 [32m+[m
+ .../build/ament_cmake_environment_hooks/package.dsv:Zone.Identifier                |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_environment_hooks/path.dsv                   |     1 [32m+[m
+ lidar_tree_detector/build/ament_cmake_environment_hooks/path.dsv:Zone.Identifier   |   Bin [31m0[m -> [32m99[m bytes
+ .../share/ament_index/resource_index/package_run_dependencies/lidar_tree_detector  |     1 [32m+[m
+ .../resource_index/package_run_dependencies/lidar_tree_detector:Zone.Identifier    |   Bin [31m0[m -> [32m99[m bytes
+ .../share/ament_index/resource_index/packages/lidar_tree_detector                  |     0
+ .../share/ament_index/resource_index/packages/lidar_tree_detector:Zone.Identifier  |   Bin [31m0[m -> [32m99[m bytes
+ .../share/ament_index/resource_index/parent_prefix_path/lidar_tree_detector        |     1 [32m+[m
+ .../resource_index/parent_prefix_path/lidar_tree_detector:Zone.Identifier          |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/ament_cmake_package_templates/templates.cmake            |    14 [32m+[m
+ .../build/ament_cmake_package_templates/templates.cmake:Zone.Identifier            |   Bin [31m0[m -> [32m99[m bytes
+ .../build/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake          |    57 [32m+[m
+ .../ament_cmake_uninstall_target.cmake:Zone.Identifier                             |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/cmake_install.cmake                                      |   133 [32m+[m
+ lidar_tree_detector/build/cmake_install.cmake:Zone.Identifier                      |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/build/compile_commands.json                                    |     7 [32m+[m
+ lidar_tree_detector/build/compile_commands.json:Zone.Identifier                    |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/msg/TreeDetection.msg                                          |     4 [32m+[m
+ lidar_tree_detector/msg/TreeDetection.msg:Zone.Identifier                          |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/msg/TreeDetectionArray.msg                                     |     1 [32m+[m
+ lidar_tree_detector/msg/TreeDetectionArray.msg:Zone.Identifier                     |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/package.xml                                                    |    26 [32m+[m
+ lidar_tree_detector/package.xml:Zone.Identifier                                    |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/requirements.txt                                               |     7 [32m+[m
+ lidar_tree_detector/requirements.txt:Zone.Identifier                               |   Bin [31m0[m -> [32m99[m bytes
+ lidar_tree_detector/src/lidar_tree_detector_node.cpp                               |   312 [32m+[m
+ lidar_tree_detector/src/lidar_tree_detector_node.cpp:Zone.Identifier               |   Bin [31m0[m -> [32m99[m bytes
+ 349 files changed, 74188 insertions(+)
