@@ -198,7 +198,6 @@ private:
         void publish_known_tree_widths()
     {
         std_msgs::msg::Int32MultiArray msg;
-        //lidar_tree_detector::msg::TreeDetectionArray msg;
         // collect rows for trees that have measurements
         std::vector<int> flat;
         int rows = 0;
