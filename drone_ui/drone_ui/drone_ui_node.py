@@ -96,7 +96,7 @@ class DroneUINode(Node):
 
     # --- Subscriber callbacks ---
     def status_callback(self, msg):
-        self.ui.statusbar.showMessage(msg.data)
+        self.ui.StatusLabel.setText(msg.data)
 
     def width_callback(self, msg):
         data = msg.data
